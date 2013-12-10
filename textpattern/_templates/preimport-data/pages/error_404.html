@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="http://tst.mosman.nsw.gov.au/textpattern/css.php?n=default" />
+<link rel="stylesheet" type="text/css" media="screen" href="http://tst.mosman.nsw.gov.au/textpattern/css.php?n=layout" />
+<link rel="stylesheet" type="text/css" media="screen" href="http://tst.mosman.nsw.gov.au/textpattern/css.php?n=header-footer" />
+<link rel="stylesheet" type="text/css" media="screen" href="http://tst.mosman.nsw.gov.au/textpattern/css.php?n=nav" />
+<!--[if lte ie 6]>
+<link rel="stylesheet" type="text/css" media="screen" href="http://tst.mosman.nsw.gov.au/textpattern/css.php?n=ie" />
+<![endif]-->
+<link rel="alternate stylesheet" type="text/css" media="screen" title="Wide" href="http://tst.mosman.nsw.gov.au/textpattern/css.php?n=wide" />
+<link rel="stylesheet" type="text/css" media="print" href="http://tst.mosman.nsw.gov.au/textpattern/css.php?n=print" />
+
+<script type="text/javascript" src="/js/schedule.js"></script>
+<script type="text/javascript" src="/js/dom_extras.js"></script>
+
+<script type="text/javascript" src="/js/class_names.js"></script>
+<script type="text/javascript" src="/js/resolution.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/striped_tables.js"></script>
+<script type="text/javascript" src="/js/sortable_tables.js"></script>
+
+<title>Mosman Council: Error</title>
+
+</head>
+<body id="error_404">
+
+<div id="header"><div class="container">
+<h1 class="print-element">Mosman Municipal Council</h1>
+<a rel="home" href="/" id="top"><img src="http://tst.mosman.nsw.gov.au/images/12.gif" width="369" height="53" alt="" /></a>
+<ul>
+<li><a href="/contact">Contact us</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/events">Events</a></li>
+<li><form action="http://tst.mosman.nsw.gov.au/search/" method="get"><input name="q" value="" size="21" type="text" /><input type="submit" value="Search" class="button" /></form></li>
+</ul>
+</div></div>
+
+<div id="navbar"><div class="container">
+<ul id="nav">
+<li><a href="/">Home</a></li>
+<li><a href="#">Council</a></li>
+<li><a href="/residents">Residents</a></li>
+<li><a href="#">Planning &amp; Heritage</a></li>
+<li><a href="#">Development &amp; Building</a></li>
+<li><a href="#">Environment</a></li>
+<li><a href="#">Library</a></li>
+<li><a href="/community">Community</a></li>
+<li><a href="#">Mosman</a></li>
+</ul>
+</div></div>
+
+<div id="wrapper"><div class="container">
+<div id="intro">
+<!-- <txp:image id="30" class="section" /> -->
+<h2><txp:error_status /> <span><txp:error_message /></span></h2> 
+<p>The link you clicked or the URL you typed into your browser has returned an error. You may have followed an outdated link - Mosman Council's website was redesigned in February 2007 - or made a spelling or syntax error in the address bar. You can <a href="/">go to the home page</a>, browse via the top level sections above, access our <txp:permlink id="25">A-Z index</txp:permlink> or <txp:permlink id="26">Sitemap</txp:permlink> or search below.</p>
+</div>
+
+<div id="content">
+
+<div class="wider-col home-1">
+<div class="box-list">
+<h3>Page <strong>Search</strong></h3>
+<form action="http://tst.mosman.nsw.gov.au/search/" method="get" id="search_form"><input name="q" value="" size="21" type="text" /><input type="submit" value="Search" class="button" /></form><br clear="left" />
+</div></div>
+
+<div class="col home-2">
+<div class="box-list">
+<h3>Top <strong>Sections</strong></h3>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/council">Council</a></li>
+<li><a href="/residents">Residents</a></li>
+<li><a href="/planning">Planning &amp; Heritage</a></li>
+<li><a href="/development">Development &amp; Building</a></li>
+<li><a href="/environment">Environment</a></li>
+<li><a href="/library">Library</a></li>
+<li><a href="/community">Community</a></li>
+<li><a href="/mosman">Mosman</a></li>
+</ul>
+</div></div>
+
+<!--
+<p>page template: error_404</p>
+<p>zem_pretext_request_uri</p>
+<txp:php>dmp(zem_pretext_request_uri());</txp:php>
+<p>dmp($GLOBALS['pretext'], $_SERVER);</p>
+<txp:php>dmp($GLOBALS['pretext'], $_SERVER);</txp:php>
+-->
+
+<div class="col">
+
+<div class="box-list">
+<h3>More <strong>Search</strong></h3>
+<txp:linklist form="Links" category="quick-search" limit="999" sort="linksort asc" wraptag="ul" break="li" />
+</div>
+
+</div>
+
+<br clear="all" />
+
+</div>
+
+<div id="footer">
+<ul>
+<li><a href="/contact">Contact us</a></li>
+<li><a href="/search">Search</a></li>
+<li><txp:permlink id="25">A-Z index</txp:permlink></li>
+<li><txp:permlink id="26">Sitemap</txp:permlink></li>
+<li><a href="/news">News</a></li>
+<li><a href="/events">Events</a></li>
+<li><a href="/media">Media Centre</a></li>
+<li><txp:permlink id="20">Subscribe</txp:permlink></li>
+<li><txp:permlink id="22">Disclaimer</txp:permlink></li>
+<li><txp:permlink id="23">Privacy</txp:permlink></li>
+</ul>
+<p><txp:permlink id="21">Copyright</txp:permlink> Mosman Municipal Council <txp:php>echo date("Y");</txp:php></p>
+</div>
+
+</div></div>
+</body>
+</html>

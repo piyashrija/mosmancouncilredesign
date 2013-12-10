@@ -1,0 +1,21 @@
+<txp:zem_article_event>
+<h2><txp:title /></h2>
+
+<dl class="table-event-display">
+<dt>Date</dt>
+<dd><strong><txp:zem_event_date wraptag="" format="%A %#d %B %Y" label="" /> <txp:chh_if_data>&#8211; <txp:zem_event_finish_date wraptag="" format="%A %#d %B %Y" /></txp:chh_if_data></strong></dd>
+
+<txp:chh_if_data><dt>Time</dt>
+<dd><txp:zem_event_time label="" wraptag="" format="%I:%M%p" /></txp:chh_if_data><txp:chh_if_data> - <txp:zem_event_finish_time label="" wraptag="" format="%I:%M%p" /></dd><txp:else /></dd></txp:chh_if_data>
+
+<txp:chh_if_data><dt>Place</dt>
+<dd><txp:zem_event_location /></dd></txp:chh_if_data>
+
+</dl>
+
+<txp:body />
+
+<txp:chh_if_data><p class="article-nav"><em>Categories:</em> <txp:zem_event_categories /></p></txp:chh_if_data>
+</txp:zem_article_event>
+
+<txp:section name="events">View all events</txp:section>

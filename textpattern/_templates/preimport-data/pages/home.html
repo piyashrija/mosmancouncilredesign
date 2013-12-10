@@ -1,0 +1,67 @@
+<txp:output_form form="include-head" />
+
+<!-- HOME PAGE CONTENT --> 
+
+<div class="wider-col home-1">
+<div class="box-list">
+<h3>What's <strong>Happening</strong></h3>
+
+<ul class="graphic">
+<txp:zem_event_list form="zem_event_Home" limit=5 />
+<li class="default"><txp:section name="events"><strong>More Events</strong></txp:section></li>
+</ul>
+
+<!--
+<ul class="graphic">
+<li><a href="#"><txp:image id="13" /></a><a href="#"><strong>Mosman Festival</strong></a><br /><em>Monday 15 Aug</em><p>The 'Faces of Mosman' Photography Competition</p></li>
+<li><a href="#"><txp:image id="13" /></a><a href="#"><strong>2006 Mosman Art Prize</strong></a><br /><em>Thursday 21 Sept</em><p>Mosman Art Gallery proudly presents Australia's longest running prize.</p></li>
+<li><a href="#"><txp:image id="13" /></a><a href="#"><strong>LEP Review information and ideas session</strong></a><br /><em>Wed 15 Oct</em><p>Have your say on the future of development in Mosman.</p></li>
+<li><a href="#"><txp:image id="13" /></a><a href="#"><strong>Art Market</strong></a><br /><em>Fri 17 Oct</em><p>Hundreds of affordable original artworks for sale.</p></li>
+<li><a href="#"><txp:image id="13" /></a><a href="#"><strong>Mosman Ward Boundary Changes</strong></a><br /><em>Mon 23 Oct</em><p>Public exhibition.</p></li>
+<li class="default"><a href="#"><strong>More Events</strong></a></li>
+</ul>
+-->
+
+</div>
+</div>
+
+<div class="col home-2">
+<div class="box-list">
+<h3>What's <strong>News</strong></h3>
+<ul class="icon-doc">
+<txp:article_custom status="live" section="news" limit=5 form="list-home-News" index=0 recurse=1 />
+<li class="default"><txp:section name="news" link=1><strong>More News</strong></txp:section></li>
+</ul>
+</div>
+</div>
+
+<div class="col">
+<div class="box-list">
+<h3>Quick <strong>Search</strong></h3>
+<txp:linklist form="Links" category="quick-search" limit="999" sort="linksort asc" wraptag="ul" break="li" />
+</div>
+<div class="box-list">
+<h3>Quick <strong>Links</strong></h3>
+<ul>
+<li><a href="#">Contact Mosman Council</a></li>
+<li><a href="#">DA Tracking</a></li>
+<li><a href="#">Application Forms</a></li>
+<li><a href="#">Mayor and Councillors</a></li>
+<li><a href="#">Council Agendas &amp; Minutes</a></li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Your <strong>Say</strong></h3>
+<ul>
+<li><a href="#">Draft LEP</a></li>
+<li><a href="#">Draft Pricing Policy</a></li>
+<li><a href="#">Draft MosPLAN 2005-2009</a></li>
+</ul>
+</div>
+</div>
+
+<!-- END HOME PAGE CONTENT -->
+
+<txp:article pgonly=1 />
+
+<txp:output_form form="include-footer" />

@@ -1,0 +1,26 @@
+/* FOR FLOATED ELEMENTS, TO COMBAT DOUBLED FLOAT-MARGIN BUG */
+
+#intro,.col,.wider-col,.double-col,#sidebar {
+display:inline;
+}
+
+
+/* IE 6 SEARCH INPUT & BUTTON TEXT TOO SMALL - THIS INCREASES SIZE */
+
+#header input {
+font-size:1em;
+padding:0;
+}
+#header input.button {
+font-size:1em;
+padding:0;
+margin-bottom:-1px;
+}
+
+
+
+/* LISTS WITH THUMBNAILS - GET THUMB IN POSITION WITH THIS */
+
+ul.graphic li img {
+left:-49px;
+}

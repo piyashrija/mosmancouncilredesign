@@ -1,0 +1,107 @@
+<txp:output_form form="include-head" />
+
+<!-- ################ CALENDAR ################# PAGE --> 
+
+<txp:if_section name="events/calendar"><div class="widest-col">
+<txp:zem_event_calendar_nav wraptag="" />
+<txp:zem_event_calendar wraptag="" break="" class="data zem_event_calendar" class_noday="empty" />
+<p class="article-nav"><a href="/events">Events home</a></p>
+</div></txp:if_section>
+
+<!-- ################ EVENT ################# PAGE --> 
+
+<txp:if_section name="events"><div class="wide-col">
+
+<txp:if_article_list>
+
+<txp:article pgonly=1 />
+
+<h2>What's On in Mosman</h2>
+
+<txp:if_category><div class="event-cat-info">You are browsing all current or upcoming events tagged <em><txp:category /></em>.</div></txp:if_category>
+<txp:if_search><div class="event-cat-info"><a href="/events/search">Search again?</a></div></txp:if_search>
+
+<txp:chh_if_data>
+<ul class="graphic">
+<txp:if_search><txp:zem_event_list date_from="1 January 2006" /><txp:else /><txp:zem_event_list /></txp:if_search>
+</ul>
+<txp:else /><p><strong>No results found.</strong></p></txp:chh_if_data>
+
+<txp:if_search><p><a href="/events">View all events</a></p></txp:if_search>
+<txp:if_category><p><a href="/events">View all events</a></p></txp:if_category>
+
+<txp:else />
+
+<txp:article form="zem_event_single" />
+
+</txp:if_article_list>
+
+</div>
+
+<div class="side-col">
+<txp:zem_event_calendar_nav />
+<txp:zem_event_mini_calendar class="minical" class_noday="empty" />
+<div class="minical-meta"><a href="/events/calendar">Calendar view</a> <a href="/events/search">Search events</a></div>
+<div class="box-list">
+<h3>Event <strong>Categories</strong></h3>
+<txp:category_list type="event" wraptag="ul" break="li" active_class="active" section="events" />
+<ul>
+<li><a href="#">Art &amp; Cultural</a></li>
+<li><a href="#">Business Community</a></li>
+<li><a href="#">Children</a></li>
+<li><a href="#">Community Consultation</a></li>
+<li><a href="#">Environment</a></li>
+<li><a href="#">Families</a></li>
+<li><a href="#">Local History</a></li>
+<li><a href="#">Seniors</a></li>
+<li><a href="#">Youth</a></li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Event <strong>Locations</strong></h3>
+<ul>
+<li><a href="#">Civic Centre</a></li>
+<li><a href="#">Mosman Art Gallery</a></li>
+<li><a href="#">Mosman Library</a></li>
+<li><a href="#">Senior's Centre</a></li>
+</ul>
+</div>
+<!--
+<div class="box-list">
+<h3>Community <strong>Calendar</strong></h3>
+<ul><li><a href="#">February-March 2007</a></li></ul>
+</div>
+-->
+
+</div>
+
+</txp:if_section>
+
+<!-- ################ EVENT SEARCH ################# PAGE --> 
+
+<txp:if_section name="events/search"><div class="wide-col">
+<h2>Search events</h2>
+<txp:zem_event_search_input section="events" sep="&nbsp;&nbsp;" wraptag="ul" break="li" />
+</div>
+
+<div class="side-col">
+<txp:zem_event_calendar_nav />
+<txp:zem_event_mini_calendar class="minical" class_noday="empty" />
+<div class="minical-meta"><a href="/events/calendar">Calendar view</a> <a href="/events/search">Search events</a></div>
+<div class="box-list">
+<h3>Event <strong>Categories</strong></h3>
+<txp:category_list type="event" wraptag="ul" break="li" active_class="a_active" this_section=1 />
+</div>
+<div class="box-list">
+<h3>Community <strong>Calendar</strong></h3>
+<ul><li><a href="#">February-March 2007</a></li></ul>
+</div>
+</div>
+
+</txp:if_section>
+
+
+
+
+
+<txp:output_form form="include-footer" />

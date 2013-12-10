@@ -1,0 +1,502 @@
+<txp:output_form form="include-head" />
+
+<txp:if_index_page>
+
+<txp:if_section_level level=1>
+
+<txp:anc_hide><!-- ### SECTION PAGE ### --></txp:anc_hide>
+
+<txp:anc_hide><!-- ### CONTACT SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="contact">
+<iframe name="Contact" src="/asp/contact/request.aspx" frameborder=0 height="970px"  width="100%" /></iframe>
+<txp:article pgonly=1 />
+<div class="col">
+<div class="box-list">
+<h3>Civic <strong>Centre</strong></h3>
+<ul>
+<li>Mosman Square<br />Spit Junction <a href="#">map</a></li>
+<li class="nudge10t">Telephone (02) 9978 4000<br />Fax (02) 9978 4132</li>
+<li class="nudge10t">Rangers (02) 9978 4081<br />mobile 0419 784 081</li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Postal <strong>Address</strong></h3>
+<ul>
+<li>General Manager<br />
+PO Box 211<br />
+Spit Junction NSW 2088<br />Australia</li>
+</ul>
+<ul class="nudge10t">
+<li>DX 9301<br />
+Mosman, NSW</li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Business <strong>Hours</strong></h3>
+<ul>
+<li>Mon, Wed–Fri 8.30am–5pm</li>
+<li>Tuesday 8.30am–7pm</li>
+</ul>
+</div>
+</div>
+</txp:if_section>
+
+<txp:anc_hide><!-- ### ABOUT SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="about"> 
+<div class="double-col"><div class="double-col-wrap">
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="23" form="section_list" /></li>
+<li><txp:article_custom id="22" form="section_list" /></li>
+</ul>
+</div>
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="20" form="section_list" /></li>
+<li><txp:article_custom id="21" form="section_list" /></li>
+</ul>
+</div>
+</div></div>
+<div class="col">
+<div class="box-list">
+<h3>Quick <strong>Search</strong></h3>
+<txp:linklist form="Links" category="quick-search" limit="999" sort="linksort asc" wraptag="ul" break="li" />
+</div>
+<div class="box-list">
+<h3>Quick <strong>Links</strong></h3>
+<ul>
+<li><a href="#">Contact Mosman Council</a></li>
+<li><a href="#">DA Tracking</a></li>
+<li><a href="#">Application Forms</a></li>
+<li><a href="#">Mayor and Councillors</a></li>
+<li><a href="#">Council Agendas &amp; Minutes</a></li>
+</ul>
+</div>
+</div>
+</txp:if_section>
+
+
+<txp:anc_hide><!-- ### COUNCIL SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="council">
+<div class="double-col"><div class="double-col-wrap">
+
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="228" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/about" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="235" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/plans" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="236" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/reports" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="237" form="section_list" /></li>
+<li><txp:article_custom id="238" form="section_list" /></li>
+<li><txp:article_custom id="179" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/employment" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="232" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/meetings" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="233" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/community-groups" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="234" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/consultation" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="239" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/community-safety" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+
+</div></div>
+
+<div class="col">
+
+<txp:chh_if_data><div class="box-list">
+<h3>Council <strong>News</strong></h3>
+<ul class="icon-doc">
+<txp:article_custom section="news" category="council" form="list-home-News" status="live" limit=5 index=0 />
+<li class="default"><a href="/news/?c=council">More Council News</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+<div class="box-list">
+<h3>Council <strong>Events</strong></h3>
+<ul class="icon-doc">
+<li><a href="#"><strong>Mosman Festival</strong></a><br /><em>Monday 15 Aug</em><p>The 'Faces of Mosman' Photography Competition</p></li>
+<li><a href="#"><strong>2006 Mosman Art Prize</strong></a><br /><em>Thursday 21 Sept</em><p>Mosman Art Gallery proudly presents Australia's longest running prize.</p></li>
+<li><a href="#"><strong>LEP Review information and ideas session</strong></a><br /><em>Wed 15 Oct</em><p>Have your say on the future of development in Mosman.</p></li>
+<li class="default"><a href="#">More News</a></li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Your <strong>Say</strong></h3>
+</div>
+</div>
+</txp:if_section>
+
+<txp:anc_hide><!-- ### RESIDENTS SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="residents">
+<div class="double-col"><div class="double-col-wrap">
+
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="4" form="section_list" /></li>
+<li><txp:article_custom id="13" form="section_list" /></li>
+<li><txp:article_custom id="12" form="section_list" /></li>
+<li><txp:article_custom id="147" form="section_list" /></li>
+<li><txp:article_custom id="155" form="section_list" /></li>
+</ul>
+</div>
+
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="17" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="residents/waste" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="32" form="section_list" /></li>
+<li><txp:article_custom id="156" form="section_list" /></li>
+<li><txp:article_custom id="157" form="section_list" /></li>
+</ul>
+</div>
+
+</div></div>
+
+<div class="col">
+<div class="box-list">
+<h3>Community <strong>Events</strong></h3>
+<ul class="icon-doc">
+<li><a href="#"><strong>Mosman Festival</strong></a><br /><em>Monday 15 Aug</em><p>The 'Faces of Mosman' Photography Competition</p></li>
+<li><a href="#"><strong>2006 Mosman Art Prize</strong></a><br /><em>Thursday 21 Sept</em><p>Mosman Art Gallery proudly presents Australia's longest running prize.</p></li>
+<li><a href="#"><strong>LEP Review information and ideas session</strong></a><br /><em>Wed 15 Oct</em><p>Have your say on the future of development in Mosman.</p></li>
+<li class="default"><a href="#">More News</a></li>
+</ul>
+</div>
+<txp:chh_if_data><div class="box-list">
+<h3>Residents <strong>News</strong></h3>
+<ul class="icon-doc">
+<txp:article_custom section="news/mayor" form="list-home-News" status="live" limit=1 index=0 />
+<txp:article_custom section="news" category="residents" form="list-home-News" status="live" limit=4 index=0 />
+<li class="default"><txp:section name="news">More News</txp:section></li>
+</ul>
+</div></txp:chh_if_data>
+<div class="box-list">
+<h3>Your <strong>Say</strong></h3>
+</div>
+</div>
+</txp:if_section>
+
+
+
+<txp:anc_hide><!-- ### ENVIRONMENT SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="environment">
+<div class="double-col"><div class="double-col-wrap">
+
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="145" form="section_list" /></li>
+<li><txp:article_custom id="148" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/cec" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="153" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/public-health" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="152" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/noise" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="119" form="section_list" /></li>
+<li><txp:article_custom id="150" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/gardening" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="149" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/biodiversity" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="283" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/marine" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="115" form="section_list" /></li>
+<li><txp:article_custom id="151" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/water" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="144" form="section_list" /></li>
+</ul>
+</div>
+
+</div></div>
+
+<div class="col">
+
+<div class="box-list ad-block">
+<a href="http://webcat.shore.shorelink.nsw.gov.au/"><txp:image id="236" /></a>
+<p style="padding-top:1em;"><a href="http://webcat.shore.shorelink.nsw.gov.au/">Subscribe for regular updates on Environment news &amp; events.</a></p>
+</div>
+
+<txp:chh_if_data><div class="box-list">
+<h3>Environment <strong>News</strong></h3>
+<ul class="icon-doc">
+<txp:article_custom section="news" category="environment" form="list-home-News" status="live" limit=5 index=0 />
+<li class="default"><a href="/news/?c=environment">More Environment News</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+</div>
+</txp:if_section>
+
+
+
+<txp:anc_hide><!-- ### LIBRARY SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="library">
+<div class="double-col"><div class="double-col-wrap">
+
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="120" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="library/about" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="67" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="library/information" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="85" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="library/local-studies" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+
+</ul>
+</div>
+
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="89" form="section_list" /></li>
+<li><txp:article_custom id="96" form="section_list" /></li>
+<li><txp:article_custom id="98" form="section_list" /></li>
+<li><txp:article_custom id="99" form="section_list" /></li>
+<li><txp:article_custom id="101" form="section_list" /></li>
+<li><txp:article_custom id="173" form="section_list" /></li>
+<li><txp:article_custom id="102" form="section_list" /></li>
+</ul>
+</div>
+
+</div></div>
+
+<div class="col">
+
+<div class="box-list ad-block">
+<a href="http://webcat.shore.shorelink.nsw.gov.au/"><txp:image id="104" class="ad-whale" /></a>
+<p>Search <a href="http://webcat.shore.shorelink.nsw.gov.au/">online catalogue</a>.</p>
+</div>
+
+<div class="box-list">
+<h3>Library <strong>Events</strong></h3>
+<ul class="icon-doc">
+<li><a href="#"><strong>Mosman Festival</strong></a><br /><em>Monday 15 Aug</em><p>The 'Faces of Mosman' Photography Competition</p></li>
+<li><a href="#"><strong>2006 Mosman Art Prize</strong></a><br /><em>Thursday 21 Sept</em><p>Mosman Art Gallery proudly presents Australia's longest running prize.</p></li>
+<li><a href="#"><strong>LEP Review information and ideas session</strong></a><br /><em>Wed 15 Oct</em><p>Have your say on the future of development in Mosman.</p></li>
+<li class="default"><txp:category name="library" section="news">More News</txp:category></li>
+</ul>
+</div>
+
+<txp:chh_if_data><div class="box-list">
+<h3>Library <strong>News</strong></h3>
+<ul class="icon-doc">
+<txp:article_custom section="news" category="library" form="list-home-News" status="live" limit=5 index=0 />
+<li class="default"><a href="/news/?c=library">More Library News</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+</div>
+</txp:if_section>
+
+
+<txp:anc_hide><!-- ### COMMUNITY SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="community">
+<div class="double-col"><div class="double-col-wrap">
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="54" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/children" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="105" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/older" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="103" form="section_list" /></li>
+<li><txp:article_custom id="161" form="section_list" /></li>
+</ul>
+</div>
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="104" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/youth" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="92" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/business" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="55" form="section_list" /></li>
+<li><txp:article_custom id="218" form="section_list" /></li>
+<li><txp:article_custom id="219" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/friendship" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+</div></div>
+<div class="col">
+<div class="box-list">
+<h3>Community <strong>Events</strong></h3>
+<ul class="icon-doc">
+<li><a href="#"><strong>Mosman Festival</strong></a><br /><em>Monday 15 Aug</em><p>The 'Faces of Mosman' Photography Competition</p></li>
+<li><a href="#"><strong>2006 Mosman Art Prize</strong></a><br /><em>Thursday 21 Sept</em><p>Mosman Art Gallery proudly presents Australia's longest running prize.</p></li>
+<li><a href="#"><strong>LEP Review information and ideas session</strong></a><br /><em>Wed 15 Oct</em><p>Have your say on the future of development in Mosman.</p></li>
+<li class="default"><a href="#">More News</a></li>
+</ul>
+</div>
+<txp:chh_if_data><div class="box-list">
+<h3>Residents <strong>News</strong></h3>
+<ul class="icon-doc">
+<txp:article_custom section="news/mayor" form="list-home-News" status="live" limit=1 />
+<txp:article_custom section="news" category="21" form="list-home-News" status="live" limit=4 />
+<li class="default"><a href="#">More News</a></li>
+</ul>
+</div></txp:chh_if_data>
+<div class="box-list">
+<h3>Your <strong>Say</strong></h3>
+</div>
+</div>
+</txp:if_section>
+
+
+
+
+<txp:anc_hide><!-- ### MOSMAN SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="mosman">
+<div class="double-col"><div class="double-col-wrap">
+<div class="col nudge20r">
+<ul class="graphic">
+
+<li><txp:article_custom id="169" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/people" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+
+<li><txp:article_custom id="183" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/place" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+
+<li><txp:article_custom id="207" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/history" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+
+</ul>
+</div>
+<div class="col">
+<ul class="graphic">
+
+<li><txp:article_custom id="190" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/recreation" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+
+<li><txp:article_custom id="201" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/culture" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+
+</ul>
+</div>
+</div></div>
+<div class="col">
+<div class="box-list">
+<h3>Community <strong>Events</strong></h3>
+<ul class="icon-doc">
+<li><a href="#"><strong>Mosman Festival</strong></a><br /><em>Monday 15 Aug</em><p>The 'Faces of Mosman' Photography Competition</p></li>
+<li><a href="#"><strong>2006 Mosman Art Prize</strong></a><br /><em>Thursday 21 Sept</em><p>Mosman Art Gallery proudly presents Australia's longest running prize.</p></li>
+<li><a href="#"><strong>LEP Review information and ideas session</strong></a><br /><em>Wed 15 Oct</em><p>Have your say on the future of development in Mosman.</p></li>
+<li class="default"><a href="#">More News</a></li>
+</ul>
+</div>
+<txp:chh_if_data><div class="box-list">
+<h3>Residents <strong>News</strong></h3>
+<ul class="icon-doc">
+<txp:article_custom section="news/mayor" form="list-home-News" status="live" limit=1 />
+<txp:article_custom section="news" category="21" form="list-home-News" status="live" limit=4 />
+<li class="default"><a href="#">More News</a></li>
+</ul>
+</div></txp:chh_if_data>
+<div class="box-list">
+<h3>Your <strong>Say</strong></h3>
+</div>
+</div>
+</txp:if_section>
+
+
+
+<txp:anc_hide><!-- ### END SECTION PAGES ### --></txp:anc_hide>
+
+<txp:else />
+
+<txp:anc_hide><!-- ### START SUBSECTION PAGE ### --></txp:anc_hide>
+
+<div id="sidebar">
+<txp:site_nav headertag="h3" active_link=0 wraptag="ul" break="li" sort="Custom_10" indent="" parent=".." depth=2 />
+<txp:article index=1 sub_indexes=0 form="section_article_related" />
+</div>
+
+<div id="internal">
+
+<txp:article index=1 sub_indexes=0 form="section_article_description" />
+
+<txp:if_section name="council/employment">
+<txp:chh_if_data>
+<table class="data" summary="Mosman Council - Positions Vacant">
+<caption>Positions vacant</caption>
+<thead>
+<tr>
+<th>Position Title</th>
+<th>Closing Date</th>
+</tr>
+</thead>
+<tbody>
+<txp:zem_event_list form="zem_employment_article" />
+<txp:article_custom section="council/employment" category="sticky-job-ad" status="live" index=0 limit=999 form="zem_employment_article_alt" sort="custom_10" />
+</tbody>
+</table>
+<txp:else /><p>There are currently no positions vacant.</p>
+</txp:chh_if_data>
+</txp:if_section>
+
+<div class="subsection-col">
+<txp:if_section name="council/employment"><h3>Applying for a position</h3></txp:if_section>
+<txp:output_form form="subsection_sidebar" />
+<ul class="graphic">
+<txp:article_custom section="." status="sticky" form="subsection_list" limit="999" sort="custom_10 asc" index=0 />
+</ul>
+</div>
+
+</div>
+
+<txp:anc_hide><!-- ### END SUBSECTION PAGE ### --></txp:anc_hide>
+
+</txp:if_section_level>
+
+
+<txp:else />
+
+<txp:if_article_list>
+this is a section list page that doesn't have an __index__ article
+<txp:site_map parent="." include_parent=0 sort="custom_8" />
+<txp:else />
+
+<!-- CONTENT PAGE -->
+
+<div id="sidebar">
+
+<txp:if_section_level level=1><txp:site_nav headertag="h3" active_link=0 wraptag="ul" break="li" sort="Custom_10" indent="" parent="." depth=1 /><txp:else /><txp:site_nav headertag="h3" active_link=0 wraptag="ul" break="li" sort="Custom_10" indent="" parent=".." depth=2 /></txp:if_section_level>
+
+<txp:chh_if_data>
+<h3><span>Related</span> Info</h3>
+<txp:related_articles wraptag="ul" break="li" sort="title" />
+</txp:chh_if_data>
+
+</div>
+
+<div id="internal">
+<txp:if_article_section name="council/employment">
+<txp:article />
+</div>
+
+<!-- END CONTENT PAGE -->
+
+</txp:if_article_list>
+</txp:if_index_page>
+
+
+
+
+
+<txp:output_form form="include-footer" />

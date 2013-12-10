@@ -1,0 +1,112 @@
+<txp:output_form form="include-head" />
+
+<div id="sidebar">
+
+<h3><span>News</span> Links</h3>
+<ul>
+<li><a href="/news">Latest news</a></li>
+<li><txp:section name="/news/archive" title=1 link=1 /></li>
+</ul>
+<ul class="nudge10t">
+<txp:category_list parent="news" exclude="news" section="news" active_class="active" break="li" class="" />
+</ul>
+<ul class="nudge10t">
+<li><txp:section name="/news/mayor" link=1>Mayor's Column</txp:section></li>
+<li><txp:section name="/news/public-notices" link=1 title=1 /></li>
+<li><a href="#">Community Consultation</a></li>
+</ul>
+<ul class="nudge10t">
+<li><a href="/media">Media Centre</a></li>
+</ul>
+<h3><span>News</span> Feeds</h3>
+<ul>
+<txp:feed_link flavor="atom" title="Mosman Council News feed (Atom)" wraptag="li" label="Atom" section="news" />
+<txp:feed_link flavor="rss" title="Mosman Council News feed (RSS)" wraptag="li" label="RSS" section="news" />
+</ul>
+
+</div>
+
+<div id="internal">
+<txp:if_section name="news">
+<txp:if_article_list>
+<txp:if_search>
+<div id="intro">
+<h2>News search results</h2>
+<txp:zem_result_count wraptag="p" text="{total} articles found." text_single="{total} article found." />
+</div>
+<txp:article searchform="search_results" limit=3 index=0 searchall=0 recurse=1 />
+<txp:chh_if_data><p class="article-nav"><span class="nudge1emr">Result page:</span><txp:zem_newer text="Previous" /><txp:zem_pages max=10 /><txp:zem_older text="Next" /></p></txp:chh_if_data>
+<form action="<txp:site_url />news/" method="get" id="search_form"><br /><input name="q" value="" size="21" type="text" /><input type="submit" value="Search News" class="button" /></form><br clear="left" />
+<p><em>You are currently searching the News section. You can also <txp:section name="search" link=1>search all web pages</txp:section>.</em></p>
+<txp:else />
+<txp:if_category><div id="intro"><h2><txp:category title=1 link=0 /> News</h2><p>You are currently browsing news filed under category <em><txp:category title=1 link=0 /></em>.</p></div><txp:else /><txp:article index=1 indexform="section_article_description" /><h3>Latest News</h3></txp:if_category>
+<txp:if_category><txp:else />
+<div class="col">
+<div class="box-list">
+<h3>Your <strong>Say</strong></h3>
+<ul class="icon-doc">
+<li><a href="#"><strong>Community Consultation item example</strong></a><p>Have your say on the future of development in Mosman.</p></li>
+</ul>
+<ul>
+<li><a href="#">More Consultation</a></li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Media <strong>Releases</strong></h3>
+<txp:feed items="5" showtitle="false" showdesc="false">http://www.mosman.nsw.gov.au/media/index.php?atom=1</txp:feed>
+<ul class="icon-doc">
+<li class="default"><a href="/media">Media Centre</a></li>
+</ul>
+</div>
+<div class="box-list">
+<h3>LEP <strong>Review</strong></h3>
+<txp:feed items="3" showtitle="false" showdesc="false">http://www.mosman.nsw.gov.au/planningreview/atom/?section=news</txp:feed>
+<ul class="icon-doc">
+<li class="default"><a href="/planningreview">LEP Review</a></li>
+</ul>
+</div>
+</div>
+
+</txp:if_category>
+<txp:chh_if_data><txp:article limit=10 listform="news-list" index=0 sub_indexes=0 recurse=1 /><txp:else /><p>No articles found.</p></txp:chh_if_data>
+<txp:chh_if_data><p class="article-nav"><span class="nudge1emr">Browse:</span><txp:zem_newer text="Previous" /><txp:zem_pages max=5 /><txp:zem_older text="Next" /></p></txp:chh_if_data>
+<form action="<txp:site_url />news/" method="get" id="search_form"><br /><input name="q" value="" size="21" type="text" /><input type="submit" value="Search News" class="button" /></form><br clear="left" />
+</txp:if_search>
+<txp:else />
+<txp:article form="news-single" />
+<p class="article-nav"><span class="nudge1emr">Browse:</span><txp:link_to_prev>Previous</txp:link_to_prev><txp:section name="news" link=1>News home</txp:section><txp:link_to_next>Next</txp:link_to_next></p>
+</txp:if_article_list>
+</txp:if_section>
+
+<txp:if_section name="news/public-notices">
+<txp:article index=1 indexform="section_article_description" />
+<txp:file_download_list form="public-notices" wraptag="ul" break="li" class="icon-doc" limit=1 label="Latest" labeltag="h3" category="public-notices" sort="created desc" />
+<txp:file_download_list form="public-notices" wraptag="ul" break="li" class="icon-doc" limit=8 offset=1 label="Archive" labeltag="h3" category="public-notices" sort="created desc" />
+<p><em><br />Public Notices are archived here for two months.</em></p>
+</txp:if_section>
+
+<txp:if_section name="news/mayor">
+<txp:if_article_list>
+<txp:article index=1 indexform="section_article_description" />
+<txp:article limit=1 listform="mayor-list" status="live" index=0 />
+<txp:article index=0 status="live" limit="99999" offset=1 sort="Posted desc" listform="list-calendar" />
+<txp:else />
+<txp:article status="live" form="mayor-single" />
+<p class="article-nav"><span class="nudge1emr">Browse:</span><txp:link_to_prev>Previous</txp:link_to_prev><txp:section name="news/mayor">Mayor's Column home</txp:section><txp:link_to_next>Next</txp:link_to_next></p>
+</txp:if_article_list>
+</txp:if_section>
+
+<txp:if_section name="news/archive">
+<txp:article index=1 indexform="section_article_description" />
+<form action="<txp:site_url />news/" method="get" id="search_form"><br /><input name="q" value="" size="21" type="text" /><input type="submit" value="Search News" class="button" /></form><br clear="left" />
+<table class="data">
+<thead><tr><th>Archive</th></tr></thead>
+<tbody>
+<txp:article_custom section="news" limit=99999 form="news-archive" status="live" index=0 sort="posted desc" />
+</tbody>
+</table>
+</txp:if_section>
+
+</div>
+
+<txp:output_form form="include-footer" />
