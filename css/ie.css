@@ -1,0 +1,131 @@
+/* FOR FLOATED ELEMENTS, TO COMBAT DOUBLED FLOAT-MARGIN BUG */
+
+#intro,.col,.wider-col,.double-col,#sidebar,
+.wide-col,.side-col,.widest-col {
+display:inline;
+}
+
+
+/* PUSH FOOTER AWAY */
+
+#content {
+margin:0 0 60px 0;
+}
+body#s_home {
+margin:0 0 30px 0;
+}
+
+/* IE 6 SEARCH INPUT & BUTTON TEXT TOO SMALL - THIS INCREASES SIZE */
+
+#header input {
+font-size:1em;
+padding:0;
+}
+#header input.button {
+font-size:1em;
+padding:0;
+margin-bottom:-1px;
+}
+
+
+
+/* LISTS WITH THUMBNAILS - GET THUMB IN POSITION WITH THIS */
+
+ul.graphic li img {
+left:-49px;
+}
+
+/* ORDERED LISTS */
+
+#internal ol li {
+margin-left:30px;
+}
+
+
+/* IE6 TEXT-TRANSFORM BUG */
+
+#internal p .caps,
+#internal blockquote .caps,
+#internal dt .caps,
+#internal dd .caps,
+#internal li .caps {
+font-variant:normal;
+text-transform:uppercase;
+letter-spacing:0.05em;
+font-size:85%;
+}
+
+table.meetings td span.caps {
+line-height:1.75em;
+}
+
+/* ALERT */
+
+#internal ul.icon-alert li {
+background:#FFE7E2 url(/images/471.gif) no-repeat 10px 12px !important;
+}
+
+/* FEATURE PHOTO ON NEWS PAGE */
+
+div.img {
+position:relative;
+width:100%;
+overflow:hidden;
+}
+
+/* NEWS SECTION OVER-RIDES */
+
+.box-list form#search_form input.button {
+width:8em;
+}
+
+.news-list-box {
+border-top:1px dashed #A7B3BF;
+}
+.double-col .news-col .news_list_item {
+border-top:1px dashed #A7B3BF;
+}
+
+
+/* EVENTS MINI CALENDAR */
+
+table.minical caption {
+padding-bottom:0.5em;
+}
+div.side-col a.next,
+div.side-col a.prev {
+line-height:1.25em;
+}
+div.minical-meta {
+margin-top:1em;
+}
+
+.widest-col caption {
+padding-bottom:0.5em;
+}
+.widest-col a.next,
+.widest-col a.prev {
+line-height:2.25em;
+}
+
+/* EVENTS LISTING */
+
+body#s_events ul.graphic li {
+border-bottom:1px dashed #A7B3BF;
+display:inline-block;
+}
+body#s_events ul.graphic  {
+border-top:1px dashed #A7B3BF;
+}
+body#s_events ul.graphic li img {
+position:absolute;
+top:3px;
+left:0px;
+}
+
+/* TABLE CAPTIONS */
+
+#internal table.data caption {
+padding:0 0 1em 0;
+}
+

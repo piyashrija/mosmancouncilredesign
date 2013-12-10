@@ -1,0 +1,10 @@
+body {
+background-color:#fff;
+color:#505050;
+font:0.8em Arial,Verdana, sans-serif;
+line-height:1.5;
+}
+form.wufoo {
+background-color:#efefef !important;
+padding-top:13px;
+}

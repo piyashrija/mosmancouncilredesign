@@ -1,0 +1,73 @@
+html {
+width:100% !important;
+}
+body, body#msg {
+width:900px !important;
+margin:0 auto !important;
+}
+#block1 .blockInner ul#recType {
+width:100%;
+}
+#block1 .blockInner ul#recType li {
+display:inline-block;
+}
+
+#block1 {
+width:63%;
+float:left;
+}
+#block2 {
+width:30%;
+float:right;
+margin-left:0;
+}
+
+#MhdrWrap {
+width:98%;
+margin:0 auto;
+border-top:7px solid white;
+position:relative;
+}
+#logo-lg {
+display:block;
+position:absolute;
+right:40px;
+top:23px;
+}
+#logo-lg img {
+
+}
+div#Mhdr h1 {
+font-size:32px;
+padding-top:15px;
+padding-bottom:0;
+line-height:0.8;
+}
+div#Mhdr h3 {
+font-size:20px;
+padding-bottom:13px;
+}
+div#Mhdr h1, div#Mhdr h3 {
+padding-left:25px;
+}
+
+body#msg #MhdrWrap {
+margin-right:15px;
+}
+div#msg {
+margin:21px 0 0 0 !important;
+padding:0  !important;
+font-size : 0.8em;
+}
+div#msg h1, div#msg h2, div#msg h3, div#msg p {
+padding-left:15px;
+padding-right:15px;
+}
+table#dirBody {
+width:880px;
+margin:5px 0 5px 10px !important;
+}
+#dirBody td {
+font-size : 0.8em;
+}
+

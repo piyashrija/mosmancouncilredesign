@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2007, Woody Gilk, http://moonbox.googlecode.com
+ *
+ * This file should be distributed with the Moonbox package. If you have
+ * downloaded this file from somewhere other than moonbox.googlecode.com,
+ * please notify the author.
+ *
+ * $Date$
+ * $Rev$
+ */
+/* Containers */
+#moonBox_overlay { display: none; position: absolute; top: 0; left: 0; z-index: 9000; width: 100%; background: #111; cursor: pointer; }
+#moonBox_wrapper { display: none; position: absolute; top: 10px; left: 50%; z-index: 9001; padding: 10px; background: #fff; overflow: hidden; }
+#moonBox_loading { display: none; position: absolute; top: 50%; left: 50%; margin-top: -16px; margin-left: -16px; z-index: 9002; width: 32px; height: 32px; background: #fff url(/js/images/moonbox/loading.gif) center no-repeat; }
+#moonBox_image { width: 100%; background: transparent none center center no-repeat; }
+#moonBox_bottom { position: relative; padding-top: 10px; }
+#moonBox_caption { margin-right: 66px; font-weight: bold; }
+#moonBox_number { margin-right: 66px; }
+/* Buttons */
+#moonBox_close { display: block; float: right; width: 66px; height: 22px; background: #fff url(/js/images/moonbox/closelabel.gif) right center no-repeat; text-indent: -9000px; }
+#moonBox_next,
+#moonBox_prev { display: none; position: absolute; top: 0; z-index: 9004; width: 50%; min-height: 100px; text-indent: -9000px; }
+#moonBox_next { right: 0; background: transparent url(/js/images/moonbox/nextlabel.gif) right 50px no-repeat;  }
+#moonBox_prev { left: 0;  background: transparent url(/js/images/moonbox/prevlabel.gif) left  50px no-repeat; }
+/* For clearing the floats on the bottom */
+#moonBox_clear { clear: both; }

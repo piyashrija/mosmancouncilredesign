@@ -1,0 +1,279 @@
+body {
+background:url(http://www.mosman.nsw.gov.au/images/10.jpg) repeat-x 0 34px;
+background-color:#fff;
+color:#333;
+font-family: arial,sans-serif;
+font-size: 1em;
+margin:0;
+}
+
+a:link {
+color:#2A78AC;
+}
+a:visited {
+color:#A87E2C;
+}
+a:hover {
+color:#AE3B26;
+}
+a:active {
+color:#2A78AC;
+}
+h1 a:link {
+color:#2A78AC;
+text-decoration:none;
+}
+h1 a:visited {
+color:#2A78AC;
+text-decoration:none;
+}
+h1 a:hover {
+color:#AE3B26;
+text-decoration:none;
+}
+h1 a:active {
+color:#2A78AC;
+text-decoration:none;
+}
+#hdr ul a:link {
+color:#2A78AC;
+text-decoration:underline;
+}
+#hdr ul a:visited {
+color:#2A78AC;
+text-decoration:underline;
+}
+#hdr ul a:hover {
+color:#AE3B26;
+text-decoration:underline;
+}
+#hdr ul a:active {
+color:#2A78AC;
+text-decoration:underline;
+}
+
+h2 {
+color:#2a78ac;
+font-size: 1.25em;
+margin: 0;
+padding:0;
+}
+body#details h2 {
+color:#000;
+}
+div.fullrec h2 {
+padding-top:1em;
+}
+h3 {
+	font-size: 1.1em;
+	margin : 0;
+	margin: 0.5em 0;
+}
+
+#hdr {
+border: 0px solid #FFCC66;
+background-color: transparent;
+margin:0.75em 0 1.5em 0;
+}
+#hdr img {
+float: left;
+border: none;
+padding: 7px 13px 0 0;
+margin: 0;
+}
+#hdr h1 {
+color:#2a78ac;
+font-size : 1.5em;
+padding: 21px 1em 0 0;
+line-height:1;
+margin: 0;
+}
+#hdr ul {
+margin-right:1em;
+}
+
+/*
+ These styles relate to the helper links placed above the first items returned from a search
+ where there are some items in the result list that are either phone/web/delivery based services
+*/
+#recType {
+	border: 1px solid #FFCC66;
+	background-color: #FFFFCC;
+	padding: 0.25em;
+}
+#recType ul {
+	list-style-type: none;
+}
+#recType li {
+	display: inline;
+	padding-left: 1em;
+	font-size: 0.8em;
+}
+
+ul#recType {
+margin-top:0.25em;
+}
+
+
+
+
+#block1 {
+padding:0 0 0 1.5em;
+margin:0;
+float: left;
+}
+#block2 {
+padding:0 2em 0 0;
+margin:0;
+border:none;
+background-color:transparent;
+}
+
+.blockInner {
+background:#fff url(http://www.mosman.nsw.gov.au/images/5.jpg) repeat-x;
+padding: 1em 1em 2em 1em;
+margin:0;
+}
+#block2 .blockInner {
+background:#fff url(http://www.mosman.nsw.gov.au/images/5.jpg) repeat-x;
+padding: 1em 1em 2em 1em;
+margin:0;
+}
+
+div#msg{
+padding: 1em 2em 2em 2em;
+}
+
+
+
+#block1 p, #block1 h2, #block1 #srchHdr, #block1 #srchResults {
+padding-left:0;
+}
+	
+
+#block2 h2 {
+color:#505050;
+}
+#block2 ul {
+margin-left:0;
+padding:0;
+}
+#block2 li {
+margin-top: 0.3em;
+}
+
+ul#search {
+margin:0;
+padding:0;
+}
+ul#search li {
+margin:0;
+padding:0;
+margin-bottom:1.5em;
+}
+#srchResults ul {
+margin-top:1em;
+padding-left:0;
+}
+
+
+div#fullrec {
+background:#fff url(http://www.mosman.nsw.gov.au/images/5.jpg) repeat-x;
+padding: 1em 1em 2em 1em;
+margin:0;
+}
+div#fullrec h2 {
+padding:0 0 0.5em 0;
+}
+
+#advanced {
+background-color:#FFFFCC;
+border: 1px solid #FFCC66;
+min-width: 10em;
+}
+
+div.paging {
+margin-bottom:1em;
+}
+
+.errMsg {
+color:#AE3B26;
+}
+
+ul#topMatch {
+background-color:#FFFFCC;
+border: 1px solid #FFCC66;
+padding: 0 0.5em 0.5em 0.5em !important;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+background-color:#2A78AC;
+color:#fff;
+border-bottom:5px solid #e2d167;
+margin-bottom:7px;
+font-size:0.8em;
+}
+
+#navbar .container:after {
+content:""; 
+display:block; 
+height:0; 
+clear:both;
+}
+#navbar .container {
+height:100%;
+}
+#navbar {
+height:29px;
+}
+
+ul#nav {
+margin:0 0 0 0;
+border-top:4px solid #2a78ac;
+list-style: none;
+font-family: arial, helvetica, sans-serif;
+font-size:0.9em;
+color: #fff;
+}
+ul#nav li {
+display:inline;
+position: relative;
+z-index: 1000;
+float: left;
+background-image:none;
+padding:0;
+margin:0;
+}
+ul#nav li a {
+display:block;
+float:left;
+width:auto;
+padding:5px 7px;
+text-decoration: none;
+color: #fff;
+}
+
+ul#nav li.subMenu a
+{
+	background-image: url(/js/images/arrow-right.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+
+ul#nav li.subMenu li a
+{
+	background-image: none;
+}
+
+ul#nav .active, 
+ul#nav li a.active:hover {
+background-color:#e1d066;
+color:#000;
+}
+ul#nav li a:hover, ul#nav li.hover a {
+background-color:#ece19c;
+color:#000;
+}

@@ -1,0 +1,23 @@
+/* 
+CUSTOM CSS FOR WUFOO VIOLET THEME 
+This theme is intended to stand alone (outside of Council website or other chrome), and have a wider viewport. It was set up for a survey on how parents & carers receive information.
+*/
+
+#container, #top, #bottom, #footer{margin:0 auto;width:940px;}
+
+/* 
+RPS PARKING SCHEME SURVEY - MAY 2013
+*/
+.rps-table table {
+border-collapse:separate;
+border-spacing:0;
+border-top:1px solid #555;
+border-left:1px solid #555;
+}
+.rps-table table td,
+.rps-table table th {
+text-align:center;
+padding:2px 7px;
+border-bottom:1px solid #555;
+border-right:1px solid #555;
+}

@@ -1,0 +1,132 @@
+body {
+background-color:transparent;
+color:#505050;
+}
+
+div {
+background:#fff url(/images/5.jpg) repeat-x;
+}
+div#pnlMember {
+background:none;
+}
+
+table,td,fieldset {
+border-width:0 !important;
+padding:0;
+}
+td.td-label {
+width:93px;
+}
+
+h3 {
+font-weight:normal;
+color:#927d2f;
+padding:0;
+margin:0 0 0.3em 0;
+font:1.5em Arial,Verdana, sans-serif;
+background-color:transparent;
+}
+
+p,li,legend,label,textarea,input,textarea,.prefield, #lblErrorEMail, #lblErrorPhone, #lblErrorMobile,
+#lblReplyResult,#lblErrorMessage,#lblComplaintMessage  {
+font:0.8em Arial,Verdana, sans-serif;
+line-height:1.5;
+}
+
+p.small {
+font-family:arial,verdana,sans-serif;
+font-size:0.7em;
+padding-top:0;
+margin-top:0.5em;
+}
+
+span#lblComplaintMessage p {
+line-height:1;
+padding-bottom:0;
+}
+
+ul {
+margin:0;
+padding:0;
+}
+
+li {
+list-style-type:none;
+background:url(/images/8.gif) no-repeat 9px 7px;
+margin:0;
+padding:0 0 0 21px;
+}
+li p {
+padding-bottom:0;
+}
+
+fieldset {
+margin:3px 0 0 0;
+padding:5px 0 7px 7px;
+border:0;
+}
+fieldset#wf_From {
+margin:13px 0 0 0;
+}
+
+
+
+table#Check1 input,
+table#rdoRadioWhatConsultation input {
+margin-right:0.5em;
+}
+
+
+div#pnlCommunityConsult,
+div#consultDiv {
+background-image:none !important;
+}
+div#pnlCommunityConsult {
+
+}
+div#consultDiv {
+padding-left:1em;
+}
+div#consultDiv p {
+padding:0;margin:0;
+}
+
+table#rdoRadioWhatConsultation {
+margin-top:0.5em;
+}
+
+
+
+fieldset table {
+margin-top:7px;
+}
+
+legend,label {
+color:#000;
+}
+legend {
+font-weight:bold;
+padding-left:0px;
+padding-top:7px;
+}
+
+input#SaveBtn,input#ResetBtn {
+font-size:1em;
+}
+
+input#txtFullName, textarea#txtRequest {
+width:290px;
+}
+
+#lblErrorName, #lblErrorPost, #lblErrorEMail, #lblErrorPhone, #lblErrorMobile, #lblErrorRequest,
+.lblReplyResult,.lblErrorMessage,.lblComplaintMessage {
+font-style:italic;
+}
+
+#lblReplyResult,#lblErrorMessage,#lblComplaintMessage {
+font-weight:bold;
+}
+#lblErrorMessage,#lblComplaintMessage {
+color:#AE3B26 !important;
+}
+
