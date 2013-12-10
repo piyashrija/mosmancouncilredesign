@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><txp:page_title /></title>
+<txp:rvm_css n="default" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="layout" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="header-footer" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="nav" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="events" format="link" media="screen" rel="stylesheet" />
+<!--[if lte ie 6]>
+<txp:rvm_css n="ie" format="link" media="screen" rel="stylesheet" />
+<![endif]-->
+<txp:rvm_css n="wide" format="link" media="screen" rel="stylesheet" title="Wide" rel="alternate stylesheet" />
+<txp:rvm_css n="print" format="link" media="print" rel="stylesheet" />
+<script type="text/javascript" src="/js/schedule.js"></script> 
+<script type="text/javascript" src="/js/dom_extras.js"></script> 
+<script type="text/javascript" src="/js/class_names.js"></script> 
+<script type="text/javascript" src="/js/resolution.js"></script> 
+<script type="text/javascript" src="/js/menu.js"></script> 
+<script type="text/javascript" src="/js/striped_tables.js"></script> 
+<script type="text/javascript" src="/js/sortable_tables.js"></script> 
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="/js/thickbox-compressed.js"></script> 
+<script type="text/javascript" src="/js/showhidetoggle.js"></script>
+</head>
+<body style="padding:1em;">
+
+
+<div id="internal">
+
+<img src="http://maps.google.com/maps/api/staticmap?zoom=18&size=609x350&sensor=false&maptype=satellite&markers=-33.82384661605768,151.23976707458496" />
+
+</div>
+
+
+
+<txp:hide>
+<txp:article_custom id="3386" />
+
+
+
+
+
+<txp:output_form form="vols-slideshow" />
+
+<img src="http://maps.google.com/maps/api/staticmap?zoom=16&size=609x350&sensor=false&path=color:0xff0000ff|weight:3|-33.82884444108109,151.23223543167114|-33.829169746359334,151.23469233512878" />
+
+<div id="footer">
+
+<div class="footer-sm" style="float:left;"> 
+<ul class="social-list">
+<li class="twitter"><a href="http://twitter.com/mosmancouncil" title="Twitter"><txp:image id="1959" /></a></li>
+<li class="facebook"><a href="http://www.facebook.com/mosmancouncil" title="Facebook"><txp:image id="3912" /></a></li>
+<li class="youtube"><a href="http://youtube.com/user/mosmancouncil" title="YouTube video"><txp:image id="1961" /></a></li>
+<li class="flickr"><a href="http://www.flickr.com/photos/mosmancouncil" title="Flickr photos"><txp:image id="4499" /></a></li> 
+<li class="enews"><a title="e-newsletters" href="<txp:permlink id="1497" />"><txp:image id="4500" /></a></li> 
+</ul> 
+</div>
+
+<ul>
+<li><a href="/contact">Contact us</a></li>
+<li><a href="/search">Search</a></li>
+<li><txp:permlink id="25">A-Z index</txp:permlink></li>
+<li><txp:permlink id="26">Sitemap</txp:permlink></li>
+<li><a href="/news">News</a></li>
+<li><a href="/events">Events</a></li>
+<txp:hide><li><a href="/media">Media Centre</a></li></txp:hide>
+<li><txp:permlink id="20">Feeds</txp:permlink></li>
+<li><txp:permlink id="1497">Email Newsletters</txp:permlink></li>
+<li><txp:permlink id="22">Disclaimer</txp:permlink></li>
+<li><txp:permlink id="23">Privacy</txp:permlink></li>
+</ul>
+<p>Copyright Mosman Municipal Council <txp:php>echo date("Y");</txp:php></p>
+</div>
+
+<br><br><br><br><br><br>
+
+
+
+<img src="http://maps.googleapis.com/maps/api/staticmap?maptype=satellite&size=609x300&zoom=19&path=color:0xff0000%7Cweight:5%7Cenc:punmE}saz[[JF`@\GIe@&sensor=false" alt="satellite view of Memory Park with outline of area to be used for Ausgrid storage" />
+
+
+
+
+
+<div id="internal">
+<p>CONTENT FOR 'ELECTION 2012' WEB PAGE</p>
+
+<h2>Election 2012</h2>
+
+<h3>Saturday 8 September 2012 - Election of 6 Councillors plus popularly elected Mayor</h3>
+ 
+<ul class="icon-doc">
+<li><a class="thickbox" href="http://www.mosman.nsw.gov.au/images/4364.gif">Government Gazette of the State of New South Wales - 13 January 2012</a> -  advising of the abolition of Wards and a 
+reduction in the number of councillors to six plus a popularly 
+elected mayor.</li>
+<li><txp:file_download id="2611" /><li>
+<li><txp:file_download id="2610" /><li>
+<li><txp:file_download id="2612" /><li>
+</ul>
+
+<br /><hr /><br />
+
+<p>AD BLOCK FOR COUNCIL HOME PAGE</P>
+
+
+<div style="margin-bottom:2em;padding:15px 0;text-align:center;border:1px solid #a7b3bf; width:220px">
+<a href="http://www.mosman.nsw.gov.au/council/about/election-2012"><txp:image id="4365" /></a>
+<p style="padding: 10px 7px 0 7px;"><a href="http://www.mosman.nsw.gov.au/council/about/election-2012"><strong>Election 2012</strong></a><br /><strong>Saturday 8 September</strong><br /><em>Election of 6 councillors plus popularly elected mayor</em></p>
+</div>
+
+</div>
+
+
+
+</txp:hide>
+
+<txp:hide>
+
+<p><txp:image id="4364" class="image photo-border" /></p>
+
+
+<li><a href="http://www.nsw.gov.au/sites/default/files/Government_Gazette_13_January.pdf#page=30">Government Gazette of the State of New South Wales - 13 January 2012</a>  <small class="file_download_size">(PDF 245KB)</small> -  advising of the abolition of Wards and a 
+reduction in the number of councillors to six plus a popularly 
+elected mayor.</li>
+
+<img src="http://maps.googleapis.com/maps/api/staticmap?maptype=satellite&zoom=18&size=609x360&path=color:0xffffff00%7Cfillcolor:0x0000ff55%7Cweight:1%7Cenc:blmmEcibz[d@TjCZN{Ap@mBgCuAY~@j@ZDMLFYp@o@v@MC]U[|@?H&markers=color:white%7Clabel:A%7C-33.82517687264756,151.2413763999939&markers=
+color:white%7Clabel:B%7C-33.82555344068765,151.24125570058823&markers=color:white%7Clabel:C%7C-33.82562028691196,151.24167948961258
+&markers=color:white%7Clabel:D%7C-33.82576512021872,151.24201476573944&markers=
+color:white%7Clabel:E%7C-33.82561360229189,151.24226957559586&markers=color:white%7Clabel:F%7C-33.82541751987036,151.2423661351204
+&markers=color:white%7Clabel:G%7C-33.82535512991466,151.24215960502625
+&sensor=false" alt="Mosman Civic Centre study area" />
+
+<hr />
+
+<img src="http://maps.googleapis.com/maps/api/staticmap?maptype=satellite&size=609x500&path=color:0xff0000%7Cweight:5%7Cenc:punmE}saz[[JF`@Rm@&sensor=false" alt="satellite view of Memory Park with outline of area to be used for Ausgrid storage" />
+
+
+
+
+<txp:output_form form="library-ebsco" />
+
+
+
+<txp:site_map depth="3" indent="-" break="li" wraptag="ul" />
+
+
+<hr />
+
+<txp:site_map wraptag="ul" break="li" sort="custom_10" />
+
+<hr />
+
+<txp:site_nav headertag="h3" active_link=0 wraptag="ul" break="li" sort="Custom_10" indent="" parent="home" depth=3 />
+
+
+
+
+
+
+</txp:hide>
+<txp:hide>
+
+<iframe width="100%" height="100%" style="min-width:650px;" frameborder="0" allowtransparency="yes" id="widget_1301624147120" src="http://data.mosman.nsw.gov.au/widget_full?id=33"></iframe>
+
+
+<h2>Importing example event XML</h2>
+
+<p><a href="http://mosman.nsw.gov.au/data/example-event.xml">http://mosman.nsw.gov.au/data/example-event.xml</a></p>
+
+<hr />
+
+<txp:smd_xml set_empty="1" debug="0" data="http://mosman.nsw.gov.au/data/example-event.xml" record="item" fields="id,name,date_start,date_end,organiser,contact,description,locations" form="DATAstore_input_test3" />
+
+
+
+
+<h2 style="margin-top:33px;">Importing example location XML</h2>
+
+<p><a href="http://mosman.nsw.gov.au/data/example-location.xml">http://mosman.nsw.gov.au/data/example-location.xml</a></p>
+
+<txp:smd_xml set_empty="1" debug="0" data="http://mosman.nsw.gov.au/data/example-location.xml" record="item" fields="id,type,longitude,latitude,other_points,icon,address_line1,address_line2,city,state,postcode,name,description" form="DATAstore_input_test2" />
+
+
+<h2 style="margin-top:33px;">Layering KML | Locations for events</h2>
+
+ <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+ <script type="text/javascript"> 
+  function initialize() {
+  var myLatlng = new google.maps.LatLng(-33.82557795097597,151.24534606933594);
+  var myOptions = {
+    zoom: 14,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  var georssLayer = new google.maps.KmlLayer('http://data.mosman.nsw.gov.au/export?dataset_id=52&object_type=locations&format=kml',{ preserveViewport : true });
+  georssLayer.setMap(map);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+ </script>
+<div id="map_canvas" style="width:550px; height:550px; margin:0 0 21px 0"></div>
+
+
+
+</txp:hide>
+
+
+<txp:hide>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+addLoadEvent(function() {
+  /* more code to run on page load */ 
+var mapOpts = {
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  scaleControl: true,
+  scrollwheel: true
+}
+
+var map = new google.maps.Map(document.getElementById("Lmap"), mapOpts);
+
+var infoWindow = new google.maps.InfoWindow();
+var markerBounds = new google.maps.LatLngBounds();
+var markerArray = [];
+
+var iconshs = 'http://www.mosman.nsw.gov.au/images/2901.png';
+ 
+function makeMarker(options){
+  var pushPin = new google.maps.Marker({map:map});
+  pushPin.setOptions(options);
+  google.maps.event.addListener(pushPin, "click", function(){
+    infoWindow.setOptions(options);
+    infoWindow.open(map, pushPin);
+  });
+  markerBounds.extend(options.position);
+  markerArray.push(pushPin);
+  return pushPin;
+}
+ 
+google.maps.event.addListener(map, "click", function(){
+  infoWindow.close();
+});
+ 
+makeMarker({
+  position: new google.maps.LatLng(-33.826376, 151.235113),
+  title: "6 Bardwell Road",
+  content: "<strong>6 Bardwell Road</strong><br />8:00am - 3:30pm",
+  icon: iconshs
+});    
+makeMarker({
+  position: new google.maps.LatLng(-33.814367, 151.245442),
+  title: "33 Parriwi Road",
+  content: "<strong>33 Parriwi Road</strong><br />7:00am - 12:00pm",
+  icon: iconshs 
+});  
+makeMarker({
+  position: new google.maps.LatLng(-33.829539, 151.237062),
+  title: "26 Cowles Road",
+  content: "<strong>26 Cowles Road</strong><br />8:00am -  1:00pm",
+  icon: iconshs 
+});
+
+makeMarker({
+  position: new google.maps.LatLng(-33.840688, 151.240279),
+  title: "25 Rickard Avenue",
+  content: "<strong>25 Rickard Avenue</strong><br />8:00am -  12:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.825415, 151.24069),
+  title: "12/11 Myahgah Road",
+  content: "<strong>12/11 Myahgah Road</strong><br />8:00am -  1:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.82254, 151.237429),
+  title: "20 Bond Street",
+  content: "<strong>20 Bond Street</strong><br />9:00am -  12:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.831482, 151.232563),
+  title: "76 Holt Avenue",
+  content: "<strong>76 Holt Avenue</strong><br />8:30am -  2:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.82757, 151.248704),
+  title: "234 Raglan Street",
+  content: "<strong>234 Raglan Street</strong><br />9:00am -  4:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.833495, 151.230699),
+  title: "13 Reginald Street",
+  content: "<strong>13 Reginald Street</strong><br />8:00am - 2:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.826087, 151.245211),
+  title: "1/91 Muston Street",
+  content: "<strong>1-91 Muston Street</strong><br />9:00am - 3:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.835487, 151.237524),
+  title: "106A Raglan Street",
+  content: "<strong>106A Raglan Street</strong><br />8:00am - 2:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.832201, 151.252938),
+  title: "Unit 1, 2 Coronation Avenue",
+  content: "<strong>Unit 1, 2 Coronation Avenue</strong><br />8:30am - 3:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.831071, 151.233437),
+  title: "47 Holt Avenue",
+  content: "<strong>47 Holt Avenue</strong><br />9:00am - 2:00pm",
+  icon: iconshs 
+});
+
+makeMarker({
+  position: new google.maps.LatLng(-33.829886, 151.250152),
+  title: "34A Gordon Street",
+  content: "<strong>34A Gordon Street</strong><br />9:00am - 12:00 noon",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.821421, 151.248103),
+  title: "21 Awaba Street",
+  content: "<strong>21 Awaba Street</strong><br />11:00am - 2:30pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.82771, 151.232997),
+  title: "106 Belmont Road",
+  content: "<strong>106 Belmont Road</strong><br />8:00am - 2:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.834609, 151.240994),
+  title: "18 Calypso Avenue",
+  content: "<strong>18 Calypso Avenue</strong><br />8:00am - 1:00pm",
+  icon: iconshs 
+});
+
+makeMarker({
+  position: new google.maps.LatLng(-33.828204, 151.236386),
+  title: "58 Belmont Road",
+  content: "<strong>58 Belmont Road</strong><br />9:00am - 1:00pm",
+  icon: iconshs 
+});
+makeMarker({
+  position: new google.maps.LatLng( -33.835724, 151.237404),
+  title: "100 Raglan Street",
+  content: "<strong>100 Raglan Street</strong><br />9:00am - 3:00pm",
+  icon: iconshs 
+});
+
+map.fitBounds(markerBounds);
+
+});
+</script>
+
+
+
+<ul>
+<txp:smd_xml data="http://data.mosman.nsw.gov.au/export?dataset_id=50&object_type=locations&format=kml" record="Placemark" fields="name,description"><li>{name}<br />{description}</li></txp:smd_xml>
+</ul>
+
+
+
+ <txp:output_form form="map-DogExercise" />
+
+<div id="map_canvas" style="width:609px;height:609px;margin:0 0 13px 0;"></div>
+
+</txp:hide>
+
+<txp:hide>
+<txp:smd_xml debug="3" data="http://data.mosman.nsw.gov.au/export?dataset_id=33&object_type=locations&format=kml" record="Placemark" fields="name" form="DATAstore_input_test" />
+</txp:hide>
+
+<txp:chs_if_urlvar var="type" value="graffiti">
+graffiti
+</txp:chs_if_urlvar>
+
+<txp:hide>
+<div id="nform">
+<txp:output_form form="contact-ireport" />
+</div>
+</txp:hide>
+
+<txp:hide>
+<div id="internal"><txp:article form="default" limit="1" /></div>
+</txp:hide>
+
+</body>
+</html>

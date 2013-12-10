@@ -1,0 +1,106 @@
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+addLoadEvent(function() {
+  /* more code to run on page load */ 
+var mapOpts = {
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  scaleControl: true,
+  scrollwheel: true
+}
+
+var map = new google.maps.Map(document.getElementById("Lmap"), mapOpts);
+
+var infoWindow = new google.maps.InfoWindow();
+var markerBounds = new google.maps.LatLngBounds();
+var markerArray = [];
+
+var iconshs = 'http://www.mosman.nsw.gov.au/images/2901.png';
+ 
+function makeMarker(options){
+  var pushPin = new google.maps.Marker({map:map});
+  pushPin.setOptions(options);
+  google.maps.event.addListener(pushPin, "click", function(){
+    infoWindow.setOptions(options);
+    infoWindow.open(map, pushPin);
+  });
+  markerBounds.extend(options.position);
+  markerArray.push(pushPin);
+  return pushPin;
+}
+ 
+google.maps.event.addListener(map, "click", function(){
+  infoWindow.close();
+});
+ 
+makeMarker({
+  position: new google.maps.LatLng(-33.829696, 151.232353),
+  title: "76 Cabramatta Road",
+  content: "<strong>76 Cabramatta Road</strong><br />9:00am - 2:00pm<p>furniture and appliances including white goods</p>",
+  icon: iconshs
+});    
+makeMarker({
+  position: new google.maps.LatLng(-33.825446, 151.235804),
+  title: "45 Bardwell Road",
+  content: "<strong>45 Bardwell Road - *POSTPONED*</strong><br />9:00am - 2:00pm<p>Books, records, toys, electronic and computer gear, and lots more</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.821355, 151.235386),
+  title: "127 Ourimbah Road",
+  content: "<strong>127 Ourimbah Road</strong><br />8:00am - 3:00pm<p>Household items, childrens books, toys, bric a brac, some furniture</p>",
+  icon: iconshs
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.832203, 151.252934),
+  title: "Unit 1 & 2 / 2 Coronation Avenue",
+  content: "<strong>Unit 1 & 2 / 2 Coronation Avenue</strong><br />8:00am - 1:00pm<p>High end fashion, shoes, handbags, homewares, books, outdoor furniture, electronic goods</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.8221995, 151.2356683),
+  title: "17 Countess Street",
+  content: "<strong>17 Countess Street</strong><br />8:30am - 2:00pm<p>Moving sale: household goods</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.820907, 151.240224),
+  title: "90A Awaba Street",
+  content: "<strong>90A Awaba Street</strong><br />7:30am - 11:00am<p>Books, household items, childrens goods and clothing</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.825453, 151.234477),
+  title: "15 + 17 Melrose Street",
+  content: "<strong>15 &amp; 17 Melrose Street</strong><br />8:00am - 4:00pm<p>Moving Sale - books, branded shoes, clothes, baby stuff, toys, furniture, collectibles (feng shui figurines), plants, garden tools, etc</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.835485, 151.237524),
+  title: "106A Raglan Street",
+  content: "<strong>106A Raglan Street</strong><br />8:00am - 2:00pm<p>Recycled adult & children's clothes, books, toys, bric-a-brac</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.832647, 151.242067),
+  title: "129 Raglan Street",
+  content: "<strong>129 Raglan Street</strong><br />9:00am - 2:00pm<p>Childrens clothing, woman and mens clothing, furniture, books and toys</p>",
+  icon: iconshs
+}); 
+
+map.fitBounds(markerBounds);
+
+});
+</script>
+
+<div id="Lmap" style="width:550px; height:550px; margin:0 0 21px 0"></div>

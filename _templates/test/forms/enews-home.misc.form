@@ -1,0 +1,15 @@
+<div style="margin-bottom:2em;padding:19px 7px 0 7px;text-align:center;border:1px solid #a7b3bf">
+<txp:image id="3356" />
+<form action="http://newsletters.mosman.nsw.gov.au/t/r/s/aftu/" method="post" id="CMonitorSmall">
+<p>Sign up for news by email</p>
+<input type="email" name="cm-aftu-aftu" id="aftu-aftu" size="20" placeholder="Your email address" />
+<table>
+<tr><td><input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm828958" value="828958" /></td><td><label class="autolabel" for="cm828958">Mosman News</label></td></tr>
+<tr><td><input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm37678" value="37678" /></td><td><label class="autolabel" for="cm37678">Mosman Art Gallery</label></td></tr>
+<tr><td><input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm37679" value="37679" /></td><td><label class="autolabel" for="cm37679">Mosman Library</label></td></tr>
+<tr><td><input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm37680" value="37680" /></td><td><label class="autolabel" for="cm37680">Sustainability and the environment</label></td></tr>
+<tr><td><input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm38316" value="38316" /></td><td><label class="autolabel" for="cm38316">Urban planning, development and heritage</label></td></tr>
+</table>
+<p><input class="submit-alt" type="submit" value=" Subscribe " /></p>
+</form>
+</div>

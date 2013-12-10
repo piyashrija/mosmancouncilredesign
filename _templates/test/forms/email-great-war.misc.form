@@ -1,0 +1,7 @@
+<div style="margin-bottom:40px;">
+<form action="http://newsletters.mosman.nsw.gov.au/t/r/s/ydjhdju/" method="post" id="CMonitorSmall">
+<p style="clear:left;"><label for="name">Name:</label><input type="text" name="cm-name" id="name" /></p>
+<p style="clear:left;"><label for="ydjhdju-ydjhdju">Email:</label><input type="text" name="cm-ydjhdju-ydjhdju" id="ydjhdju-ydjhdju" /></p>
+<p style="clear:left;"><input type="submit" value=" Subscribe "  class="submit-alt" /></p>
+</form>
+</div>

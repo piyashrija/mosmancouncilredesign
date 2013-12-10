@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title><txp:page_title /></title>
+
+</head>
+<body>
+
+<h1>Feed</h1>
+
+<txp:pie_feed items="5" showdesc="false" showdate="j F Y">http://www.mosman.nsw.gov.au/media/index.php?atom=1</txp:pie_feed>
+
+<txp:pie_feed items="5" showdesc="false" showdate="j F Y">
+http://www.mosman.nsw.gov.au/planningreview/atom/?section=news</txp:pie_feed>
+
+<txp:pie_feed items="5" showdesc="false" showdate="j F Y">http://refdesk.mosmanlibraryblogs.com/atom/</txp:pie_feed>
+
+<txp:pie_feed items="5" showdesc="false" showdate="j F Y" alttitle="Latest posts from Wired 4 Teens blog">
+http://teens.mosmanlibraryblogs.com/atom/</txp:pie_feed>
+
+<txp:pie_feed items="5" showdesc="false" showdate="j F Y">
+http://www.mosmanmemories.net/atom</txp:pie_feed>
+
+<hr />
+
+<h3>Children's Library</h3>
+
+<txp:vdh_flickr_thumbnails nsid="61713553@N00" set="72157594186653936" open="flickr" thumbnails_form="flickr-thumbs" />
+
+</body>
+</html>

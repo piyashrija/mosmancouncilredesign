@@ -1,0 +1,170 @@
+#body {
+text-align:center;
+}
+#header {
+height:92px;
+position:relative;
+background:url(/images/10.jpg) repeat-x;
+}
+#navbar {
+background-color:#2A78AC;
+color:#fff;
+position:relative;
+z-index:15;
+}
+#wrapper {
+background:url(/images/11.jpg) repeat-x;
+position:relative;
+z-index:10;
+}
+#intro {
+width:829px;
+float:left;
+margin:0 22px 0 52px;
+}
+#internal #intro {
+width:100%;
+margin:0;
+}
+#content {
+clear:both;
+margin:0 0 30px 0;
+}
+#internal {
+width:609px;
+float:left;
+margin:15px 0 0 27px;
+}
+#footer {
+clear:both;
+width:856px;
+margin:0 22px;
+}
+.container {
+width:900px;
+margin:0 auto;
+position:relative;
+}
+#wrapper .container {
+background:url(/images/16.jpg) repeat-x;
+}
+
+
+/* A GENERIC COLUMN, ON 800PX OPTIMISED LAYOUT */
+
+.col,.wider-col,.double-col {
+float:left;
+width:215px;
+}
+.wider-col {
+width:325px;
+}
+
+/* SPECIFIC TO SECTION PAGES */
+
+.double-col {
+width:560px;
+margin:-30px 20px 0 52px;
+padding:6px 0 0 0;
+background:#fff url(/images/5.jpg) repeat-x;
+}
+.double-col-wrap {
+padding:0.75em 0.75em 0 1.25em;
+}
+.double-col .col {
+width:253px;
+}
+
+/* SPECIFIC TO SUBSECTION PAGES */
+
+.subsection-col {
+float:left;
+margin-top:1em;
+}
+#internal .col {
+float:right;
+margin-top:7px;
+margin-left:1.5em;
+}
+#internal .subsection-col .col {
+position:relative;
+z-index:9999;
+}
+
+/* HOME PAGE COLUMNS */
+
+.home-1 {
+margin-top:-46px;
+margin-left:52px;
+}
+.home-2 {
+margin:-23px 20px 0 20px;
+}
+
+/* HOME PAGE AD BOX */
+
+div.box-homepage-ad {
+font-size:90%;
+line-height:1.35em;
+border:1px solid #ef755c;
+background-color:#ffe7e2;
+padding:1em 0.5em 0.25em 0.75em;
+margin-bottom:1.75em;
+}
+
+/* BOX-LIST COLUMNS */
+
+.box-list {
+background:#fff url(/images/5.jpg) repeat-x;
+padding:0.75em 0.75em 0 1.25em;
+margin: 0 0 3em 0;
+}
+.ad-block {
+background:#fff url(/images/103.gif) repeat-x;
+}
+.double-col .box-list {
+background-image:none;
+}
+.box-list h3 strong {
+color:#927D2F;
+}
+
+/* EVENTS-SPECIFIC LAYOUT RULES */
+
+.wide-col {
+float:left;
+margin:33px 25px 0 52px;
+width:550px;
+}
+.side-col {
+float:left;
+margin-top:33px;
+width:220px;
+}
+
+.widest-col {
+float:left;
+margin:33px 0 0 52px;
+width:798px;
+}
+
+/* NUDGE */
+
+.nudge20r {
+margin:0 20px 0 0
+}
+.nudge40r {
+margin:0 40px 0 0
+}
+.nudge1emr {
+margin-right:1em;
+}
+.nudge20l {
+margin:0 0 0 20px
+}
+.nudge40l {
+margin:0 0 0 40px
+}
+.nudge10t {
+margin-top:10px !important;
+}

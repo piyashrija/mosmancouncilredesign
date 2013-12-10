@@ -1,0 +1,14 @@
+<div class="box-list"> 
+<h3>Join <strong>Us</strong></h3> 
+<ul class="social-list"> 
+<li class="enews"><txp:permlink id="1497">Email newsletters</txp:permlink></li> 
+
+<li class="mosmanreaders"><a href="http://www.mosmanreaders.net" title="join our readers community">Mosman Readers</a></li> 
+<li class="libblog"><a href="http://blogs.mosman.nsw.gov.au/library" title="">Library blog</a></li> 
+<li class="teensblog"><a href="http://wired4teens.blogspot.com.au" title="teen blog">Wired 4 Teens blog</a></li> 
+<li class="facebook"><a href="http://www.facebook.com/pages/Mosman-Library/119167878179358" title="Facebook">Facebook page</a></li> 
+<li class="flickr"><a href="http://www.flickr.com/photos/mosmanlibrary" title="photo sharing">Flickr photos</a></li> 
+<li class="youtube"><a href="http://youtube.com/user/mosmancouncil" title="video sharing">YouTube</a></li> 
+<li class="vimeo"><a href="http://vimeo.com/mosmanlibrary/videos" title="webcasts and more">Vimeo videos</a></li> 
+</ul> 
+</div>

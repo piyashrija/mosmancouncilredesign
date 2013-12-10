@@ -1,0 +1,120 @@
+<!-- EBSCOhost Custom Search Box Begins -->
+<script src="http://supportforms.epnet.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+
+<style type="text/css">
+/* EBSCO FEDERATED SEARCH */
+
+#ebsco {
+font-weight:bold;
+border:1px solid #505050;
+padding:5px 0 5px 10px;
+margin:0 0 10px 0;
+}
+#ebsco input {font-weight:normal;}
+#ebsco label {margin-left:6px;font-size:12px;line-height:1;}
+#ebsco input#chkFullText {margin-top:5px;}
+#ebsco .titl {font-size:14px;line-height:1.6;}
+
+ul.choose-db-list li input {float:left;}
+#ebsco input#ebscohostsearchtext {float:none;}
+
+ul.choose-db-list li {background:none;padding:0;}
+
+ul.choose-db-list{
+list-style-type:none;
+padding:0;margin:10px 0 0 0;
+}
+#ebsli {line-height:1;}
+#ebsli ul.choose-db-list li {clear:left;padding:5px 10px;}
+#ebsli span.choose-db-check {float:left;}
+#ebsli span.choose-db-check input {margin:0;padding:0;zoom:1;height:13px;}
+#ebsli .choose-db-detail{ margin-left:25px;}
+#ebsli .summary { background-color:#1D5DA7;color:#FFFFFF;border:solid 1px #1D5DA7; }
+#ebsli .one { background-color: #FFFFFF;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
+#ebsli .two { background-color: #F5F5F5;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
+#ebsli .selected { background-color: #E0EFF7;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
+
+
+</style>
+
+<form action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
+<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
+<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&type=1&mode=bool&authtype=ip,cpid&custid=s5015093" />
+<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="dbgroup" />
+<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+<div id="ebsco">
+	<div>
+		<span class="titl">Research databases</span>
+		<div>
+			<input id="ebscohostsearchtext" name="ebscohostsearchtext" type="text" size="23" />
+			<input type="submit" value="Search" />
+			<div id="includeFT">
+				<input type="checkbox" id="chkFullText" name="chkFullText" /><label for="chkFullText">Full Text</label>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="ebsli">
+<ul class="choose-db-list">
+<li class="summary">
+	<span class="choose-db-check" title="Select / deselect all">
+		<input type="checkbox" onclick="SelectAllCheckBoxes(this);" name="cball" id="cball">
+	</span>
+	<div class="choose-db-detail">
+		 <span> Select / deselect all</a></span>
+	</div>
+</li><li id="tr1" class="one">
+	<span class="choose-db-check" title="Books and Reading">
+		<input type="checkbox" id="cb1" name="cbs" value="19268" onclick="highlight('tr1','one',this.id);">
+	</span>
+	<div class="choose-db-detail">
+		<a href="http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&authtype=ip,cpid&custid=s5015093&dbgroup=19268" target="_blank">Books and Reading</a>
+	</div>
+</li><li id="tr2" class="two">
+	<span class="choose-db-check" title="General">
+		<input type="checkbox" id="cb2" name="cbs" value="19147" onclick="highlight('tr2','two',this.id);">
+	</span>
+	<div class="choose-db-detail">
+		<a href="http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&authtype=ip,cpid&custid=s5015093&dbgroup=19147" target="_blank">General</a>
+	</div>
+</li><li id="tr3" class="one">
+	<span class="choose-db-check" title="Health">
+		<input type="checkbox" id="cb3" name="cbs" value="19148" onclick="highlight('tr3','one',this.id);">
+	</span>
+	<div class="choose-db-detail">
+		<a href="http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&authtype=ip,cpid&custid=s5015093&dbgroup=19148" target="_blank">Health</a>
+	</div>
+</li><li id="tr4" class="two">
+	<span class="choose-db-check" title="History">
+		<input type="checkbox" id="cb4" name="cbs" value="19149" onclick="highlight('tr4','two',this.id);">
+	</span>
+	<div class="choose-db-detail">
+		<a href="http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&authtype=ip,cpid&custid=s5015093&dbgroup=19149" target="_blank">History</a>
+	</div>
+</li><li id="tr5" class="one">
+	<span class="choose-db-check" title="Literature">
+		<input type="checkbox" id="cb5" name="cbs" value="19150" onclick="highlight('tr5','one',this.id);">
+	</span>
+	<div class="choose-db-detail">
+		<a href="http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&authtype=ip,cpid&custid=s5015093&dbgroup=19150" target="_blank">Literature</a>
+	</div>
+</li><li id="tr6" class="two">
+	<span class="choose-db-check" title="Media & Social Issues">
+		<input type="checkbox" id="cb6" name="cbs" value="19151" onclick="highlight('tr6','two',this.id);">
+	</span>
+	<div class="choose-db-detail">
+		<a href="http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&authtype=ip,cpid&custid=s5015093&dbgroup=19151" target="_blank">Media & Social Issues</a>
+	</div>
+</li><li id="tr7" class="one">
+	<span class="choose-db-check" title="Science & Environment">
+		<input type="checkbox" id="cb7" name="cbs" value="19152" onclick="highlight('tr7','one',this.id);">
+	</span>
+	<div class="choose-db-detail">
+		<a href="http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&authtype=ip,cpid&custid=s5015093&dbgroup=19152" target="_blank">Science & Environment</a>
+	</div>
+</li>
+</ul>
+</div>
+</form>
+<!-- EBSCOhost Custom Search Box Ends -->

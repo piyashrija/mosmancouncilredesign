@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><txp:page_title /></title>
+<txp:rvm_css n="default" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="layout" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="header-footer" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="nav" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="events" format="link" media="screen" rel="stylesheet" />
+<!--[if lte ie 6]>
+<txp:rvm_css n="ie" format="link" media="screen" rel="stylesheet" />
+<![endif]-->
+<txp:rvm_css n="wide" format="link" media="screen" rel="stylesheet" title="Wide" rel="alternate stylesheet" />
+<txp:rvm_css n="print" format="link" media="print" rel="stylesheet" />
+<script type="text/javascript" src="/textpattern/js/jquery.js"></script>
+<script type="text/javascript" src="/js/thickbox-compressed.js"></script>
+<script type="text/javascript" src="/js/showhidetoggle.js"></script>
+<script type="text/javascript" src="/js/schedule.js"></script>
+<script type="text/javascript" src="/js/dom_extras.js"></script>
+<script type="text/javascript" src="/js/class_names.js"></script>
+<script type="text/javascript" src="/js/resolution.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/striped_tables.js"></script>
+<script type="text/javascript" src="/js/sortable_tables.js"></script>
+
+</head>
+<body style="padding:1em;">
+
+<div id="internal">
+
+
+<h3 style="padding-bottom:0;">Mosman Community - Access for All Consultative Group - Agendas & Minutes 2012</h3>
+
+ <table class="data meetings2" summary="Mosman Community - Access for All Consultative Group - Agendas & Minutes 2012">
+ <thead>
+ <tr>
+ <th>Date</th>
+ <th>Business Papers</th>
+ </tr>
+ </thead>
+ <tbody>
+
+<txp:zem_cache id="ACG2012">
+<txp:php>
+$ctx = stream_context_create(array( 
+    'http' => array( 
+        # Set the timeout on the request for XML to five second
+        'timeout' => 5
+        ) 
+    ) 
+); 
+
+$doc = new DOMDocument();
+# NOTE: file_get_contents from a url might be disabled for security reasons
+$xml = file_get_contents('http://tst.mosman.nsw.gov.au/portal/Pages/tools/Listing/Meetings.aspx?type=acg&y=2012', false, $ctx);
+if ($xml) {
+  $doc->loadXML($xml);
+
+  $meetings = $doc->getElementsByTagName('mMeeting');
+  # Check that it hasn't returned a single empty meeting (in which case there is no data)
+  if (count($meetings) == 1 && $meetings->item(0)->getElementsByTagName('meetingDate')->item(0)->nodeValue == "") {
+    print "<tr><td colspan=\"2\">There are no meetings yet</td></tr>\n";
+  }
+  else {
+    foreach($meetings as $meeting) {
+      $meeting_date = date("j M Y", strtotime($meeting->getElementsByTagName('meetingDate')->item(0)->nodeValue));
+
+      print "<tr>\n";
+      print "  <td class=\"meetingDate\">$meeting_date</td>\n";
+      print "  <td>\n";
+      print "    <ul class=\"mFiles\">\n";
+
+      $files = $meeting->getElementsByTagName('mFile');
+      foreach($files as $file) {
+        $title = htmlspecialchars($file->getElementsByTagName('title')->item(0)->nodeValue);
+        $url = $file->getElementsByTagName('url')->item(0)->nodeValue;
+        $filetype = $file->getElementsByTagName('filetype')->item(0)->nodeValue;
+        $filesize = $file->getElementsByTagName('filesize')->item(0)->nodeValue;
+
+        if($filesize > 1024 * 1024) {
+          $size = sprintf("%.0fMB", round($filesize / 1024 / 1024));
+        }
+        else if($filesize > 1024) {
+          $size = sprintf("%.0fKB", round($filesize / 1024));
+        }
+        else {
+          $size = $filesize + "B";
+        }
+        print "      <li>\n";
+        print "        <a title=\"$filetype\" href=\"$url\">$title</a>\n";
+        print "        <small class=\"file_download_size\">(" . strtoupper($filetype) . " $size)</small>\n";
+        print "      </li>\n";
+      }
+
+      print "    </ul>\n"; 
+      print "  </td>\n";
+      print "</tr>\n";
+    }
+  }
+}
+else {
+  print "<tr><td colspan=\"2\" class=\"mError\">Connection error</td></tr>\n";
+}
+</txp:php>
+</txp:zem_cache>
+
+ </tbody>
+ </table>
+
+
+
+
+
+
+
+
+
+
+
+<txp:hide>
+
+
+
+<h3>Council Meetings 2012</h3>
+
+ <table class="data meetings2" summary="Council Meetings - Agendas & Minutes 2012">
+ <thead>
+ <tr>
+ <th>Date</th>
+ <th>Business Papers</th>
+ </tr>
+ </thead>
+ <tbody>
+
+<txp:zem_cache>
+<txp:php>
+$ctx = stream_context_create(array( 
+    'http' => array( 
+        # Set the timeout on the request for XML to five second
+        'timeout' => 5
+        ) 
+    ) 
+); 
+
+$doc = new DOMDocument();
+# NOTE: file_get_contents from a url might be disabled for security reasons
+$xml = file_get_contents('http://tst.mosman.nsw.gov.au/portal/Pages/tools/Listing/Meetings.aspx?type=CL&y=2012', false, $ctx);
+if ($xml) {
+  $doc->loadXML($xml);
+
+  $meetings = $doc->getElementsByTagName('mMeeting');
+  # Check that it hasn't returned a single empty meeting (in which case there is no data)
+  if (count($meetings) == 1 && $meetings->item(0)->getElementsByTagName('meetingDate')->item(0)->nodeValue == "") {
+    print "<tr><td colspan=\"2\">There are no meetings yet</td></tr>\n";
+  }
+  else {
+    foreach($meetings as $meeting) {
+      $meeting_date = date("j M Y", strtotime($meeting->getElementsByTagName('meetingDate')->item(0)->nodeValue));
+
+      print "<tr>\n";
+      print "  <td class=\"meetingDate\">$meeting_date</td>\n";
+      print "  <td>\n";
+      print "    <ul class=\"mFiles\">\n";
+
+      $files = $meeting->getElementsByTagName('mFile');
+      foreach($files as $file) {
+        $title = htmlspecialchars($file->getElementsByTagName('title')->item(0)->nodeValue);
+        $url = $file->getElementsByTagName('url')->item(0)->nodeValue;
+        $filetype = $file->getElementsByTagName('filetype')->item(0)->nodeValue;
+        $filesize = $file->getElementsByTagName('filesize')->item(0)->nodeValue;
+
+        if($filesize > 1024 * 1024) {
+          $size = sprintf("%.0fMB", round($filesize / 1024 / 1024));
+        }
+        else if($filesize > 1024) {
+          $size = sprintf("%.0fKB", round($filesize / 1024));
+        }
+        else {
+          $size = $filesize + "B";
+        }
+        print "      <li>\n";
+        print "        <a title=\"$filetype\" href=\"$url\">$title</a>\n";
+        print "        <small class=\"file_download_size\">(" . strtoupper($filetype) . " $size)</small>\n";
+        print "      </li>\n";
+      }
+
+      print "    </ul>\n"; 
+      print "  </td>\n";
+      print "</tr>\n";
+    }
+  }
+}
+else {
+  print "<tr><td colspan=\"2\" class=\"mError\">Connection error</td></tr>\n";
+}
+</txp:php>
+</txp:zem_cache>
+
+ </tbody>
+ </table>
+
+
+
+
+
+
+
+
+
+<h3>Traffic Committee Meetings 2012</h3>
+
+ <table class="data meetings2" summary="Traffic Committee Meetings - Agendas & Minutes 2012">
+ <thead>
+ <tr>
+ <th>Date</th>
+ <th>Business Papers</th>
+ </tr>
+ </thead>
+ <tbody>
+
+<txp:zem_cache>
+<txp:php>
+$ctx = stream_context_create(array( 
+    'http' => array( 
+        # Set the timeout on the request for XML to five second
+        'timeout' => 5
+        ) 
+    ) 
+); 
+
+$doc = new DOMDocument();
+# NOTE: file_get_contents from a url might be disabled for security reasons
+$xml = file_get_contents('http://tst.mosman.nsw.gov.au/portal/Pages/tools/Listing/Meetings.aspx?type=TR&y=2012', false, $ctx);
+if ($xml) {
+  $doc->loadXML($xml);
+
+  $meetings = $doc->getElementsByTagName('mMeeting');
+  # Check that it hasn't returned a single empty meeting (in which case there is no data)
+  if (count($meetings) == 1 && $meetings->item(0)->getElementsByTagName('meetingDate')->item(0)->nodeValue == "") {
+    print "<tr><td colspan=\"2\">There are no meetings yet</td></tr>\n";
+  }
+  else {
+    foreach($meetings as $meeting) {
+      $meeting_date = date("j M Y", strtotime($meeting->getElementsByTagName('meetingDate')->item(0)->nodeValue));
+
+      print "<tr>\n";
+      print "  <td class=\"meetingDate\">$meeting_date</td>\n";
+      print "  <td>\n";
+      print "    <ul class=\"mFiles\">\n";
+
+      $files = $meeting->getElementsByTagName('mFile');
+      foreach($files as $file) {
+        $title = htmlspecialchars($file->getElementsByTagName('title')->item(0)->nodeValue);
+        $url = $file->getElementsByTagName('url')->item(0)->nodeValue;
+        $filetype = $file->getElementsByTagName('filetype')->item(0)->nodeValue;
+        $filesize = $file->getElementsByTagName('filesize')->item(0)->nodeValue;
+
+        if($filesize > 1024 * 1024) {
+          $size = sprintf("%.0fMB", round($filesize / 1024 / 1024));
+        }
+        else if($filesize > 1024) {
+          $size = sprintf("%.0fKB", round($filesize / 1024));
+        }
+        else {
+          $size = $filesize + "B";
+        }
+        print "      <li>\n";
+        print "        <a title=\"$filetype\" href=\"$url\">$title</a>\n";
+        print "        <small class=\"file_download_size\">(" . strtoupper($filetype) . " $size)</small>\n";
+        print "      </li>\n";
+      }
+
+      print "    </ul>\n"; 
+      print "  </td>\n";
+      print "</tr>\n";
+    }
+  }
+}
+else {
+  print "<tr><td colspan=\"2\" class=\"mError\">Connection error</td></tr>\n";
+}
+</txp:php>
+</txp:zem_cache>
+
+ </tbody>
+ </table>
+
+
+</txp:hide>
+
+</div>
+
+
+
+
+
+<txp:hide>
+<smd_xml data="http://mmcws02/INTRAdev/Pages/tools/Listing/Meetings.aspx?type=council&y=2012" record="mMeeting" fields="meetingDate">
+{meetingDate}
+</smd_xml>
+</txp:hide>
+
+</body>
+</html>

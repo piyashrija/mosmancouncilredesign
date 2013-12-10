@@ -1,0 +1,19 @@
+<div class="box-list"> 
+<h3>Join <strong>Us Online</strong></h3> 
+<ul class="social-list"> 
+<li class="twitter"><a href="http://twitter.com/mosmancouncil" title="short text messaging">Council Twitter</a></li> 
+<li class="twitter"><a href="http://twitter.com/mosmanlibrary" title="short text messaging">Library Twitter</a></li> 
+<li class="facebook"><a href="http://www.facebook.com/mosmancouncil" title="Facebook">Council Facebook</a></li>
+<li class="facebook"><a href="http://www.facebook.com/mosmanlibrary" title="Facebook">Library Facebook</a></li>
+<li class="facebook"><a href="http://www.facebook.com/pages/Mosman-Art-Gallery/363055020406782" title="Facebook">Gallery Facebook</a></li>
+<li class="facebook"><a href="http://www.facebook.com/mosmanyouth" title="Facebook">Youth Facebook</a></li>
+<li class="youtube"><a href="http://youtube.com/user/mosmancouncil" title="video sharing">YouTube</a></li>
+<li class="flickr"><a href="http://www.flickr.com/photos/mosmancouncil" title="photo sharing">Council Flickr</a></li> 
+<li class="flickr"><a href="http://www.flickr.com/photos/mosmanlibrary" title="photo sharing">Library Flickr</a></li>  
+<txp:hide><li class="friendfeed"><a href="http://friendfeed.com/mosmancouncil" title="all our content in one stream">FriendFeed</a></li></txp:hide>
+<li class="mosmanreaders"><a href="http://www.mosmanreaders.net" title="join our readers community">Mosman Readers</a></li> 
+<li class="libblog"><a href="http://blogs.mosman.nsw.gov.au/library" title="">Library blog</a></li> 
+<li class="magicon"><a href="http://mosmanartgallery.org.au/blog" title="View from the Gallery">Mosman Art Gallery blog</a></li>
+<li class="enews"><txp:permlink id="1497">Email newsletters</txp:permlink></li> 
+</ul> 
+</div>

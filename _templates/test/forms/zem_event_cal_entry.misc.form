@@ -1,0 +1,1 @@
+<txp:if_article_section name="events"><p><txp:zem_event_permlink wraptag="" ><txp:zem_event_name label="" wraptag="" /></txp:zem_event_permlink></p><txp:else /></txp:if_article_section>

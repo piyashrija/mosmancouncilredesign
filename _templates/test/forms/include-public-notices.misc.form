@@ -1,0 +1,5 @@
+<ul class="icon-doc">
+<txp:smd_xml data="http://portal.mosman.nsw.gov.au/pages/tools/listing/feedme.aspx" record="Notice" fields="Title,PublicationDate,URL" limit="10">
+<li><a href="{URL}">{Title}</a></li>
+</txp:smd_xml>
+</ul>

@@ -1,0 +1,75 @@
+ <table class="data meetings3" summary="MDAP - Agendas & Minutes 2013">
+ <thead>
+ <tr>
+ <th>Date</th>
+ <th>Agenda &amp; Decisions</th>
+ </tr>
+ </thead>
+ <tbody>
+
+<txp:zem_cache id="MDAP2013">
+<txp:php>
+$ctx = stream_context_create(array( 
+    'http' => array( 
+        # Set the timeout on the request for XML to five second
+        'timeout' => 5
+        ) 
+    ) 
+); 
+
+$doc = new DOMDocument();
+# NOTE: file_get_contents from a url might be disabled for security reasons
+$xml = file_get_contents('http://portal.mosman.nsw.gov.au/Pages/tools/Listing/Meetings.aspx?type=MDAP&y=2013', false, $ctx);
+if ($xml) {
+  $doc->loadXML($xml);
+
+  $meetings = $doc->getElementsByTagName('mMeeting');
+  # Check that it hasn't returned a single empty meeting (in which case there is no data)
+  if (count($meetings) == 1 && $meetings->item(0)->getElementsByTagName('meetingDate')->item(0)->nodeValue == "") {
+    print "<tr><td colspan=\"2\">There are no meeting documents yet</td></tr>\n";
+  }
+  else {
+    foreach($meetings as $meeting) {
+      $meeting_date = date("j M Y", strtotime($meeting->getElementsByTagName('meetingDate')->item(0)->nodeValue));
+
+      print "<tr>\n";
+      print "  <td class=\"meetingDate\">$meeting_date</td>\n";
+      print "  <td>\n";
+      print "    <ul class=\"mFiles\">\n";
+
+      $files = $meeting->getElementsByTagName('mFile');
+      foreach($files as $file) {
+        $title = htmlspecialchars($file->getElementsByTagName('title')->item(0)->nodeValue);
+        $url = $file->getElementsByTagName('url')->item(0)->nodeValue;
+        $filetype = $file->getElementsByTagName('filetype')->item(0)->nodeValue;
+        $filesize = $file->getElementsByTagName('filesize')->item(0)->nodeValue;
+
+        if($filesize > 1024 * 1024) {
+          $size = sprintf("%.0fMB", round($filesize / 1024 / 1024));
+        }
+        else if($filesize > 1024) {
+          $size = sprintf("%.0fKB", round($filesize / 1024));
+        }
+        else {
+          $size = $filesize + "B";
+        }
+        print "      <li>\n";
+        print "        <a title=\"$filetype\" href=\"$url\">$title</a>\n";
+        print "        <small class=\"file_download_size\">(" . strtoupper($filetype) . " $size)</small>\n";
+        print "      </li>\n";
+      }
+
+      print "    </ul>\n"; 
+      print "  </td>\n";
+      print "</tr>\n";
+    }
+  }
+}
+else {
+  print "<tr><td colspan=\"2\" class=\"mError\">Connection error</td></tr>\n";
+}
+</txp:php>
+</txp:zem_cache>
+
+ </tbody>
+ </table>

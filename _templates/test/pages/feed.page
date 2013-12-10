@@ -1,0 +1,96 @@
+<txp:mg_setheader /><?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel><generator>http://textpattern.com/?v=4.1.x</generator>
+<image>
+<url>http://www.mosman.nsw.gov.au/images/3154.gif</url>
+</image>
+
+<txp:if_category><txp:else />
+<title>Mosman Council: News</title>
+<link>http://www.mosman.nsw.gov.au/news</link>
+<atom:link href="http://www.mosman.nsw.gov.au/feed" rel="self" type="application/rss+xml" />
+<description>Proud to be Mosman – Protecting our Heritage – Planning our Future – Involving our Community</description>
+<pubDate><txp:upm_datetime format="%a, %d %b %Y %H:%M:%S +1000" /></pubDate>
+<txp:article_custom section="news" status="live" index=0 form="feed-items-news" limit=10 />
+</txp:if_category>
+
+<txp:if_category name="events">
+<title>Mosman Council: Events</title>
+<link>http://www.mosman.nsw.gov.au/events</link>
+<atom:link href="http://www.mosman.nsw.gov.au/feed/?c=events" rel="self" type="application/rss+xml" />
+<description>What's happening in Mosman</description>
+<pubDate><txp:upm_datetime format="%a, %d %b %Y %H:%M:%S +1000" /></pubDate>
+<txp:zem_event_list all_categories="1" form="feed-items-events" limit=10 section="events"  />
+</txp:if_category>
+
+<txp:if_category name="events-today">
+<title>Mosman Council: Today's Events</title>
+<link>http://www.mosman.nsw.gov.au/events</link>
+<atom:link href="http://www.mosman.nsw.gov.au/feed/?c=events-today" rel="self" type="application/rss+xml" />
+<description>What's happening in Mosman today</description>
+<pubDate><txp:upm_datetime format="%a, %d %b %Y %H:%M:%S +1000" /></pubDate>
+<txp:zem_event_list date_to="today" all_categories="1" form="feed-items-events" limit=15 section="events"  />
+</txp:if_category>
+
+<txp:if_category name="events-library">
+<title>What's On at Mosman Library</title>
+<link>http://www.mosman.nsw.gov.au/events/?c=mosman-library</link>
+<atom:link href="http://www.mosman.nsw.gov.au/events/?c=mosman-library" rel="self" type="application/rss+xml" />
+<description>Events at Mosman Library</description>
+<pubDate><txp:upm_datetime format="%a, %e %b %Y %H:%M:%S +1000" /></pubDate>:hide>
+<txp:zem_event_list category="mosman-library" form="feed-items-events" limit=15 section="events"  />
+</txp:if_category>
+
+<txp:if_category name="events-library-children">
+<title>What's On at the Children's Library</title>
+<link>http://www.mosman.nsw.gov.au/events/?c=childrens-library</link>
+<atom:link href="http://www.mosman.nsw.gov.au/events/?c=childrens-library" rel="self" type="application/rss+xml" />
+<description>Events at the Children's Library</description>
+<pubDate><txp:upm_datetime format="%a, %e %b %Y %H:%M:%S +1000" /></pubDate>:hide>
+<txp:zem_event_list category="childrens-library" form="feed-items-events" limit=15 section="events"  />
+</txp:if_category>
+
+<txp:if_category name="events-library-teens">
+<title>Mosman Council: Wired 4 Teens events</title>
+<link>http://www.mosman.nsw.gov.au/events/?c=mosman-library-teens</link>
+<atom:link href="http://www.mosman.nsw.gov.au/events/?c=mosman-library-teens" rel="self" type="application/rss+xml" />
+<description>Teen events at Mosman Library</description>
+<pubDate><txp:upm_datetime format="%a, %d %b %Y %H:%M:%S +1000" /></pubDate>:hide>
+<txp:zem_event_list category="mosman-library-teens,youth" form="feed-items-events" limit=10 section="events"  />
+</txp:if_category>
+
+
+<txp:if_category name="employment">
+<title>Positions vacant at Mosman Council</title>
+<link>http://www.mosman.nsw.gov.au/council/employment</link>
+<atom:link href="http://www.mosman.nsw.gov.au/feed/?c=employment" rel="self" type="application/rss+xml" />
+<description>Mosman is... a great place to work!</description>
+<pubDate><txp:upm_datetime format="%a, %d %b %Y %H:%M:%S +1000" /></pubDate>
+<txp:zem_event_list all_categories="1" form="feed-items-employment" section="council/employment" sort="zem_event_date.finish_date asc" />
+<txp:article_custom section="council/employment" category="sticky-job-ad" status="live" index=0 limit=999 form="feed-items-employment" sort="custom_10" />
+</txp:if_category>
+
+
+<txp:if_category name="consultation">
+<title>Mosman Council: Community Consultation</title>
+<link>http://www.mosman.nsw.gov.au/council/consultation</link>
+<atom:link href="http://www.mosman.nsw.gov.au/feed/?c=consultation" rel="self" type="application/rss+xml" />
+<description>Comment can be made in writing to the General Manager or via our online form</description>
+<pubDate><txp:upm_datetime format="%a, %d %b %Y %H:%M:%S +1000" /></pubDate>
+<txp:zem_event_list all_categories="1" sort="zem_event_date.finish_date asc" form="feed-items-consultation" section="council/consultation" />
+<txp:article_custom section="council/consultation" category="sticky-consultation" status="live" index=0 limit=999 form="feed-items-consultation" sort="custom_10" />
+<txp:zem_event_list form="feed-items-consultation" section="events" category="community-consultation" />
+</txp:if_category>
+
+
+<txp:if_category name="mayor">
+<title>Mosman Council: The Mayor's Column</title>
+<link>http://www.mosman.nsw.gov.au/news/mayor</link>
+<atom:link href="http://www.mosman.nsw.gov.au/feed/?c=mayor" rel="self" type="application/rss+xml" />
+<description>The Mayor’s Column is published in The Mosman Daily every Thursday.</description>
+<pubDate><txp:upm_datetime format="%a, %d %b %Y %H:%M:%S +1000" /></pubDate>
+<txp:article_custom section="news/mayor" index=0 status="live" limit="10"  form="feed-items-news" />
+</txp:if_category>
+
+</channel>
+</rss>

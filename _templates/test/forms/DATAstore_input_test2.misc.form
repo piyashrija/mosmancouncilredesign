@@ -1,0 +1,9 @@
+<h3><strong>{name}</strong></h3>
+
+<p>{address_line1} {address_line2} <br/>{city} {state} {postcode}</p>
+
+<p>{id}  {type} {longitude} {latitude} {other_points} {icon}</p>
+
+{description}
+
+<hr />

@@ -1,0 +1,4 @@
+<div class="news_list_item">
+<p><a href="<txp:permlink />" title="Posted <txp:posted format="%e %B %Y" />"><strong><txp:title /></strong></a></p>
+<txp:excerpt />
+</div>

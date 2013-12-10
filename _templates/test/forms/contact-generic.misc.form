@@ -1,0 +1,115 @@
+<div id="nform">
+
+<txp:zem_contact to="olr@mosman.nsw.gov.au" from="council@mosman.nsw.gov.au" subject="Mosman Council web form submission" label="" thanks_form="contact-thanks">
+
+<txp:asy_wondertag><txp:zem_contact_secret name="WebRequestNumber" label="WebRequestNumber" value="<txp:upm_datetime format="%y%m%d%H%M%S" /><txp:php>echo mt_rand(1000, 9999);</txp:php>" /></txp:asy_wondertag>
+
+<txp:if_section name="council/consultation">
+<h3>Have your say: make an online submission</h3>
+<ul class="icon-alert"><li>Any submissions (including personal information in the submission such as the identifying particulars of the writer) made to Council are deemed to be for the purpose of public process and will be available for public inspection in accordance with Council’s <txp:file_download id="1681" />. Council will give consideration to the ‘public interest’ and requests for confidentiality by submitters in determining access to submission letters. However, the provisions of the <em>Government Information (Public Access) Act</em> may, after due process, result in submissions marked confidential by the writer being released to an applicant.</li></ul>
+<txp:zem_contact_secret name="intRequestType" label="intRequestType" value="9" />
+<txp:asy_wondertag><txp:zem_contact_secret name="strActionReq" label="strActionReq" value="<txp:title no_widow="0" />" /></txp:asy_wondertag>
+</txp:if_section>
+
+<txp:if_section name="contact">
+
+<txp:hide>GENERAL REQUEST</txp:hide>
+<txp:if_article_id id="2468">
+<txp:zem_contact_secret name="intRequestType" label="intRequestType" value="7" />
+</txp:if_article_id>
+
+<txp:hide>COMPLAINT</txp:hide>
+<txp:if_article_id id="2469">
+<txp:zem_contact_secret name="intRequestType" label="intRequestType" value="8" />
+</txp:if_article_id>
+
+</txp:if_section>
+
+
+<txp:if_section name="council/consultation">
+<fieldset>
+<legend>Your submission:</legend>
+<txp:zem_contact_textarea label="Message" name="Submission" required="1" break="" />
+</fieldset>
+</txp:if_section>
+
+<txp:if_section name="contact">
+<fieldset>
+<legend>Your correspondence:</legend>
+<txp:zem_contact_textarea label="Message" name="Correspondence" required="1" break="" />
+</fieldset>
+</txp:if_section>
+
+<fieldset>
+<legend>Your name:</legend>
+<table><tr>
+<td><txp:zem_contact_select label="Title" name="NameTitle" list=",Mr,Mrs,Ms,Miss,Dr,Prof,Sir,Mstr" required="1" break="br" /></td>
+<td><txp:zem_contact_text label="Given Name" name="GivenName" required="1" break="br" /></td>
+<td><txp:zem_contact_text label="Family Name" name="FamilyName" required="1" break="br" /></td>
+</tr></table>
+</fieldset>
+
+<fieldset>
+<legend>Your contact details:</legend>
+
+<table><tr>
+<td><txp:zem_contact_text label="Unit" name="FlatUnit" required="0" break="br" size="5" /> /&nbsp;</td>
+<td><txp:zem_contact_text label="" label="House No(s)" name="HouseNumber" required="1" break="br" size="5" /> - <txp:zem_contact_text name="HouseNumberEndRange" label="" required="0" break="" size="5" />
+</td>
+</tr></table>
+
+<table><tr>
+<td colspan="3"><txp:zem_contact_text label="Street Name or PO Box" name="StreetNameOrPOBox" required="1" break="br" /></td>
+</tr><tr>
+<td><txp:zem_contact_text label="Suburb / Locality / Town" name="SuburbLocalityTown" required="1" break="br" /></td>
+<td><txp:zem_contact_select label="State" list=",NSW,ACT,VIC,QLD,SA,WA,NT" name="StateTerritory" required="1" break="br" /></td>
+<td><txp:zem_contact_text label="Postcode" name="Postcode" required="1" break="br" size="5" /></td>
+</tr></table>
+
+<fieldset>
+<legend>Email: <em>optional</em></legend>
+<table>
+<tr><td class="nffw"><txp:zem_contact_email label="Email address" name="EmailAddress" required="0" break="" /></td></tr>
+</table>
+<p><small><em>To assist us with contacting you on this matter electronically, please provide us with a valid email address</em></small></p>
+</fieldset>
+
+<fieldset>
+<legend>Telephone: <em>optional</em></legend>
+<table>
+<tr><td class="nffw"><txp:zem_contact_text label="Telephone" name="TelephoneNumber" required="0" break="" max="20" /></td></tr>
+<tr><td class="nffw"><txp:zem_contact_text label="Mobile" name="MobileNumber" required="0" break="" max="20" /></td></tr>
+</table>
+<p><small><em>To assist us with contacting you, please provide a telephone contact</em></small></p>
+</fieldset>
+
+</fieldset>
+
+<txp:if_section name="council/consultation">
+<ul class="icon-alert"><li>Please note that under Council's <txp:file_download id="1681" /> and the <em>Government Information (Public Access) Act 2009</em> your submission will be available for inspection on Council's document management system upon request.</li></ul>
+</txp:if_section>
+
+<txp:hide>
+<fieldset>
+<txp:zem_contact_checkbox label="I do not require a formal response from Council on this matter" required="0" break=" " />
+</fieldset>
+</txp:hide>
+
+<txp:zem_contact_submit label="Submit your correspondence" />
+
+
+
+
+<txp:php>
+  global $zem_contact_values, $zem_contact_labels;
+
+  foreach ($zem_contact_values as $name => $value)
+  {
+    $zem_contact_labels[$name] = '';
+    $zem_contact_values[$name] = '<'.$name.'>'.htmlspecialchars($value).'</'.$name.'>';
+  }
+</txp:php>
+
+</txp:zem_contact>
+
+</div>

@@ -1,0 +1,11 @@
+<h5>Be notified of new jobs by email</h5>
+
+<form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=MosmanCouncilJobs', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+
+<label for="eml" style="width:auto;padding:0 10px 0 0;">Enter your email address:</label><input type="text" style="width:190px" name="email" id="eml" />
+<input type="hidden" value="MosmanCouncilJobs" name="uri"/><input type="hidden" name="loc" value="en_US"/>
+
+<input style="margin:0 0 21px 14px;" type="submit" value="Subscribe" class="submit" /><br />
+<p><small>How does it work? When a position is advertised on our website, you'll be sent an email alert.<br />Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></small>.</p>
+
+</form>

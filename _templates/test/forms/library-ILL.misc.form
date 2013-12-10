@@ -1,0 +1,58 @@
+<div id="nform" class="nform-ill">
+
+<h3>Make an online request</h3>
+
+<txp:zem_contact from="no-reply@mosmanlibraryblogs.com" to="ill@mosman.nsw.gov.au" subject="Mosman Library online ILL form submission" label="" thanks_form="contact-ILL-thanks">
+
+<txp:asy_wondertag><txp:zem_contact_secret name="WebRequestNumber" label="WebRequestNumber" value="<txp:upm_datetime format="%y%m%d%H%M%S" /><txp:php>echo mt_rand(1000, 9999);</txp:php>" /></txp:asy_wondertag>
+
+<fieldset>
+<legend>CUSTOMER INFORMATION</legend>
+<table><tr>
+<td><txp:zem_contact_text label="Name" name="Name" required="1" break="br" /></td>
+<td colspan="2"><txp:zem_contact_text label="Library Card Number" name="LibraryCardNumber" required="1" break="br" /></td>
+</tr>
+<tr>
+<td><txp:zem_contact_text label="Contact Phone Number" name="ContactPhoneNumber" required="1" break="br" /></td>
+<td><txp:zem_contact_email label="Email address" name="EmailAddress" required="0" break="br" /></td>
+<td colspan="2"><td><txp:zem_contact_select label="Preferred Response" name="ResponseMethod" list=",phone,email" required="0" break="br" /></td></td></tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend>ITEM INFORMATION</legend>
+<table>
+<tr><td class="nffw"><txp:zem_contact_select label="Format" name="Format" list=",Book, Journal Article, Audio Visual, Bulk loan" required="1" break="" /></td></tr>
+<tr><td class="nffw"><txp:zem_contact_text label="Title" name="Title" required="1" break="" /> </td></tr>
+<tr><td class="nffw"><txp:zem_contact_text label="Author" name="Author" required="1" break="" /></td></tr>
+
+<tr><td class="nffw"><txp:zem_contact_text label="Publisher" name="Publisher" required="0" break="" /></td></tr>
+<tr><td class="nffw"><txp:zem_contact_text label="Year of Publication" name="Year of Publication" required="0" break="" /></td></tr>
+<tr><td class="nffw"><txp:zem_contact_text label="ISBN" name="ISBN" required="0" break="" /></td></tr>
+
+<tr><td><txp:zem_contact_textarea cols="40" rows="5" label="Additional information" required="0" />
+<p><small>Journal articles: please provide journal title, volume, issue and pages in additional information</small></p>
+<p><small>Bulk loans: please provide language, print size ,format and genre in additional information.</small></p>
+
+</td></tr>
+
+</table>
+</fieldset>
+
+<fieldset>
+<legend>PAYMENT INFORMATION</legend>
+<table>
+<tr><td style="padding-bottom:10px;"><txp:zem_contact_checkbox label=" I understand that the minimum charge for this service is $3.50" break="" /><p style="margin-top:-5px;"><small>We will contact you prior to processing if any other charges are applicable.</small></p></td></tr>
+<tr><td><txp:zem_contact_text label="Is there a deadline for this request?" name="DateRequired" required="0" break="br" /> 
+<p><small>Please allow a minimum of one week as requests can take several weeks to be supplied</small></p></td></tr>
+
+</table>
+</fieldset>
+
+<txp:zem_contact_submit label="Submit loan request" />
+
+
+
+</txp:zem_contact>
+
+</div>

@@ -1,0 +1,8 @@
+<div id="intro">
+<txp:if_article_category name="from-the-mayor"><div style="margin:20px 0 -10px 0;"><txp:image id="5182" class="image" /></div></txp:if_article_category>
+<h2><txp:title /></h2>
+</div>
+<txp:wet_if_live><p class="news-byline">Posted <txp:posted format="%A %e %B %Y" /></p></txp:wet_if_live>
+<txp:body />
+
+<txp:wet_if_live><txp:output_form form="social_bookmarks" /></txp:wet_if_live>

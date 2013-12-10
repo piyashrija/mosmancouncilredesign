@@ -1,0 +1,1 @@
+<li><a title="<txp:etz_striptags><txp:excerpt /></txp:etz_striptags>" href="<txp:permlink />"><strong><txp:title /></strong></a><br /><em><txp:zem_event_date wraptag="" format="%A %e %B" label="" /><txp:chh_if_data> &#8211; <txp:zem_event_finish_date wraptag="" format="%A %e %B" /></txp:chh_if_data></em></li>

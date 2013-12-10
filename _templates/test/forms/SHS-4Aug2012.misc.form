@@ -1,0 +1,243 @@
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+addLoadEvent(function() {
+  /* more code to run on page load */ 
+var mapOpts = {
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  scaleControl: true,
+  scrollwheel: true
+}
+
+var map = new google.maps.Map(document.getElementById("Lmap"), mapOpts);
+
+var infoWindow = new google.maps.InfoWindow();
+var markerBounds = new google.maps.LatLngBounds();
+var markerArray = [];
+
+var iconshs = 'http://www.mosman.nsw.gov.au/images/2901.png';
+ 
+function makeMarker(options){
+  var pushPin = new google.maps.Marker({map:map});
+  pushPin.setOptions(options);
+  google.maps.event.addListener(pushPin, "click", function(){
+    infoWindow.setOptions(options);
+    infoWindow.open(map, pushPin);
+  });
+  markerBounds.extend(options.position);
+  markerArray.push(pushPin);
+  return pushPin;
+}
+ 
+google.maps.event.addListener(map, "click", function(){
+  infoWindow.close();
+});
+ 
+makeMarker({
+  position: new google.maps.LatLng(-33.832203, 151.252934),
+  title: "2 Coronation Avenue",
+  content: "<strong>2 Coronation Avenue</strong><br />8am-3pm",
+  icon: iconshs
+});
+
+makeMarker({
+  position: new google.maps.LatLng(-33.826928, 151.23426),
+  title: "48 Prince Street",
+  content: "<strong>48 Prince Street</strong><br />9am - 4pm",
+  icon: iconshs
+});
+
+
+
+makeMarker({
+  position: new google.maps.LatLng(-33.826363, 151.235115),
+  title: "6 Bardwell Road",
+  content: "<strong>6 Bardwell Road</strong><br />8am - 3pm",
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.83542, 151.237339),
+  title: "106 A Raglan Street",
+  content: "<strong>106 A Raglan Street</strong><br />8am - 4pm",
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.823824, 151.241343),
+  title: "34 Hordern Place",
+  content: "<strong>34 Hordern Place</strong><br />8.30am - 5pm",
+  icon: iconshs
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.833824, 151.241684),
+  title: "25 Queen Street",
+  content: "<strong>25 Queen Street</strong><br />8am - 2pm",
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.835533, 151.237129),
+  title: "100 Raglan Street",
+  content: "<strong>100 Raglan Street</strong><br />8am - 3pm",
+  icon: iconshs
+});		
+makeMarker({
+  position: new google.maps.LatLng(-33.827197, 151.239724),
+  title: "24 Vista Street",
+  content: "<strong>24 Vista Street</strong><br />8:30am - 4pm", 
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.830442, 151.239059),
+  title: "11 Wolger Road",
+  content: "<strong>11 Wolger Road</strong><br />9am to 4pm",
+  icon: iconshs
+});
+
+makeMarker({
+  position: new google.maps.LatLng(-33.821399, 151.232566),
+  title: "106 Ourimbah Road",
+  content: "<strong>106 Ourimbah Road</strong><br />8am-2pm",
+  icon: iconshs
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.8190485, 151.2454505),
+  title: "37 Stanton Road",
+  content: "<strong>37 Stanton Road</strong><br />8am - 3pm",
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.831569, 151.233238),
+  title: "62 Holt Avenue",
+  content: "<strong>62 Holt Avenue</strong><br />8am - 11am",
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.825842, 151.250461),
+  title: "2 Esther Road",
+  content: "<strong>2 Esther Road</strong><br />9am - 12.30pm",
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.818281, 151.23375),
+  title: "2a Julian Street",
+  content: "<strong>2a Julian Street</strong><br />10am to 3pm",
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.827593, 151.248705),
+  title: "234 Raglan Street",
+  content: "<strong>234 Raglan Street</strong><br />9am - 3pm",
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.827577, 151.2473402),
+  title: "21 Balmoral Avenue",
+  content: "<strong>21 Balmoral Avenue</strong><br />8am-2pm",
+  icon: iconshs
+});				
+makeMarker({
+  position: new google.maps.LatLng(-33.822568, 151.239641),
+  title: "26 Ourimbah Road",
+  content: "<strong>26 Ourimbah Road</strong><br />8am-2pm",
+  icon: iconshs
+});		
+makeMarker({
+  position: new google.maps.LatLng(-33.8218963, 151.2462158),
+  title: "19 Stanley Avenue",
+  content: "<strong>19 Stanley Avenue</strong><br />8am-1pm",
+  icon: iconshs
+});		
+makeMarker({
+  position: new google.maps.LatLng(-33.822048, 151.246428),
+  title: "17B Stanley Avenue",
+  content: "<strong>17B Stanley Avenue</strong><br />8am - 2pm",
+  icon: iconshs
+});					
+makeMarker({
+  position: new google.maps.LatLng(-33.817431, 151.242347),
+  title: "23 Bapaume Road",
+  content: "<strong>23 Bapaume Road</strong><br />9am to 3pm",
+  icon: iconshs
+});			
+makeMarker({
+  position: new google.maps.LatLng(-33.840541, 151.242588),
+  title: "7A Whiting Beach Road",
+  content: "<strong>7A Whiting Beach Road</strong><br />8am - 4pm",
+  icon: iconshs
+});		
+makeMarker({
+  position: new google.maps.LatLng(-33.834416, 151.238423),
+  title: "130 Raglan Street",
+  content: "<strong>130 Raglan Street</strong><br />8am - 4pm",
+  icon: iconshs
+});			
+makeMarker({
+  position: new google.maps.LatLng(-33.838672, 151.247101),
+  title: "19 Silex Road",
+  content: "<strong>19 Silex Road</strong><br />8.30am – 4pm",
+  icon: iconshs
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.830597, 151.236577),
+  title: "9 Spencer Road",
+  content: "<strong>9 Spencer Road</strong><br />9am – 2pm",
+  icon: iconshs
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.840729, 151.242542),
+  title: "7 Whiting Beach Road",
+  content: "<strong>7 Whiting Beach Road</strong><br />10am – 5pm",
+  icon: iconshs
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.8145785, 151.24361),
+  title: "200 Spit Road",
+  content: "<strong>200 Spit Road</strong><br />9:30am – 4pm",
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.835499, 151.241877),
+  title: "4 Cabban Street",
+  content: "<strong>4 Cabban Street</strong><br />9am – 2pm",
+  icon: iconshs
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.826698, 151.236586),
+  title: "13 Prince Street",
+  content: "<strong>13 Prince Street</strong><br />9am – 1pm",
+  icon: iconshs
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.82967, 151.237045),
+  title: "24 Cowles Road",
+  content: "<strong>24 Cowles Road</strong><br />9am – 12:30pm",
+  icon: iconshs
+});	
+makeMarker({
+  position: new google.maps.LatLng(-33.834382, 151.240131),
+  title: "32 Queen Street",
+  content: "<strong>32 Queen Street</strong><br />9am – 1pm",
+  icon: iconshs
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.81499, 151.24247),
+  title: "25 Ryrie Street",
+  content: "<strong>25 Ryrie Street</strong><br />8am – 1pm",
+  icon: iconshs
+});			
+
+map.fitBounds(markerBounds);
+
+});
+</script>
+
+<div id="Lmap" style="width:550px; height:550px; margin:0 0 30px 0"></div>

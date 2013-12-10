@@ -1,0 +1,5 @@
+<tr>
+<td class="meeting-date"><nobr><txp:zem_event_date wraptag="" format="%e %b %Y" /></nobr></td>
+<td><span class="caps"><txp:if_article_category name="extraordinary">Council*<txp:else /><txp:category1 title=0 link=0 /></txp:if_article_category></span></td>
+<td><txp:upm_article_file_list form="files-meetings" break="" file_category="council-meetings" /><br clear="left" /><txp:upm_article_file_list form="files-meetings" break="" file_category="council-meeting-attachments" /></td>
+</tr>

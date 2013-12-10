@@ -1,0 +1,4 @@
+<tr>
+<td class="meeting-date"><nobr><txp:zem_event_date wraptag="" format="%e %b %Y" /></nobr></td>
+<td><txp:upm_article_file_list form="files-meetings" break="" file_category="mdap-agendas-decisions" /></td>
+</tr>

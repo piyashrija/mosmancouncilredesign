@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><txp:page_title /></title>
+<body>
+
+<txp:php>
+
+	$www = 'http://'.$GLOBALS[_SERVER][HTTP_HOST].'/';
+	
+	$filename = "files/sitemap".time().".csv";
+	$handle = fopen($filename, 'w+');
+	fputcsv($handle, array('Section','page','subsection','subsection-page','excerpt','url'));
+	$query = "SELECT * FROM txp_section WHERE parent = '2' ORDER BY sort_order";
+	$result = mysql_query($query);
+	$exclude_section = array('web','contact','search','news','map','events','test','feed');
+	fputcsv($handle, array('Home','','','','',$www));
+	echo '<a href="'.$www.'"/>Home</a>';
+	echo '<br/>';
+	
+	while($row = mysql_fetch_assoc($result)){
+		if(!(in_array($row['name'],$exclude_section))){
+			/** main  section query **/
+			echo '<a href="'.$www.$row['name'].'"/>'.$row['title'].'</a>';
+			echo '<br/>';
+			echo '<br/>';
+			$arr['section'] [$row['title']]= array();
+			/** main  sub-section query **/
+			$q = "SELECT * FROM textpattern WHERE Status = '5' AND url_title <> '__index__'  AND section_id = '".$row['id']."'";
+			$r = mysql_query($q);
+			
+			while($ro = mysql_fetch_assoc($r)){
+				echo '-';
+				echo '<a href="'.$www.$ro['Section'].'/'.$ro['url_title'].'"/>'.$ro['Title'].'</a>';
+				$arr['section'] [$row['title']][$ro['Title']] = array();
+				$arr['section'] [$row['title']][$ro['Title']]['url'] = $www.$ro['Section'].'/'.$ro['url_title'] ;
+				$arr['section'] [$row['title']][$ro['Title']]['excerpt'] = $ro['Excerpt'];
+				echo '<br/>';
+				
+			}
+			$arr['section'] [$row['title']]['url'] = $www.$row['name'];
+			$query1 = "SELECT * FROM txp_section WHERE parent = '".$row['id']."'";
+			$result1 = mysql_query($query1);
+			while($row1 = mysql_fetch_assoc($result1)){
+				echo '<br/>';
+				$query2 = "SELECT * FROM textpattern WHERE Status = '5'  AND section_id='".$row1['id']."' ORDER BY url_title desc";
+				$result2 = mysql_query($query2);
+				
+				while($row2 = mysql_fetch_assoc($result2)){
+					if($row2['url_title']=='__index__'){
+						echo '-';
+						echo '<a href="'.$www.$row2['Section'].'"/>'.$row2['Title'].'</a>';
+						$key= $row2['Title'];
+						$arr['section'] [$row['title']][$key]['url']=$www.$row2['Section'];
+						$arr['section'] [$row['title']][$key]['excerpt'] = $row2['Excerpt'];
+					}else{
+						echo '--';
+						echo '<a href="'.$www.$row2['Section'].'/'.$row2['url_title'].'"/>'.$row2['Title'].'</a>';
+						$arr['section'] [$row['title']][$key][$row2['Title']] = array();
+						$arr['section'] [$row['title']][$key][$row2['Title']]['url'] = $www.$row2['Section'].'/'.$row2['url_title'];
+						$arr['section'] [$row['title']][$key][$row2['Title']]['excerpt'] = $row2['Excerpt'];
+					} 
+					echo '<br/>';
+				}
+			}
+			echo '<br/>';
+		}
+	}
+	
+	foreach($arr[section] as $key => $value ){
+		fputcsv($handle, array($key,'','','','',$value['url']));
+		foreach($value as $key1 => $value1){
+			
+			if(sizeof($value1)<3 && $key1 != 'url'){
+			
+				fputcsv($handle, array($key,$key1,'','',$value1['excerpt'],$value1['url']));
+			}else{
+				
+				if($key1 == 'url' ){}else{
+				
+				fputcsv($handle, array($key,'',$key1,'',$value1['excerpt'],$value1['url']));
+				}
+			}
+			foreach($value1 as $key2 => $value2){
+				if($key1 == 'url' || $key2 == 'url' || $key1 == 'excerpt' || $key2 == 'excerpt'){}else{
+			
+				fputcsv($handle, array($key,'',$key1,$key2,$value2['excerpt'],$value2['url']));
+				}
+			}
+		}
+		 
+	}
+	
+	fclose($handle);
+</txp:php>
+
+</body>
+</html>

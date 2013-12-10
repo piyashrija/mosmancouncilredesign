@@ -1,0 +1,48 @@
+<style>
+.hero-unit{background-color:#f5f5f5;margin-bottom:30px;padding:30px 10px 35px 30px;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}.hero-unit h1{margin-bottom:0;font-size:60px;line-height:1;letter-spacing:-1px;}
+.hero-unit p{font-size:18px;font-weight:200;line-height:27px;}
+footer{margin-top:17px;padding-top:17px;border-top:1px solid #eee;}
+
+.hero-unit {
+position:relative;
+background:#731472 url(http://moslib.mosman.nsw.gov.au/images/315.png);
+}
+.hero-unit h1 {
+font-size:26px;
+color:#fff;
+text-shadow:1px 1px 2px #444;
+}
+
+.hero-unit input#searchdata1 {
+width:250px;
+color:#000;
+font-weight:bold;
+}
+.hero-unit select#srchfield1 {
+color:#000;
+}
+</style>
+
+<div class="hero-unit">
+<h1>Catalogue search</h1> 
+
+<form name="searchform" method="post" action="Input webcat link here(old sirsi)">
+   <input value="userid" name="WEB-MO" type="hidden" />
+   <input value="password" name="WEB-MO" type="hidden" />
+   <input type="hidden" name="library" value="MOSMAN">
+   <input type="hidden" name="sort_by" value="ANY"/>
+   <input type="hidden" name="relevance" value="off">
+   <input type="text" name="searchdata1" id="searchdata1" maxlength="255" size="30" value="" />
+      <select name="srchfield1" id="srchfield1">
+         <option value="GENERAL^SUBJECT^^^words or phrase">Keyword</option>
+         <option value="AU^AUTHOR^^Author Processing^author">Author</option>
+         <option value="TI^TITLE^^Title Processing^title">Title</option>
+         <option value="SU^SUBJECT^^^subject">Subject</option>
+         <option value="SER^SERIES^^Title Processing^series">Series</option>
+         <option value="PER^PERTITLE^^Title Processing^periodical title">Periodical Title</option>
+         <option value="ISBNISSN^ISBNISSN^^^ISBNISSN">ISBN/ISSN</option>
+      </select>
+   <input class="btn primary" type="submit" value="Search" class="searchbutton"/>
+</form>
+
+</div>

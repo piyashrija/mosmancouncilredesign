@@ -1,0 +1,1 @@
+<li><txp:permlink><txp:chh_if_data><txp:article_image /><txp:else /><txp:image id="13" /></txp:chh_if_data></txp:permlink><txp:permlink><strong><txp:title /></strong></txp:permlink><txp:excerpt /></li>

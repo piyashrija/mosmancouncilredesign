@@ -1,0 +1,3 @@
+<txp:if_article_section name="events">
+<txp:zem_event_location /> - <txp:zem_event_date wraptag="" format="%A %#d %B %Y" label="" /><txp:zem_event_finish_date wraptag="" format="%A %#d %B %Y" label=" to " sep="" /><txp:zem_event_time sep="" label=", " format="%H:%M" /><txp:zem_event_finish_time sep="" label=" - " format="%H:%M" />
+</txp:if_article_section>

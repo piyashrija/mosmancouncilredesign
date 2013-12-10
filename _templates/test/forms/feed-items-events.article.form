@@ -1,0 +1,12 @@
+<item><title><txp:atb_html_special_chars><txp:title no_widow="0" /></txp:atb_html_special_chars></title>
+<description>
+<![CDATA[
+<p><em><txp:chh_if_data><txp:zem_event_location /><span class="zem_event_location">, </span></txp:chh_if_data><txp:zem_event_date wraptag="" format="%A %#e %B %Y" label="" /><txp:zem_event_finish_date wraptag="" format="%A %#e %B %Y" label=" to " sep="" /><txp:zem_event_time sep="" label=", " format="%H:%M" /><txp:zem_event_finish_time sep="" label=" - " format="%H:%M" /></em></p>
+<txp:excerpt />
+]]>
+</description>
+<link><txp:permlink /></link>
+<pubDate><txp:posted format="%a, %e %b %Y %H:%M:%S +1000" /></pubDate>
+<dc:creator>Mosman Council</dc:creator>
+<guid isPermaLink="false">tag:www.mosman.nsw.gov.au,<txp:article_id /></guid>
+</item>

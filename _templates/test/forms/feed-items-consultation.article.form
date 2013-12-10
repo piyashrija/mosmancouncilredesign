@@ -1,0 +1,15 @@
+<item><title><txp:atb_html_special_chars><txp:title no_widow="0" /></txp:atb_html_special_chars></title>
+<description>
+<![CDATA[
+<txp:chh_if_data>Closing date: <txp:zem_event_finish_date wraptag="" format="%A %#d %B %Y" />.</txp:chh_if_data>
+<txp:if_article_category name="sticky-consultation">Open.</txp:if_article_category>
+<txp:if_article_section name="events">
+<p><txp:zem_event_location /> - <txp:zem_event_date wraptag="" format="%A %#d %B %Y" label="" /><txp:zem_event_finish_date wraptag="" format="%A %#d %B %Y" label=" to " sep="" /><txp:zem_event_time sep="" label=", " format="%H:%M" /><txp:zem_event_finish_time sep="" label=" - " format="%H:%M" />.</p>
+</txp:if_article_section>
+]]>
+</description>
+<link><txp:permlink /></link>
+<pubDate><txp:posted format="%a, %d %b %Y %H:%M:%S +1000" /></pubDate>
+<dc:creator>Mosman Council</dc:creator>
+<guid isPermaLink="false">tag:www.mosman.nsw.gov.au,<txp:article_id /></guid>
+</item>

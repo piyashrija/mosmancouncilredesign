@@ -1,0 +1,9 @@
+<div class="box-list">
+<h3><a style="padding-right:0.3em;" rel="alternate" type="application/rss+xml" href="http://works.mosman.nsw.gov.au/?rah_external_output=rss" title="RSS Feed"><img src="/images/326.gif" width="12" height="12" alt="RSS feed" /></a>Council <strong>Works</strong></h3>
+<ul class="icon-list">
+<txp:smd_xml data="http://works.mosman.nsw.gov.au/?rah_external_output=xml" record="project" fields="headline,url,date_string,type,description" limit="10">
+<li><p><a href="{url}">{headline}</a><br /><em>{date_string}</em></li>
+</txp:smd_xml>
+<li class="default"><a href="http://works.mosman.nsw.gov.au">Works &amp; Alerts</a></li>
+</ul>
+</div>

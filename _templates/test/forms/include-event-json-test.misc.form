@@ -1,0 +1,28 @@
+<h1 style="padding-top:30px">Testing Mosman Events json feed</h1><hr />
+<br>
+All events, from nearest to furthest away, limit 15<br>
+
+<ul class="allevents graphic">
+	<txp:smd_xml limit="1" data="http://events.mosman.nsw.gov.au/?rah_external_output=xml" record="event" fields="description,date_string_short,headline,url,thumbnail" form="event-import"  break="li" />
+	
+</ul>
+<br>
+All events at venue Mosman Library, limit 10<br>
+
+<ul class="venue graphic">
+	<txp:smd_xml data="http://events.mosman.nsw.gov.au/?rah_external_output=xml&venue=mosman-library" form="event-import"  record="event" fields="description,date_string_short,headline,url,thumbnail"     limit="3" break="li"/>
+</ul>
+<hr/>
+All events with tag childrens-library<br>
+<ul class="tags graphic">
+	<txp:smd_xml data="http://events.mosman.nsw.gov.au/?rah_external_output=xml&tag=children" form="event-import"  record="event" fields="description,date_string_short,headline,url,thumbnail"     limit="15"  break="li"/>
+
+</ul>
+<hr />
+
+<h4>Example, importing Gallery website data:</h4>
+
+<ul class="graphic">
+<txp:smd_xml data="http://mosmanartgallery.org.au/feed?c=MAG-on-MMC" record="item" fields="title,description,link,comments" form="gallery-import" limit="3"  break="li" />
+<li class="default"><a href="http://mosmanartgallery.org.au">Mosman Art Gallery</a></li>
+</ul>

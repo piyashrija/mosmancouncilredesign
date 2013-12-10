@@ -1,0 +1,516 @@
+<div id="navbar"><div class="container">
+<ul id="nav">
+<li><a<txp:if_section name=""> class="active"</txp:if_section> href="<txp:site_url/>">Home</a></li>
+<li><a<txp:if_section within="council"> class="active"</txp:if_section> href="<txp:site_url/>council">Council</a>
+<ul>
+	<li><a href="<txp:site_url/>council/about/">About Mosman Council</a><ul>
+	
+	<li><a href="<txp:site_url/>council/about/councillors">Mayor and Councillors</a></li>
+	<li><a href="<txp:site_url/>council/about/elections">Elections</a></li>
+	<li><a href="<txp:site_url/>council/about/election-2012">Election 2012</a></li>
+	<li><a href="<txp:site_url/>council/about/poll-of-electors-2012">Poll of Electors 2012</a></li>
+        <li><a href="<txp:site_url/>council/about/political-donations-gifts">Political Donations and Gifts</a></li>
+        <li><a href="<txp:site_url/>council/about/councillor-resources">Resources for Councillors</a></li>
+	<li><a href="<txp:site_url/>council/about/senior-management">General Manager and Directors</a></li>
+	<li><a href="<txp:site_url/>council/about/shoroc">SHOROC</a></li>
+	<li><a href="<txp:site_url/>council/about/history">Brief history of Mosman Council</a></li>
+</ul></li>
+	<li><a href="/council/meetings/">Council Meetings</a><ul>
+	<li><a href="<txp:site_url/>council/meetings/about">About Council Meetings</a></li>
+        <li><a href="<txp:site_url/>council/meetings/2013">Agendas &amp; Minutes 2013</a></li>
+        <li><a href="<txp:site_url/>council/meetings/2012">Agendas &amp; Minutes 2012</a></li>
+        <li><a href="<txp:site_url/>council/meetings/2011">Agendas &amp; Minutes 2011</a></li>
+        <li><a href="<txp:site_url/>council/meetings/2010">Agendas &amp; Minutes 2010</a></li>
+        <li><a href="<txp:site_url/>council/meetings/2009">Agendas &amp; Minutes 2009</a></li>
+	<li><a href="<txp:site_url/>council/meetings/2008">Agendas &amp; Minutes 2008</a></li>
+	<li><a href="<txp:site_url/>council/meetings/2007">Agendas &amp; Minutes 2007</a></li>
+	<li><a href="<txp:site_url/>council/meetings/2006">Agendas &amp; Minutes 2006</a></li>
+	<li><a href="<txp:site_url/>council/meetings/2005">Agendas &amp; Minutes 2005</a></li>
+
+</ul></li>
+
+
+<li><a href="<txp:site_url/>council/community-consultative-committees">Community Consultative Committees</a>
+<ul>
+	<li><a href="<txp:site_url/>council/community-consultative-committees/mosman-friendship-cities">Mosman Friendship Cities</a></li>
+	<li><a href="<txp:site_url/>council/community-consultative-committees/access-mobility">Access &amp; Mobility</a></li>
+	<li><a href="<txp:site_url/>council/community-consultative-committees/active-transport">Active Transport</a></li>
+	<li><a href="<txp:site_url/>council/community-consultative-committees/arts-culture">Arts &amp; Culture</a></li>
+	<li><a href="<txp:site_url/>council/community-consultative-committees/committee-for-an-independent-mosman">Committee for an Independent Mosman</a></li>
+	<li><a href="<txp:site_url/>council/community-consultative-committees/visual-amenity-signage-advertising">Visual Amenity - Signage &amp; Advertising</a></li>
+</ul></li>
+
+
+<txp:hide>
+
+<li><a href="<txp:site_url/>council/consultative-groups">Consultative Groups</a><ul>
+	<li><a href="<txp:site_url/>council/consultative-groups/access">Mosman Community - Access for All Consultative Group</a></li>
+        <li><a href="<txp:site_url/>council/consultative-groups/art-gallery-consultative-group">Art Gallery Consultative Group</a></li>
+	<li><a href="<txp:site_url/>council/consultative-groups/community-safety-group">Community Safety Group</a></li>
+	<li><a href="<txp:site_url/>council/consultative-groups/sustainability">Mosman Sustainability Group</a></li>
+</ul></li>
+
+</txp:hide>
+
+	<li><a href="<txp:site_url/>council/consultation/">Community Consultation</a></li>
+	<li><a href="/council/plans/">Management Plans</a><ul>
+	<li><a href="<txp:site_url/>council/plans/MOSPLAN">MOSPLAN</a></li>
+	<li><a href="<txp:site_url/>council/plans/social">Social Planning</a></li>
+	<li><a href="<txp:site_url/>council/plans/cultural">Cultural Plan</a></li>
+	<li><a href="<txp:site_url/>council/plans/environment">Environmental Management Plan</a></li>
+	<li><a href="<txp:site_url/>council/plans/governance">Governance Plan</a></li>
+</ul></li>
+	<li><a href="<txp:site_url/>council/reports/">Reports</a><ul>
+
+	<li><a href="<txp:site_url/>council/reports/annual">Annual Report</a></li>
+	<li><a href="<txp:site_url/>council/reports/financial">Financial Report</a></li>
+	<li><a href="<txp:site_url/>council/reports/SoE">State of the Environment</a></li>
+	<li><a href="<txp:site_url/>council/reports/CEC">CEC Annual Report</a></li>
+	<li><a href="<txp:site_url/>council/reports/statement-of-affairs">Statement of Affairs</a></li>
+</ul></li>
+	<li><a href="<txp:site_url/>council/policies">Policies</a></li>
+	<li><a href="<txp:site_url/>council/forms">Forms</a></li>
+
+<li><a href="<txp:site_url/>council/information/">Access to Information</a><ul>
+	<li><a href="<txp:site_url/>council/information/how-to-access">How to access Council information</a></li>
+	<li><a href="<txp:site_url/>council/information/index">Index to open access information</a></li>
+</ul></li>
+
+	<li><a href="<txp:site_url/>council/community-safety/">Community Safety</a><ul>
+	<li><a href="<txp:site_url/>council/community-safety/rangers">Rangers</a></li>
+	<li><a href="<txp:site_url/>council/community-safety/graffiti">Graffiti and vandalism</a></li>
+	<li><a href="<txp:site_url/>council/community-safety/cctv">CCTV</a></li>
+	<li><a href="<txp:site_url/>council/community-safety/solutions">Local Solutions to Local Crime &amp; Safety Issues</a></li>
+	<li><a href="<txp:site_url/>council/community-safety/emergency">Emergency Management</a></li>
+
+	<li><a href="<txp:site_url/>council/community-safety/communities">Safe Communities program</a></li>
+	<li><a href="<txp:site_url/>council/community-safety/roads">Road Safety</a></li>
+</ul></li>
+	<li><a href="<txp:site_url/>council/citizenship-ceremonies">Citizenship Ceremonies</a></li>
+	<li><a href="<txp:site_url/>council/employment/">Employment</a><ul>
+	<li><a href="<txp:site_url/>council/employment/how-to-apply">How to apply</a></li>
+	<li><a href="<txp:site_url/>council/employment/faq">Frequently asked questions</a></li>
+
+</ul></li>
+	<li><a href="<txp:site_url/>council/tenders">Tenders</a></li>
+
+  <li class="offsite"><a href="http://ideas.mosman.nsw.gov.au">Big Ideas for Mosman</a></li>
+
+</ul></li>
+<li><a<txp:if_section within="residents"> class="active"</txp:if_section> href="<txp:site_url/>residents">Residents</a>
+<ul>
+	<li><a href="<txp:site_url/>residents/online-services">Online services</a></li>
+	<li><a href="<txp:site_url/>residents/rates">Rates</a></li>
+	<li><a href="<txp:site_url/>residents/waste">Waste and recycling</a><ul>
+
+	<li><a href="<txp:site_url/>residents/waste/collection-days">My collection dates</a></li>
+	<li><a href="<txp:site_url/>residents/waste/recycling">Household recycling</a></li>
+	<li><a href="<txp:site_url/>residents/waste/garbage">Household garbage</a></li>
+	<li><a href="<txp:site_url/>residents/waste/garden">Household green waste</a></li>
+	<li><a href="<txp:site_url/>residents/waste/clean-up">Household clean up</a></li>
+	<li><a href="<txp:site_url/>residents/waste/e-waste">E-waste</a></li>
+	<li><a href="<txp:site_url/>residents/waste/other-facilities">Nearby waste &amp; recycling facilities</a></li>
+
+	<li><a href="<txp:site_url/>residents/waste/a-z-waste-disposal">A to Z of waste disposal</a></li>
+	<li><a href="<txp:site_url/>residents/waste/compost-bins-worm-farms">Compost bins &amp; worm farms</a></li>
+	<li><a href="<txp:site_url/>residents/waste/minimisation">Tips to save money, reduce waste</a></li>
+	<li><a href="<txp:site_url/>residents/waste/education">Waste education</a></li>
+</ul></li>
+	<li><a href="<txp:site_url/>residents/parking">Resident parking</a></li>
+	<li><a href="<txp:site_url/>residents/animals">Companion Animals</a></li>
+	<li><a href="<txp:site_url/>residents/fences">Fence maintenance</a></li>
+
+	<li><a href="<txp:site_url/>residents/get-togethers">Neighbourhood get-togethers</a></li>
+	<li><a href="<txp:site_url/>residents/new">New residents</a></li>
+</ul></li>
+<li><a<txp:if_section within="planning"> class="active"</txp:if_section> href="<txp:site_url/>planning">Planning &amp; Heritage</a>
+<ul>
+	<li><a href="<txp:site_url/>planning/controls">Planning Controls</a><ul>
+	<li><a href="<txp:site_url/>planning/controls/LEP">Local Environmental Plan</a></li>
+	<li><a href="<txp:site_url/>planning/controls/planning-proposals">Planning Proposals (rezoning)</a></li>
+	<li><a href="<txp:site_url/>planning/controls/DCP">Development Control Plans</a></li>
+	<li><a href="<txp:site_url/>planning/controls/plans-of-management">Plans of Management</a></li>
+	<li><a href="<txp:site_url/>planning/controls/contribution-plans">Contribution Plans</a></li>
+	<li><a href="<txp:site_url/>planning/controls/s149">Section 149 Certificates</a></li>
+	<li><a href="<txp:site_url/>planning/controls/rockfaces">Rock faces &amp; retaining walls</a></li>
+
+</ul></li>
+	
+
+<li><a href="<txp:site_url/>planning/spitjunction">Spit Junction Masterplan</a></li>
+
+	<li><a href="<txp:site_url/>planning/heritage/">Heritage</a><ul>
+	<li><a href="<txp:site_url/>planning/heritage/listings">Heritage Listings</a></li>
+	<li><a href="<txp:site_url/>planning/heritage/advice">Advisory Service</a></li>
+	<li><a href="<txp:site_url/>planning/heritage/assistance-fund">Mosman Heritage Fund</a></li>
+
+	<li><a href="<txp:site_url/>planning/heritage/built">Mosman's Built Heritage DVD</a></li>
+	<li><a href="<txp:site_url/>planning/heritage/architecture">Mosman's Architectural Heritage</a></li>
+	<li><a href="<txp:site_url/>planning/heritage/fact-sheets">Conservation &amp; maintenance</a></li>
+	<li><a href="<txp:site_url/>planning/heritage/indigenous">Aboriginal Heritage</a></li>
+	<li><a href="<txp:site_url/>planning/heritage/studies">Heritage Studies</a></li>
+	<li><a href="<txp:site_url/>planning/heritage/walks">Heritage Walks</a></li>
+
+</ul></li>
+	<li><a href="<txp:site_url/>planning/documents">Documents &amp; Guides</a></li>
+	<li><a href="<txp:site_url/>planning/mosman-design-awards">Mosman Design Awards</a></li>
+
+  <li class="offsite"><a href="http://mosmanplanning.net/">MosmanPlanning.net</a></li>
+
+</ul></li>
+<li><a<txp:if_section within="development"> class="active"</txp:if_section> href="<txp:site_url/>development">Building &amp; Development</a>
+<ul>
+	<li><a href="<txp:site_url/>development/forms">Forms</a></li>
+	<li><a href="<txp:site_url/>development/swimming">Swimming Pools</a><ul>
+		<li><a href="<txp:site_url/>development/swimming/new-laws">New Laws</a></li>
+		<li><a href="<txp:site_url/>development/swimming/swimming-pools">Swimming Pools</a></li>
+	</ul></li>
+	<li><a href="<txp:site_url/>planning/controls">Controls and Policies</a></li>
+	<li><a href="<txp:site_url/>development/maps">Maps</a></li>
+	<li><a href="<txp:site_url/>development/applications">Development Applications</a><ul>
+	<li><a href="<txp:site_url/>development/applications/process">The DA process</a></li>
+	<li><a href="<txp:site_url/>development/applications/duty-planner">Duty Planner</a></li>
+	<li><a href="<txp:site_url/>development/applications/tracker">DA Tracker</a></li>
+<li><a href="<txp:site_url/>development/applications/political-donations">Political donations</a></li>
+	<li><a href="<txp:site_url/>development/applications/energy-efficiency">BASIX and energy efficiency</a></li>
+	<li><a href="<txp:site_url/>development/applications/traffic">Traffic issues</a></li>
+	<txp:hide><li><a href="<txp:site_url/>development/applications/swimming-pools">Swimming pools</a></li></txp:hide>
+	<li><a href="<txp:site_url/>development/applications/rainwater-tanks">Rainwater tanks</a></li>
+	<li><a href="<txp:site_url/>development/applications/solar-panels">Solar panels</a></li>
+	<li><a href="<txp:site_url/>development/applications/faq">Frequently asked questions</a></li>
+	<li><a href="<txp:site_url/>development/applications/sepp-1-register">Register of Applications with variation to development standards</a></li>
+</ul></li>
+<li><a href="<txp:site_url/>development/MDAP">Mosman Development Assessment Panel (MDAP)</a></li>
+
+
+	
+
+
+
+
+	<li><a href="<txp:site_url/>development/construction-certificates">Building Work and Private Certification</a></li>
+
+	<li><a href="<txp:site_url/>development/construction-sites">Construction sites</a><ul>
+	<li><a href="<txp:site_url/>development/construction-sites/planning">Planning for construction sites</a></li>
+	<li><a href="<txp:site_url/>development/construction-sites/waste">Construction waste</a></li>
+	<li><a href="<txp:site_url/>development/construction-sites/erosion-sedimentation">Erosion and sedimentation</a></li>
+	<li><a href="<txp:site_url/>development/construction-sites/council-land">Work on Council land</a></li>
+	<li><a href="<txp:site_url/>development/construction-sites/safety">Construction site safety</a></li>
+	<li><a href="<txp:site_url/>development/construction-sites/asbestos">Asbestos</a></li>
+</ul></li>
+	<li><a href="/development/heritage">Heritage</a></li>
+	<li><a href="/development/fire-safety">Fire Safety</a></li>
+
+<li class="offsite"><a href="http://portal.mosman.nsw.gov.au">DA Tracker</a></li>
+
+</ul></li>
+<li><a<txp:if_section within="environment"> class="active"</txp:if_section> href="<txp:site_url/>environment">Environment</a>
+<ul>
+	<li><a href="<txp:site_url/>environment/management">Environmental management</a></li>
+	<li><a href="<txp:site_url/>environment/cec">Community Environmental Contract (CEC)</a><ul>
+	<li><a href="<txp:site_url/>environment/cec/integrated">Integrated Projects</a></li>
+	<li><a href="<txp:site_url/>environment/cec/bushland">Bushland </a></li>
+	<li><a href="<txp:site_url/>environment/cec/stormwater">Stormwater</a></li>
+	<li><a href="<txp:site_url/>environment/cec/seawalls">Seawalls</a></li>
+
+</ul></li>
+	<li><a href="<txp:site_url/>environment/trees">Trees</a></li>
+	<li><a href="<txp:site_url/>environment/bushland/">Bushland and Biodiversity</a><ul>
+	<li><a href="<txp:site_url/>environment/bushland/management">Bushland Management</a></li>
+	<li><a href="<txp:site_url/>environment/bushland/volunteers">Bushcare Volunteers</a></li>
+	<li><a href="<txp:site_url/>environment/bushland/survey">Flora and Fauna Survey</a></li>
+	<li><a href="<txp:site_url/>environment/bushland/bush-rats">Bush Rats</a></li>
+	<li><a href="<txp:site_url/>environment/bushland/injured-wildlife">Injured or orphaned wildlife</a></li>
+	<li><a href="<txp:site_url/>environment/bushland/10-things-to-improve-biodiversity">10 things you can do to improve Mosman's biodiversity</a></li>
+</ul></li>
+
+<li><a href="<txp:site_url/>environment/pests">Pests and Weeds</a><ul>
+<li><a href="<txp:site_url/>environment/pests/weeds">Weeds</a></li>
+<li><a href="<txp:site_url/>environment/pests/rabbits">Rabbits</a></li>
+<li><a href="<txp:site_url/>environment/pests/indian-mynas">Indian Mynas</a></li>
+</ul></li>
+
+	<li><a href="<txp:site_url/>environment/gardening/">Gardening</a><ul>
+	<li><a href="<txp:site_url/>environment/gardening/native-plant-species">Native plant species for Mosman gardens</a></li>
+	<li><a href="<txp:site_url/>environment/gardening/bush-friendly">Bush friendly neighbours</a></li>
+<li><a href="<txp:site_url/>environment/gardening/community-gardening">Community Gardening</a></li>
+<li><a href="<txp:site_url/>environment/gardening/mosman-home-gardeners-society">Mosman Home Gardeners' Society</a></li>
+	<li><a href="<txp:site_url/>environment/gardening/mulch">Free mulch for residents</a></li>
+	<li><a href="<txp:site_url/>environment/gardening/links">Useful links</a></li>
+
+</ul></li>
+	<li><a href="<txp:site_url/>environment/marine/">Coastal and Marine</a><ul>
+	<li><a href="<txp:site_url/>environment/marine/species">Marine species</a></li>
+	<li><a href="<txp:site_url/>environment/marine/pests">Marine pests</a></li>
+	<li><a href="<txp:site_url/>environment/marine/fishing">Fishing</a></li>
+	<li><a href="<txp:site_url/>environment/marine/pollution">Litter and pollution</a></li>
+
+	<li><a href="<txp:site_url/>environment/marine/marinas">Marinas, Boatsheds and Slipways</a></li>
+	<li><a href="<txp:site_url/>environment/marine/help">What you can do to help</a></li>
+</ul></li>
+	<li><a href="<txp:site_url/>environment/water/">Water Management</a><ul>
+	<li><a href="<txp:site_url/>environment/water/stormwater">Stormwater</a></li>
+	<li><a href="<txp:site_url/>environment/water/conservation">Water conservation</a></li>
+	<li><a href="<txp:site_url/>environment/water/documents">Documents and Resources</a></li>
+	<li><a href="<txp:site_url/>environment/water/mosman-flood-study">Mosman LGA Flood Study</a></li>
+</ul></li>
+	<li><a href="<txp:site_url/>environment/sustainability/">Ecologically Sustainable Living</a><ul>
+	<li><a href="<txp:site_url/>environment/sustainability/definition">What is Ecologically Sustainable Development?</a></li>
+	<li><a href="<txp:site_url/>environment/sustainability/ecological-footprint">Our Ecological Footprint </a></li>
+	<li><a href="<txp:site_url/>environment/sustainability/businesses">Resources for Sustainable Businesses</a></li>
+	<li><a href="<txp:site_url/>environment/sustainability/households-and-units">Resources for Households and Unit Dwellers</a></li>
+<li><a href="<txp:site_url/>environment/sustainability/sustainable-transport">Sustainable Transport</a></li>
+	<li><a href="<txp:site_url/>environment/sustainability/workshops">Workshops and events</a></li>
+</ul></li>
+
+<li><a href="<txp:site_url/>environment/atmosphere/">Atmospheric Environment</a><ul>
+	<li><a href="<txp:site_url/>environment/atmosphere/the-greenhouse-effect">The Greenhouse Effect</a></li>
+	<li><a href="<txp:site_url/>environment/atmosphere/what-council-is-doing">What Council is doing</a></li>
+	<li><a href="<txp:site_url/>environment/atmosphere/what-you-can-do">What you can do</a></li>
+</ul></li>
+
+	<li><a href="<txp:site_url/>environment/food-safety/">Food Safety</a><ul>
+	<li><a href="<txp:site_url/>environment/food-safety/program">Mosman Council's food safety program</a></li>
+	<li><a href="<txp:site_url/>environment/food-safety/legislation-and-standards">Legislation and Standards</a></li>
+	<li><a href="<txp:site_url/>environment/food-safety/scores-on-doors">Scores on Doors</a></li>
+
+	<li><a href="<txp:site_url/>environment/food-safety/management-of-your-food-premises">Management of your food premises</a></li>
+<li><a href="<txp:site_url/>environment/food-safety/food-safety-supervisors">Food safety supervisors</a></li>
+	<li><a href="<txp:site_url/>environment/food-safety/requirements-for-new-premises">Requirements for new premises</a></li>
+
+<li><a href="<txp:site_url/>environment/food-safety/temporary-food-stalls">Temporary food stalls</a></li>
+
+	<li><a href="<txp:site_url/>environment/food-safety/making-a-complaint">Making a complaint</a></li>
+	<li><a href="<txp:site_url/>environment/food-safety/food-safety-information">Food safety information for businesses</a></li>
+	<li><a href="<txp:site_url/>environment/food-safety/food-handler-seminars">Food handler seminars</a></li>
+	<li><a href="<txp:site_url/>environment/food-safety/helpful-hints">Helpful hints for consumers</a></li>
+	</ul></li>
+
+	<li><a href="<txp:site_url/>environment/public-health/">Public Health</a><ul>
+	<li><a href="<txp:site_url/>environment/public-health/contacts">Contacts</a></li>
+	<li><a href="<txp:site_url/>environment/public-health/salons">Hair &amp; Beauty</a></li>
+	<li><a href="<txp:site_url/>environment/public-health/cooling-systems">Cooling Systems</a></li>
+
+	<li><a href="<txp:site_url/>environment/public-health/greywater">Greywater</a></li>
+	<li><a href="<txp:site_url/>environment/public-health/smoke-free">Smoke Free Zones</a></li>
+	<li><a href="<txp:site_url/>environment/public-health/tobacco">Tobacco Control</a></li>
+	<li><a href="<txp:site_url/>environment/public-health/public-areas">Cleansing Public Areas</a></li>
+	<li><a href="<txp:site_url/>environment/public-health/pesticide-use">Pesticide Use</a></li>
+	
+<li><a href="<txp:site_url/>environment/public-health/mosquitoes">Mosquitoes</a></li>
+</ul></li>
+
+	<li><a href="<txp:site_url/>environment/noise/">Noise</a><ul>
+
+	<li><a href="<txp:site_url/>environment/noise/dogs">Barking dogs</a></li>
+	<li><a href="<txp:site_url/>environment/noise/licensed-premises">Licensed Premises</a></li>
+	<li><a href="<txp:site_url/>environment/noise/air-conditioners">Air conditioners</a></li>
+	<li><a href="<txp:site_url/>environment/noise/alarms">Intruder alarms</a></li>
+	<li><a href="<txp:site_url/>environment/noise/tools">Tools and Pumps</a></li>
+	<li><a href="<txp:site_url/>environment/noise/other">Other Noise</a></li>
+
+	<li><a href="<txp:site_url/>environment/noise/legislation">Legislation</a></li>
+
+
+
+
+</ul></li>
+
+<li> <a href="<txp:site_url/>environment/responsible-pet-ownership">Responsible Pet Ownership</a></li>
+<li> <a href="<txp:site_url/>environment/dog-poo-fairy">Dog Poo Fairy</a></li>
+<li class="offsite"><a href="<txp:site_url/>mosman/venues/special-events">Sustainable events</a></li>
+</ul></li>
+<li><a<txp:if_section within="library"> class="active"</txp:if_section> href="<txp:site_url/>library">Library</a>
+<ul>
+
+  	<li><a href="<txp:site_url/>library/about">About Mosman Library</a><ul>
+	<li><a href="<txp:site_url/>library/about/catalogue">Library catalogue</a></li>
+	<li><a href="<txp:site_url/>library/about/services">Library services</a></li>
+<li><a href="<txp:site_url/>library/about/interlibrary-loans">Interlibrary loans</a></li>
+	<li><a href="<txp:site_url/>library/about/faq">Frequently Asked Questions</a></li>
+	<li><a href="<txp:site_url/>library/about/email-list">Email list</a></li>
+	<li><a href="<txp:site_url/>library/about/tour">Virtual Tour</a></li>
+</ul></li>
+	<li><a href="<txp:site_url/>library/information/">Information Services</a><ul>
+	<li><a href="<txp:site_url/>library/information/community">Community Information</a></li>
+	<li><a href="<txp:site_url/>library/information/databases">Electronic resources</a></li>
+	<li><a href="<txp:site_url/>library/information/ereading">eReading</a></li>
+	<li><a href="<txp:site_url/>library/information/legal">Legal information</a></li>
+	<li><a href="<txp:site_url/>library/information/drug">Drug information</a></li>
+	<li><a href="<txp:site_url/>library/information/business">Business resources</a></li>
+	<li><a href="<txp:site_url/>library/information/genealogy">Genealogy</a></li>
+	
+	<li><a href="<txp:site_url/>library/information/ask-a-librarian">Ask a Librarian</a></li>
+
+</ul></li>
+	<li><a href="<txp:site_url/>library/local-studies/">Local Studies</a><ul>
+	<li><a href="<txp:site_url/>library/local-studies/mosman-memories">Mosman Memories of Your Street</a></li>
+	<li><a href="<txp:site_url/>library/local-studies/mosman-voices">Mosman Voices</a></li>
+	<li><a href="<txp:site_url/>library/local-studies/mosman-faces">Mosman Faces</a></li>
+	<li><a href="<txp:site_url/>library/local-studies/images">Images Collection</a></li>
+	<li><a href="<txp:site_url/>library/local-studies/house-hunt">Researching the history of a Mosman property</a></li>
+	<li><a href="<txp:site_url/>library/local-studies/publications">Publications</a></li>
+	<li><a href="<txp:site_url/>library/local-studies/donations">Donations</a></li>
+<li><a href="<txp:site_url/>library/local-studies/flickr">Local Studies Collection on Flickr</a></li>
+</ul></li>
+<li><a href="<txp:site_url/>library/lounge/">Reading Lounge</a><ul>
+	<li><a href="<txp:site_url/>library/lounge/mosman-readers">Mosman Readers</a></li>
+	<li><a href="<txp:site_url/>library/lounge/nextreads">NextReads</a></li>
+<li><a href="<txp:site_url/>library/lounge/resources">More recommended reading</a></li>
+
+	<li><a href="<txp:site_url/>library/lounge/book-clubs">Book clubs</a></li>
+</ul></li>
+
+	<li><a href="<txp:site_url/>library/children">Children </a></li>
+	<li><a href="<txp:site_url/>library/teens">Teens</a></li>
+	<li><a href="<txp:site_url/>library/hsc">HSC students</a></li>
+	<li><a href="<txp:site_url/>library/special-needs">Special Needs</a></li>
+	<li><a href="<txp:site_url/>library/computer-training">Computer Training </a></li>
+
+	<li><a href="<txp:site_url/>library/flickr">Flickr photos</a></li>
+<li><a href="<txp:site_url/>library/weblog">Library blog</a></li>
+	<li><a href="<txp:site_url/>library/webcasts">Webcasts </a></li>
+
+  <li class="offsite"><a href="http://www.aurorashore.com.au/OPAC/Mosman/Default.aspx">Library catalogue</a></li>
+  <li class="offsite"><a href="http://www.datadiction.com.au/bin/dd.dll/Lincs?xps&amp;MBR=MOS">Community Directory</a></li>
+
+</ul></li>
+<li><a<txp:if_section within="community"> class="active"</txp:if_section> href="<txp:site_url/>community">Community</a>
+<ul>
+	<li><a href="<txp:site_url/>community/children">Children &amp; Families</a><ul>
+	<li><a href="<txp:site_url/>community/children/0-5">Ages 0-5 </a></li>
+
+	<li><a href="<txp:site_url/>community/children/5-12">Ages 5-12</a></li>
+	<li><a href="<txp:site_url/>community/children/vacation-care">Vacation Care </a></li>
+	<li><a href="<txp:site_url/>community/children/leisure-learning">Leisure &amp; Learning</a></li>
+	<li><a href="<txp:site_url/>community/children/immunisation">Immunisation</a></li>
+	<li><a href="<txp:site_url/>community/children/payment">Payment</a></li>
+		<li><a href="<txp:site_url/>community/children/links">Useful links</a></li>
+</ul></li>
+
+	<li><a href="<txp:site_url/>community/youth/">Youth</a><ul>
+        <li><a href="<txp:site_url/>community/youth/what-we-do">What We Do</a></li>
+	<li><a href="<txp:site_url/>community/youth/youth-forum">Youth Forum</a></li>
+	<li><a href="<txp:site_url/>community/youth/centre">Youth Centre</a></li>
+	<li><a href="<txp:site_url/>community/youth/whats-on">What's On</a></li>
+<!--<li><a href="<txp:site_url/>community/youth/film-festival">24/7 Youth Film Festival</a></li> -->
+  <!-- <li><a href="<txp:site_url/>community/youth/action-group">Youth Action Group</a></li> -->
+	<!-- <li><a href="<txp:site_url/>community/youth/youth-week">Youth Week</a></li> -->
+	<li><a href="<txp:site_url/>community/youth/links">Web Links</a></li>
+</ul></li>
+	<li><a href="<txp:site_url/>community/older/">Older people</a><ul>
+
+	<li><a href="<txp:site_url/>community/older/seniors-centre">Seniors Centre</a></li>
+	<li><a href="<txp:site_url/>community/older/meals-on-wheels">Meals on Wheels</a></li>
+	<li><a href="<txp:site_url/>community/older/restaurant">Community Restaurant</a></li>
+	<li><a href="<txp:site_url/>community/older/neighbour-aid">Neighbour Aid</a></li>
+	<li><a href="<txp:site_url/>community/older/transport">Community Transport</a></li>
+<li><a href="<txp:site_url/>community/older/links">Useful links</a></li>
+</ul></li>
+	<li><a href="<txp:site_url/>community/access">People with a disability</a></li>
+<li><a href="<txp:site_url/>community/carers">Carers</a></li>
+<li><a href="<txp:site_url/>community/mens-shed">Men's Shed</a></li>
+
+	<li><a href="<txp:site_url/>community/volunteers">Volunteers</a><ul>
+<li><a href="<txp:site_url/>community/volunteers/become-a-volunteer">Become a volunteer</a></li>
+<li><a href="<txp:site_url/>community/volunteers/visitors">Community Visitors Scheme</a></li>
+
+<li><a href="<txp:site_url/>community/volunteers/service-clubs-in-mosman">Service Clubs in Mosman</a></li>
+
+<li><a href="<txp:site_url/>community/volunteers/youth">Youth volunteers</a></li>
+
+</ul></li>
+
+	<li><a href="<txp:site_url/>community/indigenous">Aboriginal and Torres Strait Islanders</a></li>
+
+	<li><a href="<txp:site_url/>community/community-grants">Community Grants</a></li>
+
+	<li><a href="<txp:site_url/>/community/cultural-diversity">Cultural diversity</a></li>
+
+	<li><a href="<txp:site_url/>community/business/">Business community</a><ul>
+
+	<li><a href="<txp:site_url/>community/business/bec">Northside Business Enterprise Centre (BEC)</a></li>
+	
+	<li><a href="<txp:site_url/>community/business/chamber">Mosman Chamber of Commerce</a></li>
+	
+</ul></li>
+	<li><a href="<txp:site_url/>community/friendship/">Friendship Agreements</a><ul>
+	<li><a href="<txp:site_url/>community/friendship/glen-innes">Glen Innes, NSW</a></li>
+	<li><a href="<txp:site_url/>community/friendship/isle-of-wight">Isle of Wight, UK</a></li>
+        <li><a href="<txp:site_url/>community/friendship/maubara">Maubara, East Timor</a></li>
+	<li><a href="<txp:site_url/>community/friendship/mudanjiang">Mudanjiang, China</a></li>
+	<li><a href="<txp:site_url/>community/friendship/norfolk-island">Norfolk Island</a></li>
+	<li><a href="<txp:site_url/>community/friendship/paciano">Paciano, Italy</a></li>
+</ul></li>
+  <li class="offsite"><a href="http://www.datadiction.com.au/bin/dd.dll/Lincs?xps&amp;MBR=MOS">Community Directory</a></li>
+</ul></li>
+
+
+
+<li><a<txp:if_section within="mosman"> class="active"</txp:if_section> href="<txp:site_url/>mosman">About Mosman</a>
+<ul>
+<li><a href="/mosman/transport">Traffic &amp; transport</a><ul>
+<li><a rel="bookmark" href="<txp:site_url/>mosman/transport/traffic">Roads &amp; traffic</a></li>
+<li><a rel="bookmark" href="<txp:site_url/>mosman/transport/parking">Parking &amp; public carparks</a></li>
+<li><a rel="bookmark" href="<txp:site_url/>mosman/transport/car-sharing">Car sharing</a></li>
+<li><a rel="bookmark" href="<txp:site_url/>mosman/transport/public-transport">Public transport</a></li>
+<li><a rel="bookmark" href="<txp:site_url/>mosman/transport/mosman-rider">Mosman Rider</a></li>
+<li><a rel="bookmark" href="<txp:site_url/>mosman/transport/cycling">Cycling</a></li></ul></li>
+
+	<li><a href="/mosman/recreation">Recreation &amp; sport</a><ul>
+	<li><a href="<txp:site_url/>mosman/recreation/parks">Parks &amp; Reserves</a></li>
+	<li><a href="<txp:site_url/>mosman/recreation/playgrounds">Playgrounds</a></li>
+	<li><a href="<txp:site_url/>mosman/recreation/sporting-fields">Sporting fields</a></li>
+	<li><a href="<txp:site_url/>mosman/recreation/beaches">Beaches</a></li>
+	<li><a href="<txp:site_url/>mosman/recreation/swim-centre">Mosman Swim Centre</a></li>
+
+	<li><a href="<txp:site_url/>mosman/recreation/skate-park">Balmoral Oval Skate Park</a></li>
+
+	<li><a href="<txp:site_url/>mosman/recreation/registered-personal-trainers">Registered Personal Trainers</a></li>
+
+	<li><a href="<txp:site_url/>mosman/recreation/walks">Walks in Mosman</a></li>
+	<li><a href="<txp:site_url/>mosman/recreation/dogs">Dog exercise areas</a></li>
+	<li><a href="<txp:site_url/>mosman/recreation/sydney-harbour-national-park">Sydney Harbour National Park</a></li>
+</ul></li>
+	<li><a href="/mosman/venues">Venues for hire</a><ul>
+	  <li><a href="<txp:site_url/>mosman/venues/hire-faq">Frequently asked questions</a></li>
+	  <li><a href="<txp:site_url/>mosman/venues/gallery-community-centre">Mosman Art Gallery &amp; Community Centre</a></li>
+	  <li><a href="<txp:site_url/>mosman/venues/drill-hall">Mosman Drill Hall</a></li>
+	  <li><a href="<txp:site_url/>mosman/venues/marie-bashir-mosman-sports-centre">Marie Bashir Mosman Sports Centre</a></li>
+	  <li><a href="<txp:site_url/>mosman/venues/outdoor">Outdoor venues</a></li>
+	  <li><a href="<txp:site_url/>mosman/venues/other">Other venues in Mosman</a></li>
+	  <li><a href="<txp:site_url/>mosman/venues/weddings">Weddings</a></li>
+	  <li><a href="<txp:site_url/>mosman/venues/corporate">Corporate functions</a></li>
+	  <li><a href="<txp:site_url/>mosman/venues/special-events">Sustainable events</a></li>
+		<li><a href="<txp:site_url/>mosman/venues/commercial-filming">Commercial filming</a></li>
+		<li><a href="<txp:site_url/>mosman/venues/hire-forms">Forms</a></li>
+</ul></li>
+	<li><a href="/mosman/culture/">Art &amp; culture</a><ul>
+	<li><a href="<txp:site_url/>mosman/culture/heritage">Mosman's cultural heritage</a></li>
+<li><a href="/mosman/culture/festival">Festival of Mosman</a></li>
+	<li><a href="<txp:site_url/>mosman/culture/art-gallery">Mosman Art Gallery</a></li>
+
+	<li><a href="<txp:site_url/>mosman/culture/public-art">Public art</a></li>
+	<li><a href="<txp:site_url/>mosman/culture/market">Mosman Village Art &amp; Craft Market</a></li>
+        <li><a href="<txp:site_url/>mosman/culture/the-mosman-collection">The Mosman Collection</a></li>
+</ul></li>
+	<li><a href="/mosman/place/">Our place</a><ul>
+	<li><a href="<txp:site_url/>mosman/place/maps">Maps</a></li>
+<li><a href="/mosman/place/people">People &amp; demographics</a></li>
+	<li><a href="<txp:site_url/>mosman/place/accommodation">Hotels &amp; accommodation</a></li>
+	<li><a href="<txp:site_url/>mosman/place/public-amenities">Public amenities</a></li>
+</ul></li>
+	<li><a href="/mosman/history/">History</a><ul>
+	<li><a href="<txp:site_url/>mosman/history/from-1788">A brief history of Mosman</a></li>
+
+	<li><a href="<txp:site_url/>mosman/history/indigenous">Aboriginal Mosman</a></li>
+	<li><a href="<txp:site_url/>mosman/history/sport">Mosman Sporting Wall of Fame</a></li>
+	<li><a href="<txp:site_url/>mosman/history/society-of-arts-and-crafts">The Society of Arts and Crafts of New South Wales</a></li>
+	<li><a href="<txp:site_url/>mosman/history/potteries">Potteries in Mosman</a></li>
+	<li><a href="<txp:site_url/>mosman/history/cairn">Scotland Australia Cairn</a></li>
+	<li><a href="<txp:site_url/>mosman/history/society">Mosman Historical Society</a></li>
+</ul></li>
+</ul></li>
+
+</ul>
+</div></div>

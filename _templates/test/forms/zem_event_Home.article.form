@@ -1,0 +1,2 @@
+<txp:if_custom_field name="keep off home page"><txp:else /><li><txp:zem_event_permlink wraptag=""><txp:chh_if_data><txp:article_image /><txp:else /><txp:image id="13" /></txp:chh_if_data></txp:zem_event_permlink><txp:zem_event_permlink wraptag=""><strong><txp:title /></strong></txp:zem_event_permlink><br /><strong><em><txp:zem_event_date wraptag="" format="%a %e %B" label="" /> <txp:chh_if_data>&#8211; <txp:zem_event_finish_date wraptag="" format="%a %e %B" /></txp:chh_if_data></em></strong>
+<txp:excerpt /></li></txp:if_custom_field>

@@ -1,0 +1,42 @@
+<br clear="all" />
+
+</div>
+
+<div id="footer">
+
+<div class="footer-sm" style="float:left;"> 
+<ul class="social-list">
+<li class="twitter"><a href="http://twitter.com/mosmancouncil" title="Twitter"><txp:image id="1959" /></a></li>
+<li class="facebook"><a href="http://www.facebook.com/mosmancouncil" title="Facebook"><txp:image id="3912" /></a></li>
+<li class="flickr"><a href="http://www.flickr.com/photos/mosmancouncil" title="Flickr photos"><txp:image id="4499" /></a></li>
+<li class="youtube"><a href="http://youtube.com/user/mosmancouncil" title="YouTube video"><txp:image id="4501" /></a></li> 
+<li class="enews"><a title="e-newsletters" href="<txp:permlink id="1497" />"><txp:image id="4500" /></a></li> 
+</ul> 
+</div>
+
+<ul>
+<li><a href="/contact">Contact us</a></li>
+<li><a href="/search">Search</a></li>
+<li><txp:permlink id="25">A-Z index</txp:permlink></li>
+<li><txp:permlink id="26">Sitemap</txp:permlink></li>
+<li><a href="/news">News</a></li>
+<li><a href="http://events.mosman.nsw.gov.au">Events</a></li>
+<txp:hide><li><a href="/media">Media Centre</a></li></txp:hide>
+<li><txp:permlink id="20">Feeds</txp:permlink></li>
+<li><txp:permlink id="1497">Email Newsletters</txp:permlink></li>
+<li><txp:permlink id="22">Disclaimer</txp:permlink></li>
+<li><txp:permlink id="23">Privacy</txp:permlink></li>
+</ul>
+<p>Copyright Mosman Municipal Council <txp:php>echo date("Y");</txp:php></p>
+</div>
+
+</div></div>
+
+
+<txp:if_section name="news,events">
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {lang: 'en-GB'}
+</script>
+</txp:if_section>
+</body>
+</html>

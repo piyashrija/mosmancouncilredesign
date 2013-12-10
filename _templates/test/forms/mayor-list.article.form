@@ -1,0 +1,8 @@
+<p><txp:permlink><strong><txp:title /></strong></txp:permlink></p>
+
+<txp:excerpt />
+<txp:permlink>Read more...</txp:permlink>
+
+<!--
+<txp:rss_auto_excerpt paragraphs="1" overrideexcerpt="1" linktext="Read more..." />
+-->

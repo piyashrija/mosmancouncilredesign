@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="google-translate-customization" content="e60f1e6cc0045bcb-69cd0e50c9f92150-g6d6c5ad195f2cfce-15"></meta>
+ 
+<link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" /> 
+  
+<txp:if_section name=""><meta name="description" content="Located on the northern shores of Sydney Harbour, Mosman offers a rich cultural life amidst beautiful bushland surrounds. Mosman Council plans for building and development, maintains parks, beaches and sporting facilities, provides services for children, youth and seniors and runs cultural activities, a library and an art gallery." /></txp:if_section>
+
+<txp:rvm_css n="default" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="layout" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="header-footer" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="nav" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="events" format="link" media="screen" rel="stylesheet" />
+<txp:hide><txp:rvm_css n="MetroJs" format="link" media="screen" rel="stylesheet" /></txp:hide>
+<!--[if lte ie 6]>
+<txp:rvm_css n="ie" format="link" media="screen" rel="stylesheet" />
+<![endif]-->
+<txp:hide><txp:rvm_css n="wide" format="link" media="screen" rel="stylesheet" title="Wide" rel="alternate stylesheet" /></txp:hide>
+<txp:rvm_css n="print" format="link" media="print" rel="stylesheet" />
+
+<script type="text/javascript" src="<txp:site_url/>/js/schedule.js"></script>
+<script type="text/javascript" src="<txp:site_url/>/js/dom_extras.js"></script>
+<script type="text/javascript" src="<txp:site_url/>/js/class_names.js"></script>
+<script type="text/javascript" src="<txp:site_url/>/js/resolution.js"></script>
+<script type="text/javascript" src="<txp:site_url/>/js/menu.js"></script>
+
+<txp:if_section name="">
+
+<script type="text/javascript" src="<txp:site_url/>/js/swfobject2.js"></script>
+<script type="text/javascript">
+swfobject.registerObject("myFlashContent", "6.0.0");
+</script>
+   
+   
+<txp:else /><script type="text/javascript" src="<txp:site_url/>/js/striped_tables.js"></script>
+<script type="text/javascript" src="<txp:site_url/>/js/sortable_tables.js"></script></txp:if_section>
+
+<txp:hide>
+<txp:if_section name="news,events">
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&amp;login=mosmancouncil&amp;apiKey=R_1b0a79affc6fe015587ea32e28c94e63"></script>
+</txp:if_section>
+</txp:hide>
+
+<script type="text/javascript" src="<txp:site_url/>/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="<txp:site_url/>/js/thickbox-compressed.js"></script>
+<script type="text/javascript" src="<txp:site_url/>/js/showhidetoggle.js"></script>
+<script type="text/javascript" src="<txp:site_url/>/js/MetroJs.min.js"></script>
+<title><txp:page_title /></title>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2119766-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body id="s_<txp:if_section_level level=1><txp:section title=0 link=0 /><txp:else /><txp:if_section name="">home<txp:else />subsection</txp:section></txp:if_section_level>">
+
+<div id="header"><div class="container">
+<h1 class="print-element">Mosman Municipal Council</h1>
+<a rel="home" href="/" id="top"><txp:image id="3154" /></a>
+<ul>
+<li><a href="/contact">Contact us</a></li>
+<li><a title="A directory of services and facilities for people in Mosman" href="http://www.datadiction.com.au/bin/dd.dll/Lincs?xps&amp;MBR=MOS">Community Directory</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="http://events.mosman.nsw.gov.au">What&#39;s On</a></li>
+<li style="padding-left:25px;"><form action="/search/" method="get"><input name="q" value="" size="21" type="text" /><input type="submit" value="Search" class="button" /></form></li>
+</ul>
+</div></div>
+
+<txp:anc_hide> ### START NAV ### </txp:anc_hide>
+
+<txp:output_form form="include-nav" />
+
+<txp:anc_hide> ### END NAV ### </txp:anc_hide>
+
+<div id="wrapper"><div class="container">
+
+<txp:if_section name="">
+<div id="intro">
+<div id="flashcontent">
+<object style="z-index:-100;" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="310" height="187" id="FlashContent">
+<param name="movie" value="http://www.mosman.nsw.gov.au/swf/slideshow.swf">
+<param name="wmode" value="transparent" />
+<!--[if !IE]>-->
+<param name="wmode" value="opaque" />
+<object type="application/x-shockwave-flash" data="http://www.mosman.nsw.gov.au/swf/slideshow.swf" width="310" height="187" wmode="opaque">
+<!--<![endif]-->
+<img src="/ssp_director/albums/mosman-general/lg/slideshow-default.jpg" width="310" height="187" alt="" />
+<!--[if !IE]>-->
+</object>
+<!--<![endif]-->
+</object>
+</div>
+<h2>Welcome <span>to Mosman <span class="w800">Municipal </span>Council</span></h2> 
+<p>Located on the northern shores of Sydney Harbour, <txp:section name="mosman" link=1>Mosman</txp:section> offers a rich cultural life amidst beautiful bushland surrounds. <txp:section name="council">Mosman Council</txp:section> <txp:section name="planning">plans</txp:section> for <txp:section name="development">building and development</txp:section>, maintains <txp:permlink id="192">parks</txp:permlink>, <txp:permlink id="196">beaches</txp:permlink> and <txp:permlink id="195">sporting facilities</txp:permlink>, provides <txp:permlink id="90">services</txp:permlink> for <txp:permlink id="54">children</txp:permlink>, <txp:permlink id="104">youth</txp:permlink> and <txp:permlink id="105">seniors</txp:permlink> and runs <txp:permlink id="201">cultural activities</txp:permlink>, a <txp:section name="library">library</txp:section> and an <a href="http://mosmanartgallery.org.au">art gallery</a>.</p>
+</div>
+</txp:if_section>
+<txp:if_section name="council,residents,planning, development,environment,library,community,mosman, contact,web">
+<txp:if_index_page><txp:if_section_level level=1>
+<txp:article index=1 form="section_article_description" />
+</txp:if_section_level></txp:if_index_page>
+</txp:if_section>
+<txp:anc_hide><!-- ### NEWS INTRO ### --></txp:anc_hide>
+<txp:if_section name="news">
+<txp:if_index_page><txp:if_section_level level=1>
+<txp:if_search><txp:else /><txp:if_category><txp:else />
+<div id="intro">
+<div id="intro-news">
+<div id="intro-float">
+<p class="feed"><txp:feed_link flavor="rss" title="Mosman Council News feed (RSS)" label="News Feed" /></p>
+</div>
+<h2>Mosman News <span>Online</span></h2> 
+<p><em class="grey"><txp:upm_datetime format="%A %#d %B %Y" /></em></p>
+</div>
+</div>
+</txp:if_category></txp:if_search>
+</txp:if_section_level></txp:if_index_page>
+</txp:if_section>
+<txp:anc_hide><!-- ### END NEWS INTRO ### --></txp:anc_hide>
+<div id="content">

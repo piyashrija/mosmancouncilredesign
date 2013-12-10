@@ -1,0 +1,191 @@
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<!--[if IE]>
+<script type="text/javascript" src="/js/split.js"></script>
+<![endif]-->
+
+
+<script type="text/javascript">
+
+
+$.ajax({
+    url: "https://spreadsheets.google.com/feeds/cells/0Aq12UKXKf7lWdHUyWDFNTUpxemNsM2t4d2JTSkd1WEE/od6/public/values?alt=json-in-script",
+    dataType: 'jsonp',
+    success: function(results){
+var arr = new Array();
+var j =0;
+var j2 = [];
+var k = 0;
+var splitalphanum = [];
+var count = 1;
+var alpha = [];
+	for(var i = 0 ; i<(results.feed.entry.length -1); i++){
+		var label = results.feed.entry[i].title.$t;
+		var updated = results.feed.entry[i].updated.$t;
+		var date = updated.split('T');
+		$('#updated').html('Map updated: '+date[0]);
+		var pattern1=  new RegExp('[0-9]');
+		var pattern2 = new RegExp('[A-Z]')
+		var splitalpha = label.split(pattern1);
+		var splitnum = label.split(pattern2);
+		splitalphanum[i] = (splitnum[1])
+		if(i!=0){
+		if(splitalphanum[i-1]<splitalphanum[i]){
+			break;
+		}else{
+			count +=1 
+			alpha[i] = splitalpha[0];
+		}
+		}else{
+		// count +=1 
+			alpha[i] = splitalpha[0];
+		}	
+	}
+	//alert(count);
+	//$('.result').html(alpha)
+	var cols = (count-1);
+	arr[j] = new Array(cols+1);
+	for(var i = (cols+1) ; i<(results.feed.entry.length); i++){				
+		var col = results.feed.entry[i].gs$cell.col;
+		var col1 = results.feed.entry[i-1].gs$cell.col;
+		var row1 = results.feed.entry[i-1].gs$cell.row;
+		var row = results.feed.entry[i].gs$cell.row
+		diffrow = row - row1;
+		coldiff = col-col1;
+		
+		if(coldiff>1){
+			for(var m = 1; m<(coldiff);m++){
+				arr[j][k] ="";
+				k++
+			}
+		}
+		var patt1 =  new RegExp('[0-9]');
+		var striDown = results.feed.entry[i].title.$t
+		var splitIndown = striDown.split(patt1);
+		j2 = splitIndown[0]
+		output = j2.localeCompare( alpha[k] );
+		//console.log('output '+output);
+		if(output == 1){
+			//console.log('j: '+j,'checked');
+		}else if(output < 0){
+			//console.log('row diffence: '+diffrow)
+			if(diffrow>0){
+				coldiff = (cols+1) - col1;
+				//console.log(results.feed.entry[i-1].gs$cell);
+				//console.log('column difference if new row '+coldiff+' ,Previous column number '+col1)
+				for(var m = 0; m<(coldiff);m++){
+					//console.log("m "+m+', j: '+j+',k: '+k)
+					//arr[j][k] =" ";
+					k++
+				}
+				if(k>=cols){
+					k=0;
+					j=j+1;
+					arr[j] = new Array(cols+1)
+				}
+				
+			}
+		}
+		//console.log(' j: '+j+',k: '+k)
+		arr[j][k] = results.feed.entry[i].content.$t;
+		//console.log("i "+i+', j: '+j+',k: '+k)
+		//console.log(j,arr[j],cols);
+		if(k==cols){
+			k = -1
+			j++
+			arr[j] = new Array(cols+1)
+		}
+		k++;
+		
+}
+var mapOpts = { 
+mapTypeId: google.maps.MapTypeId.ROADMAP,
+scaleControl: true,
+scrollwheel: true
+}
+var map = new google.maps.Map(document.getElementById("Lmap"), mapOpts);
+var infoWindow = new google.maps.InfoWindow();
+var markerBounds = new google.maps.LatLngBounds();
+var markerArray = [];
+function makeMarker(options){
+ var pushPin = new google.maps.Marker({map:map});
+ pushPin.setOptions(options);
+ google.maps.event.addListener(pushPin, "click", function(){
+infoWindow.setOptions(options);
+infoWindow.open(map, pushPin);
+ });
+ markerBounds.extend(options.position);
+ markerArray.push(pushPin);
+ return pushPin;
+}
+ 
+google.maps.event.addListener(map, "click", function(){
+  infoWindow.close();
+});
+// console.log(arr.length);
+
+for(i = 0;i<(arr.length-1);i++){
+
+//console.log(arr[i][0])
+
+var latlog = (arr[i][0]).split(',');
+
+var str = "";
+
+for(k=0;k<count;k++){
+
+ 
+
+            if((!arr[i][k])||(arr[i][k] == "undefined")){
+
+                        arr[i][k] = ""       
+
+                        
+
+            }else{
+
+                        if(k>2){
+
+                                    if(k==4){
+
+                                                continue
+
+                                    }
+
+                                    str += "<br/><span class='icol"+k+"'>" + arr[i][k] + "</span>"
+
+
+
+                        }
+
+            }
+
+}
+
+
+
+//console.log("loop: "+i,arr[i][3],arr[i][4],arr.length);
+makeMarker({
+position: new google.maps.LatLng(latlog[0],latlog[1]),
+
+
+title: arr[i][1]+' - '+arr[i][2],
+ content: "<strong>"+arr[i][1]+"</strong><br />"+arr[i][2]+ str,
+ icon: '/images/'+arr[i][4]+".png"
+});
+map.fitBounds(markerBounds);
+//console.log(arr[i][0]);
+
+}
+    }
+});
+ 
+
+</script>
+
+<txp:if_section name="map">
+<div id="Lmap" style="width:100%; height:100%; margin:0 0 21px 0"></div>
+<div id="updated"></div>
+<txp:else />
+<div id="Lmap" style="width:609px; height:550px; margin:0 0 13px 0"></div>
+<div id="updated" style="margin:0 0 21px 0"></div>
+</txp:if_section>

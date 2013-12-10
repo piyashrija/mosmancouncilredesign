@@ -1,0 +1,15 @@
+<h3>#{id} <strong>{name}</strong></h3>
+
+<p>When: {date_start} - {date_end} <br/>
+Organiser: {organiser}<br />
+Contact: {contact}</p>
+
+{description}
+
+<p><strong>Locations</strong></p>
+
+<p>Where: {locations|address_line1} {locations|address_line2} <br/>{locations|city} {locations|state} {locations|postcode}</p>
+
+<p>  {locations|type} {locations|longitude} {locations|latitude} {locations|other_points} </p>
+
+<hr />

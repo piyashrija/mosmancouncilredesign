@@ -1,0 +1,124 @@
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+addLoadEvent(function() {
+  /* more code to run on page load */ 
+var mapOpts = {
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  scaleControl: true,
+  scrollwheel: true
+}
+
+var map = new google.maps.Map(document.getElementById("Lmap"), mapOpts);
+
+var infoWindow = new google.maps.InfoWindow();
+var markerBounds = new google.maps.LatLngBounds();
+var markerArray = [];
+
+var iconshs = 'http://www.mosman.nsw.gov.au/images/2901.png';
+ 
+function makeMarker(options){
+  var pushPin = new google.maps.Marker({map:map});
+  pushPin.setOptions(options);
+  google.maps.event.addListener(pushPin, "click", function(){
+    infoWindow.setOptions(options);
+    infoWindow.open(map, pushPin);
+  });
+  markerBounds.extend(options.position);
+  markerArray.push(pushPin);
+  return pushPin;
+}
+ 
+google.maps.event.addListener(map, "click", function(){
+  infoWindow.close();
+});
+ 
+makeMarker({
+  position: new google.maps.LatLng(-33.831259, 151.229959),
+  title: "67 Spofforth Street",
+  content: "<strong>67 Spofforth Street</strong><br />8:30am - 5:00pm<p>Huge book sale</p>",
+  icon: iconshs
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.8221995, 151.2356683),
+  title: "17 Countess Street",
+  content: "<strong>17 Countess Street</strong><br />8:30am - 2:00pm<p>Moving sale: household goods</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.826363, 151.235115),
+  title: "6 Bardwell Road",
+  content: "<strong>6 Bardwell Road</strong><br />8:00am - 3:00pm<p>French rattan ladder back chairs, smeg oven and gas hob, microwave, chain saw, bric a back, books, clothes, interior doors</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.835485, 151.237524),
+  title: "106A Raglan Street",
+  content: "<strong>106A Raglan Street</strong><br />8:00am - 2:00pm<p>Good quality recycled ladies, children's & baby clothes. Adult & children's books. Toys. Puzzles & Cosmetics & Bric-a Brac. All proceeds to The Cancer Council.</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.831565, 151.243937),
+  title: "6/110 Prince Albert Street",
+  content: "<strong>6/110 Prince Albert Street</strong><br />9:00am - 2:00pm<p>Small table, stands, bric bracs clothing ski gear.</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.828205, 151.236386),
+  title: "58 Belmont Road",
+  content: "<strong>58 Belmont Road</strong><br />7:30am - 1:00pm<p>Household goods, books</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.827798, 151.233656),
+  title: "96 Belmont Road",
+  content: "<strong>96 Belmont Road</strong><br />8:30am - 11:00am<p>Various small furniture pieces eg antique pine cup rack, large mirror, piano, childrens' toys, giftware, card-making stock eg. envelopes, cellophane bags and more.</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.825446, 151.235804),
+  title: "45 Bardwell Road",
+  content: "<strong>45 Bardwell Road</strong><br />9:00am - 2:00pm<p>Cot, pram, baby car seat, kids clothes, books, records, toys, electronic and computer gear, and lots more</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.810542, 151.237708),
+  title: "101 Bay Street",
+  content: "<strong>101 Bay Street</strong><br />8:00am - 12:00pm<p>Bugaboo Pram & Maxi Cosi, Maclaren Stroller, Toys, Furniture, Clothes ( bubs, ladies designer & shoes!) household items & lots more!</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.8180701, 151.2403896),
+  title: "17 Bay street",
+  content: "<strong>17 Bay street</strong><br />10:00am - 2:00pm<p>Household goods, toys, books</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.828, 151.238466),
+  title: "4 Harbour Street",
+  content: "<strong>4 Harbour Street</strong><br />8:00am - 2:00pm<p>Antique furniture, linen, kitchen items, china, silver, books (children and adults), garden goods, bric-a-brac and lots more, all good quality</p>",
+  icon: iconshs
+}); 
+makeMarker({
+  position: new google.maps.LatLng(-33.832881, 151.249442),
+  title: "71 Middle Head Road",
+  content: "<strong>71 Middle Head Road</strong><br />9:00am - 1:00pm<p>Designer ladies clothes, children's clothes & toys, books for adults & children, adult & child surf ski</p>",
+  icon: iconshs
+}); 
+
+map.fitBounds(markerBounds);
+
+});
+</script>
+
+<div id="Lmap" style="width:550px; height:550px; margin:0 0 -15px 0"></div>

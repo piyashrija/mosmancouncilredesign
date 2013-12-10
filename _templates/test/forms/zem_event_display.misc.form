@@ -1,0 +1,3 @@
+<li><txp:zem_event_permlink wraptag=""><txp:chh_if_data><txp:article_image /><txp:else /><txp:image id="13" /></txp:chh_if_data></txp:zem_event_permlink><txp:zem_event_permlink wraptag=""><strong><txp:title /></strong></txp:zem_event_permlink><br /><strong><em><txp:zem_event_date wraptag="" format="%A %e %B %Y" label="" /> <txp:chh_if_data>&#8211; <txp:zem_event_finish_date wraptag="" format="%A %e %B %Y" /></txp:chh_if_data></em></strong><br />
+<em><txp:chh_if_data><txp:zem_event_location /></txp:chh_if_data><txp:chh_if_data>, <txp:zem_event_time format="%l:%M%p" /></txp:chh_if_data><txp:zem_event_finish_time sep="" label=" - " format="%l:%M%p" /></em><br />
+<txp:excerpt /></li>

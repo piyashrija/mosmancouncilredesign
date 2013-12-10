@@ -1,0 +1,15 @@
+<script src="http://www.flickrshow.co.uk/static/scripts/flickrshow-7.2.min.js"></script>
+<style>#robin li {background:none !important;}</style>
+
+<div id="robin" style="width:566px;height:800px;margin:0 0 15px 9px;">
+    <p>Please enable Javascript to view this slideshow</p>
+</div>
+
+<script src="http://www.flickrshow.co.uk/static/scripts/flickrshow-7.2.min.js"></script>
+<script>
+    var robin = new flickrshow('robin', {
+autoplay:true,
+interval:6000,
+'set':'72157629751122316'
+    });
+</script>

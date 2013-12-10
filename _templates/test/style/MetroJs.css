@@ -1,0 +1,1503 @@
+.live-tile,.live-tile1,.list-tile,.copy-tile,.tile-strip .flip-list>li {
+    height: 296px;
+    margin: 0px;
+    outline: 1px solid transparent;
+    padding: 0;
+    width: 100%;
+}
+
+.live-tile.half-tile,.live-tile1.half-tile,.list-tile.half-tile,.copy-tile.half-tile,.tile-strip .flip-list>li.half-tile {
+    height: 70px;
+    width: 70px;
+}
+
+.live-tile.half-wide,.live-tile1.half-wide,.list-tile.half-wide,.copy-tile.half-wide,.tile-strip .flip-list>li.half-wide {
+    width: 70px;
+}
+
+.live-tile.two-wide,.live-tile1.two-wide,.list-tile.two-wide,.copy-tile.two-wide,.tile-strip .flip-list>li.two-wide {
+    width: 310px;
+}
+
+.live-tile.three-wide,.live-tile1.three-wide,.list-tile.three-wide,.copy-tile.three-wide,.tile-strip .flip-list>li.three-wide {
+    width: 470px;
+}
+
+.live-tile.four-wide,.live-tile1.four-wide,.list-tile.four-wide,.copy-tile.four-wide,.tile-strip .flip-list>li.four-wide {
+    width: 630px;
+}
+
+.live-tile.five-wide,.live-tile1.five-wide,.list-tile.five-wide,.copy-tile.five-wide,.tile-strip .flip-list>li.five-wide {
+    width: 790px;
+}
+
+.live-tile.six-wide,.live-tile1.six-wide,.list-tile.six-wide,.copy-tile.six-wide,.tile-strip .flip-list>li.six-wide {
+    width: 950px;
+}
+
+.live-tile.seven-wide,.list-tile.seven-wide,.copy-tile.seven-wide,.tile-strip .flip-list>li.seven-wide {
+    width: 1110px;
+}
+
+.live-tile.eight-wide,.live-tile1.eight-wide,.list-tile.eight-wide,.copy-tile.eight-wide,.tile-strip .flip-list>li.eight-wide {
+    width: 1270px;
+}
+
+.live-tile.nine-wide,.live-tile1.nine-wide,.list-tile.nine-wide,.copy-tile.nine-wide,.tile-strip .flip-list>li.nine-wide {
+    width: 1430px;
+}
+
+.live-tile.ten-wide,.live-tile1.ten-wide,.list-tile.ten-wide,.copy-tile.ten-wide,.tile-strip .flip-list>li.ten-wide {
+    width: 1590px;
+}
+
+.live-tile.half-tall,.live-tile1.half-tall,.list-tile.half-tall,.copy-tile.half-tall,.tile-strip .flip-list>li.half-tall {
+    height: 70px;
+}
+
+.live-tile.two-tall,.live-tile1.two-tall,.live-tile1.two-tall,.list-tile.two-tall,.copy-tile.two-tall,.tile-strip .flip-list>li.two-tall {
+    height: 310px;
+}
+
+.live-tile.three-tall,.live-tile1.three-tall,.list-tile.three-tall,.copy-tile.three-tall,.tile-strip .flip-list>li.three-tall {
+    height: 470px;
+}
+
+.live-tile.four-tall,.live-tile1.four-tall,.list-tile.four-tall,.copy-tile.four-tall,.tile-strip .flip-list>li.four-tall {
+    height: 630px;
+}
+
+.live-tile.five-tall,.live-tile1.five-tall,.list-tile.five-tall,.copy-tile.five-tall,.tile-strip .flip-list>li.five-tall {
+    height: 790px;
+}
+
+.live-tile.six-tall,.live-tile1.six-tall,.list-tile.six-tall,.copy-tile.six-tall,.tile-strip .flip-list>li.six-tall {
+    height: 950px;
+}
+
+.live-tile.seven-tall,.live-tile1.seven-tall,.list-tile.seven-tall,.copy-tile.seven-tall,.tile-strip .flip-list>li.seven-tall {
+    height: 1110px;
+}
+
+.live-tile.eight-tall,.live-tile1.eight-tall,.list-tile.eight-tall,.copy-tile.eight-tall,.tile-strip .flip-list>li.eight-tall {
+    height: 1270px;
+}
+
+.live-tile.nine-tall,.live-tile1.nine-tall,.list-tile.nine-tall,.copy-tile.nine-tall,.tile-strip .flip-list>li.nine-tall {
+    height: 1430px;
+}
+
+.live-tile.ten-tall,.live-tile1.ten-tall,.list-tile.ten-tall,.copy-tile.ten-tall,.tile-strip .flip-list>li.ten-tall {
+    height: 1590px;
+}
+
+.live-tile>.flip-list,.live-tile1>.flip-list,.list-tile>.flip-list {
+    height: 100%;
+    width: 100%;
+}
+
+.flip-list>li {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+}
+
+.flip-list.fourTiles>li {
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: 50%;
+    width: 50%;
+}
+
+.flip-list.nineTiles>li {
+    height: 33%;
+    width: 33%;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flip-list.fourTiles>li>div,.flip-list.fourTiles>li>div>a,.flip-list.fourTiles>li>div>img,.flip-list.nineTiles>li>div,.flip-list.nineTiles>li>div>a,.flip-list.nineTiles>li>div>img {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.fourTiles .fourTiles1 img,.fourTiles img.fourTiles1,.fourTiles .fourTiles1 a,.fourTiles .tile-1 img,.fourTiles .tile-1 a {
+    background-position: 0 0;
+}
+
+.fourTiles .fourTiles2 img,.fourTiles img.fourTiles2,.fourTiles .fourTiles2 a,.fourTiles .tile-2 img,.fourTiles .tile-2 a {
+    background-position: -75px 0;
+}
+
+.fourTiles .fourTiles3 img,.fourTiles img.fourTiles3,.fourTiles .fourTiles3 a,.fourTiles .tile-3 img,.fourTiles .tile-3 a {
+    background-position: 0 -75px;
+}
+
+.fourTiles .fourTiles4 img,.fourTiles img.fourTiles4,.fourTiles .fourTiles4 a,.fourTiles .tile-4 img,.fourTiles .tile-4 a {
+    background-position: -75px -75px;
+}
+
+.nineTiles .nineTiles1 img,.nineTiles img.nineTiles1,.nineTiles .nineTiles1 a,.nineTiles .tile-1 img,.nineTiles .tile-1 a {
+    background-position: 0 0;
+}
+
+.nineTiles .nineTiles2 img,.nineTiles img.nineTiles2,.nineTiles .nineTiles2 a,.nineTiles .tile-2 img,.nineTiles .tile-2 a {
+    background-position: -50px 0;
+}
+
+.nineTiles .nineTiles3 img,.nineTiles img.nineTiles3,.nineTiles .nineTiles3 a,.nineTiles .tile-3 img,.nineTiles .tile-3 a {
+    background-position: -100px 0;
+}
+
+.nineTiles .nineTiles4 img,.nineTiles img.nineTiles4,.nineTiles .nineTiles4 a,.nineTiles .tile-4 img,.nineTiles .tile-4 a {
+    background-position: 0 -50px;
+}
+
+.nineTiles .nineTiles5 img,.nineTiles img.nineTiles5,.nineTiles .nineTiles5 a,.nineTiles .tile-5 img,.nineTiles .tile-5 a {
+    background-position: -50px -50px;
+}
+
+.nineTiles .nineTiles6 img,.nineTiles img.nineTiles6,.nineTiles .nineTiles6 a,.nineTiles .tile-6 img,.nineTiles .tile-6 a {
+    background-position: -100px -50px;
+}
+
+.nineTiles .nineTiles7 img,.nineTiles img.nineTiles7,.nineTiles .nineTiles7 a,.nineTiles .tile-7 img,.nineTiles .tile-7 a {
+    background-position: 0 -100px;
+}
+
+.nineTiles .nineTiles8 img,.nineTiles img.nineTiles8,.nineTiles .nineTiles8 a,.nineTiles .tile-8 img,.nineTiles .tile-8 a {
+    background-position: -50px -100px;
+}
+
+.nineTiles .nineTiles9 img,.nineTiles img.nineTiles9,.nineTiles .nineTiles9 a,.nineTiles .tile-9 img,.nineTiles .tile-9 a {
+    background-position: -100px -100px;
+}
+
+.tile-group,.tile-strip {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -ms-perspective: 800px;
+    perspective: 800px;
+}
+
+.tile-group.one-tile,.tile-strip.one-tile {
+    height: 160px;
+    width: 160px;
+}
+
+.tile-group.half-wide,.tile-strip.half-wide {
+    width: 80px;
+}
+
+.tile-group.one-wide,.tile-strip.one-wide {
+    width: 160px;
+}
+
+.tile-group.two-wide,.tile-strip.two-wide {
+    width: 320px;
+}
+
+.tile-group.three-wide,.tile-strip.three-wide {
+    width: 480px;
+}
+
+.tile-group.four-wide,.tile-strip.four-wide {
+    width: 640px;
+}
+
+.tile-group.five-wide,.tile-strip.five-wide {
+    width: 800px;
+}
+
+.tile-group.six-wide,.tile-strip.six-wide {
+    width: 960px;
+}
+
+.tile-group.seven-wide,.tile-strip.seven-wide {
+    width: 1120px;
+}
+
+.tile-group.eight-wide,.tile-strip.eight-wide {
+    width: 1280px;
+}
+
+.tile-group.nine-wide,.tile-strip.nine-wide {
+    width: 1440px;
+}
+
+.tile-group.ten-wide,.tile-strip.ten-wide {
+    width: 1600px;
+}
+
+.tile-group.half-tall,.tile-strip.half-tall {
+    height: 80px;
+}
+
+.tile-group.one-tall,.tile-strip.one-tall {
+    height: 160px;
+}
+
+.tile-group.two-tall,.tile-strip.two-tall {
+    height: 320px;
+}
+
+.tile-group.three-tall,.tile-strip.three-tall {
+    height: 480px;
+}
+
+.tile-group.four-tall,.tile-strip.four-tall {
+    height: 640px;
+}
+
+.tile-group.five-tall,.tile-strip.five-tall {
+    height: 800px;
+}
+
+.tile-group.six-tall,.tile-strip.six-tall {
+    height: 960px;
+}
+
+.tile-group.seven-tall,.tile-strip.seven-tall {
+    height: 1120px;
+}
+
+.tile-group.eight-tall,.tile-strip.eight-tall {
+    height: 1280px;
+}
+
+.tile-group.nine-tall,.tile-strip.nine-tall {
+    height: 1440px;
+}
+
+.tile-group.ten-tall,.tile-strip.ten-tall {
+    height: 1600px;
+}
+
+.tile-strip,.live-tile,.live-tile1,.list-tile,.copy-tile,.slide {
+    float: left;
+}
+
+.tile-strip.bounce,.live-tile.bounce,.live-tile1.bounce,.list-tile.bounce,.copy-tile.bounce,.slide.bounce {
+    cursor: pointer;
+    outline: 1px solid transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.tile-strip.bounce.bounce-c,.live-tile.bounce.bounce-c,.live-tile1.bounce.bounce-c,.list-tile.bounce.bounce-c,.copy-tile.bounce.bounce-c,.slide.bounce.bounce-c {
+    cursor: pointer;
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -o-transform: scale(.95);
+    transform: scale(.95);
+}
+
+.tile-strip.bounce.bounce-t,.live-tile.bounce.bounce-t,.live-tile.bounce.bounce-t,.list-tile.bounce.bounce-t,.copy-tile.bounce.bounce-t,.slide.bounce.bounce-t {
+    -webkit-transform: rotateX(20deg);
+    -ms-transform: rotateX(20deg);
+    -moz-transform: rotateX(20deg);
+    -o-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+
+.tile-strip.bounce.bounce-b,.live-tile.bounce.bounce-b,.live-tile1.bounce.bounce-b,.list-tile.bounce.bounce-b,.copy-tile.bounce.bounce-b,.slide.bounce.bounce-b {
+    -webkit-transform: rotateX(-20deg);
+    -ms-transform: rotateX(-20deg);
+    -moz-transform: rotateX(-20deg);
+    -o-transform: rotateX(-20deg);
+    transform: rotateX(-20deg);
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+
+.tile-strip.bounce.bounce-r,.live-tile.bounce.bounce-r,.live-tile1.bounce.bounce-r,.list-tile.bounce.bounce-r,.copy-tile.bounce.bounce-r,.slide.bounce.bounce-r {
+    -webkit-transform: rotateY(20deg);
+    -ms-transform: rotateY(20deg);
+    -moz-transform: rotateY(20deg);
+    -o-transform: rotateY(20deg);
+    transform: rotateY(20deg);
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.tile-strip.bounce.bounce-l,.live-tile.bounce.bounce-l,.live-tile1.bounce.bounce-l,.list-tile.bounce.bounce-l,.copy-tile.bounce.bounce-l,.slide.bounce.bounce-l {
+    -webkit-transform: rotateY(-20deg);
+    -ms-transform: rotateY(-20deg);
+    -moz-transform: rotateY(-20deg);
+    -o-transform: rotateY(-20deg);
+    transform: rotateY(-20deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+}
+
+.tile-strip.bounce.bounce-tl,.live-tile.bounce.bounce-tl,.live-tile1.bounce.bounce-tl,.list-tile.bounce.bounce-tl,.copy-tile.bounce.bounce-tl,.slide.bounce.bounce-tl {
+    -webkit-transform: rotateX(10deg) rotateY(-10deg);
+    -ms-transform: rotateX(10deg) rotateY(-10deg);
+    -moz-transform: rotateX(10deg) rotateY(-10deg);
+    -o-transform: rotateX(10deg) rotateY(-10deg);
+    transform: rotateX(10deg) rotateY(-10deg);
+}
+
+.tile-strip.bounce.bounce-tr,.live-tile.bounce.bounce-tr,.live-tile1.bounce.bounce-tr,.list-tile.bounce.bounce-tr,.copy-tile.bounce.bounce-tr,.slide.bounce.bounce-tr {
+    -webkit-transform: rotateX(10deg) rotateY(10deg);
+    -ms-transform: rotateX(10deg) rotateY(10deg);
+    -moz-transform: rotateX(10deg) rotateY(10deg);
+    -o-transform: rotateX(10deg) rotateY(10deg);
+    transform: rotateX(10deg) rotateY(10deg);
+}
+
+.tile-strip.bounce.bounce-bl,.live-tile.bounce.bounce-bl,.live-tile1.bounce.bounce-bl,.list-tile.bounce.bounce-bl,.copy-tile.bounce.bounce-bl,.slide.bounce.bounce-bl {
+    -webkit-transform: rotateX(-10deg) rotateY(-10deg);
+    -ms-transform: rotateX(-10deg) rotateY(-10deg);
+    -moz-transform: rotateX(-10deg) rotateY(-10deg);
+    -o-transform: rotateX(-10deg) rotateY(-10deg);
+    transform: rotateX(-10deg) rotateY(-10deg);
+}
+
+.tile-strip.bounce.bounce-br,.live-tile.bounce.bounce-br,.live-tile1.bounce.bounce-br,.list-tile.bounce.bounce-br,.copy-tile.bounce.bounce-br,.slide.bounce.bounce-br {
+    -webkit-transform: rotateX(-10deg) rotateY(10deg);
+    -ms-transform: rotateX(-10deg) rotateY(10deg);
+    -moz-transform: rotateX(-10deg) rotateY(10deg);
+    -o-transform: rotateX(-10deg) rotateY(10deg);
+    transform: rotateX(-10deg) rotateY(10deg);
+}
+
+.live-tile,.live-tile1,.list-tile,.copy-tile {
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+}
+
+.live-tile p,.live-tile1 p,.list-tile p,.copy-tile p,.live-tile .face,.list-tile .face,.copy-tile .face {
+    display: block;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+.live-tile .face,.live-tile1 .face,.list-tile .face,.copy-tile .face {
+    padding: 0;
+}
+
+.live-tile p,.live-tile1 p,.list-tile p,.copy-tile p {
+    padding: 10px;
+}
+
+.live-tile.half-tile p,.live-tile1.half-tile p,.list-tile.half-tile p,.copy-tile.half-tile p {
+    padding: 5px;
+}
+
+.live-tile .face.full,.live-tile1 .face.full,.list-tile .face.full,.copy-tile .face.full {
+    height: 100%;
+    width: 100%;
+}
+
+.live-tile img,.live-tile1 img,.list-tile img,.copy-tile img {
+    border: none;
+}
+
+.live-tile .tile-title,.live-tile1 .tile-title,.list-tile .tile-title,.copy-tile .tile-title {
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    left: 0;
+    padding: 0 0 6px 2%;
+    text-decoration: none;
+    width: 98%;
+    z-index: 30;
+}
+
+.live-tile a.tile-title:link,.list-tile a.tile-title:link,.live-tile1 a.tile-title:link,.copy-tile a.tile-title:link,.live-tile a.tile-title:visited,.list-tile a.tile-title:visited,.copy-tile a.tile-title:visited,.live-tile a.tile-title:hover,.list-tile a.tile-title:hover,.copy-tile a.tile-title:hover,.live-tile a.tile-title,.list-tile a.tile-title,.copy-tile a.tile-title {
+    text-decoration: none;
+}
+
+.live-tile a:link,.list-tile a:link,.copy-tile a:link,.live-tile a:visited,.list-tile a:visited,.copy-tile a:visited {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.live-tile a:hover,.live-tile1 a:hover,.list-tile a:hover,.copy-tile a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.light .copy-tile {
+    color: #000;
+}
+
+.light .copy-tile.accent {
+    color: #fff;
+}
+
+.light .copy-tile a:link,.light .copy-tile a:visited,.light .copy-tile a:hover {
+    color: #000;
+}
+
+.light .copy-tile .face,.light .copy-tile .accent {
+    color: #fff;
+}
+
+.light .copy-tile .face a:link,.light .copy-tile .accent a:link,.light .copy-tile .face a:visited,.light .copy-tile .accent a:visited,.light .copy-tile .face a:hover,.light .copy-tile .accent a:hover {
+    color: #fff;
+}
+
+.copy-tile p {
+    padding: 5px 5px 0 5px;
+    font-size: .95em;
+}
+
+.noselect>div,.noselect>.slide,.noselect>.slide-front,.noselect>.slide-back,.noselect>.fade-front,.noselect>.fade-back,.noselect>.flip-front,.noselect>.flip-back {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.live-tile>div,.live-tile1>div,.list-tile>div,.live-tile>.slide,.live-tile1>.slide,.carousel>.slide,.live-tile>.slide-front,.live-tile>.slide-back,.live-tile>.fade-front,.live-tile>.fade-back,.live-tile>.flip-front,.live-tile>.flip-back,.live-tile1>.flip-front,.live-tile1>.flip-back {
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 20;
+}
+
+.list-tile>div {
+    position: relative;
+    background-color: transparent;
+}
+
+img.full,a.full,.live-tile .full,.live-tile1 .full,.list-tile .full {
+    display: block;
+    margin: 0;
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+}
+
+.live-tile>.back,.live-tile>.slide-back,.live-tile>.fade-back,.live-tile>.flip-back,.live-tile1>.back,.live-tile>.slide-back,.live-tile1>.fade-back,.live-tile1>.flip-back,.flip-list .flip-back {
+    position: absolute;
+    z-index: 10;
+}
+
+.flip-list {
+    padding: 0;
+    margin: 0;
+}
+
+.list-tile .flip-list {
+    height: 100%;
+    width: 100%;
+}
+
+.flip-list>li>a {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.flip-list>li img {
+    border: none;
+    outline: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.flip-list>li {
+    float: left;
+    list-style-type: none;
+    outline: none;
+    position: relative;
+}
+
+.flip-list>li>div {
+    border: none;
+    background: #fff;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.flip-list>li>div.flip-back {
+    height: 0;
+}
+
+.live-tile.flip.ha,.live-tile1.flip.ha,.flip-list.ha {
+    position: relative;
+    overflow: hidden;
+}
+
+.live-tile.flip .ha.flip-front,.flip-list .ha.flip-front,.live-tile.flip .ha.flip-back,.live-tile1.flip .ha.flip-front,.flip-list .ha.flip-front,.live-tile1.flip .ha.flip-back,.flip-list .ha.flip-back {
+    position: absolute;
+    z-index: 20;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-list>li>.ha.flip-back,.flip-list>li>.ha.flip-back img {
+    margin: 0!important;
+    height: 100%;
+}
+
+.metroBig,.metroExtraLarge,.face.metroBig,.face.metroExtraLarge,.live-tile .metroExtraLarge,.live-tile1 .metroExtraLarge {
+    font-size: 2em;
+    line-height: 1.1em;
+}
+
+a.metroBig:link,a.metroExtraLarge:link,a.face.metroBig:link,a.face.metroExtraLarge:link,a.live-tile .metroExtraLarge:link,a.live-tile1 .metroExtraLarge:link {
+    text-decoration: none;
+}
+
+.metroLarger,.face.metroLarger,.live-tile .metroLarger,.live-tile1 .metroLarger {
+    font-size: 1.5em;
+    line-height: 1.1em;
+}
+
+a.metroLarger:link,a.face.metroLarger:link,a.live-tile .metroLarger:link ,a.live-tile1 .metroLarger:link{
+    text-decoration: none;
+}
+
+.metroLarge,.face.metroLarge,.live-tile .metroLarge,.live-tile1 .metroLarge {
+    font-size: 1.2em;
+    line-height: 1.1em;
+}
+
+a.metroLarge:link,a.face.metroLarge:link,a.live-tile .metroLarge:link,a.live-tile1 .metroLarge:link {
+    text-decoration: none;
+}
+
+.metroSmall,.face.metroSmall,.live-tile .metroSmall,.live-tile1 .metroSmall {
+    font-size: .9em;
+    line-height: 1em;
+}
+
+a.metroSmall:link,a.face.metroSmall:link,a.live-tile .metroSmall:link,a.live-tile1 .metroSmall:link  {
+    text-decoration: none;
+}
+
+.metroSmaller,.face.metroSmaller,.live-tile .metroSmaller {
+    font-size: .8em;
+    line-height: 1em;
+}
+
+a.metroSmaller:link,a.face.metroSmaller:link,a.live-tile .metroSmaller:link {
+    text-decoration: none;
+}
+
+.metroExtraSmall,.face.metroExtraSmall,.live-tile .metroExtraSmall {
+    font-size: .7em;
+    line-height: 1em;
+}
+
+a.metroExtraSmall:link,a.face.metroExtraSmall:link,a.live-tile .metroExtraSmall:link {
+    text-decoration: none;
+}
+
+.live-tile.me .metroBig,.live-tile .bottom {
+    display: block;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    padding: 0;
+    text-decoration: none;
+}
+
+.live-tile.half-tile .bottom {
+    left: 5px;
+}
+
+.light {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.light.accent {
+    background-color: #fff;
+}
+
+.dark.accent {
+    background-color: #000;
+}
+
+.light .appbar {
+    background-color: #dfdfdf;
+}
+
+.dark .appbar {
+    background-color: #212021;
+}
+
+.amber .accent,.amber .live-tile>div,.amber .copy-tile>div,.amber .live-tile>.face,.amber .copy-tile>.face,.amber .live-tile>.slide,.amber .live-tile>.flip-back,.amber .live-tile>.flip-front,.amber .live-tile>.slide-back,.amber .live-tile>.slide-front,.amber .list-tile>div,.amber .flip-list>li>div {
+    background-color: #f1a30b;
+}
+
+.amber .accentColor,.amber .accentHover:hover,.amber .accentHover a:hover,.amber .accentLink a,.amber .accentLink a:hover,.amber .accentLink a:visited,.amber a.accentLink,.amber a.accentLink:hover,.amber a.accentLink:visited {
+    color: #f1a30b;
+}
+
+.amber .accentBorder {
+    border-color: #f1a30b;
+}
+
+.amber .accentBorderBottom {
+    border-bottom-color: #f1a30b;
+}
+
+.amber .accentBorderLeft {
+    border-left-color: #f1a30b;
+}
+
+.amber .accentBorderRight {
+    border-right-color: #f1a30b;
+}
+
+.amber .accentBorderTop {
+    border-top-color: #f1a30b;
+}
+
+.blue .accent,.blue .live-tile>div,.blue .copy-tile>div,.blue .live-tile>.face,.blue .copy-tile>.face,.blue .live-tile>.slide,.blue .live-tile>.flip-back,.blue .live-tile>.flip-front,.blue .live-tile>.slide-back,.blue .live-tile>.slide-front,.blue .list-tile>div,.blue .flip-list>li>div {
+    background-color: #1ba1e2;
+}
+
+.blue .accentColor,.blue .accentHover:hover,.blue .accentHover a:hover,.blue .accentLink a,.blue .accentLink a:hover,.blue .accentLink a:visited,.blue a.accentLink,.blue a.accentLink:hover,.blue a.accentLink:visited {
+    color: #1ba1e2;
+}
+
+.blue .accentBorder {
+    border-color: #1ba1e2;
+}
+
+.blue .accentBorderBottom {
+    border-bottom-color: #1ba1e2;
+}
+
+.blue .accentBorderLeft {
+    border-left-color: #1ba1e2;
+}
+
+.blue .accentBorderRight {
+    border-right-color: #1ba1e2;
+}
+
+.blue .accentBorderTop {
+    border-top-color: #1ba1e2;
+}
+
+.brown .accent,.brown .live-tile>div,.brown .copy-tile>div,.brown .live-tile>.face,.brown .copy-tile>.face,.brown .live-tile>.slide,.brown .live-tile>.flip-back,.brown .live-tile>.flip-front,.brown .live-tile>.slide-back,.brown .live-tile>.slide-front,.brown .list-tile>div,.brown .flip-list>li>div {
+    background-color: #a05000;
+}
+
+.brown .accentColor,.brown .accentHover:hover,.brown .accentHover a:hover,.brown .accentLink a,.brown .accentLink a:hover,.brown .accentLink a:visited,.brown a.accentLink,.brown a.accentLink:hover,.brown a.accentLink:visited {
+    color: #a05000;
+}
+
+.brown .accentBorder {
+    border-color: #a05000;
+}
+
+.brown .accentBorderBottom {
+    border-bottom-color: #a05000;
+}
+
+.brown .accentBorderLeft {
+    border-left-color: #a05000;
+}
+
+.brown .accentBorderRight {
+    border-right-color: #a05000;
+}
+
+.brown .accentBorderTop {
+    border-top-color: #a05000;
+}
+
+.cobalt .accent,.cobalt .live-tile>div,.cobalt .copy-tile>div,.cobalt .live-tile>.face,.cobalt .copy-tile>.face,.cobalt .live-tile>.slide,.cobalt .live-tile>.flip-back,.cobalt .live-tile>.flip-front,.cobalt .live-tile>.slide-back,.cobalt .live-tile>.slide-front,.cobalt .list-tile>div,.cobalt .flip-list>li>div {
+    background-color: #0050ef;
+}
+
+.cobalt .accentColor,.cobalt .accentHover:hover,.cobalt .accentHover a:hover,.cobalt .accentLink a,.cobalt .accentLink a:hover,.cobalt .accentLink a:visited,.cobalt a.accentLink,.cobalt a.accentLink:hover,.cobalt a.accentLink:visited {
+    color: #0050ef;
+}
+
+.cobalt .accentBorder {
+    border-color: #0050ef;
+}
+
+.cobalt .accentBorderBottom {
+    border-bottom-color: #0050ef;
+}
+
+.cobalt .accentBorderLeft {
+    border-left-color: #0050ef;
+}
+
+.cobalt .accentBorderRight {
+    border-right-color: #0050ef;
+}
+
+.cobalt .accentBorderTop {
+    border-top-color: #0050ef;
+}
+
+.crimson .accent,.crimson .live-tile>div,.crimson .copy-tile>div,.crimson .live-tile>.face,.crimson .copy-tile>.face,.crimson .live-tile>.slide,.crimson .live-tile>.flip-back,.crimson .live-tile>.flip-front,.crimson .live-tile>.slide-back,.crimson .live-tile>.slide-front,.crimson .list-tile>div,.crimson .flip-list>li>div {
+    background-color: #a20025;
+}
+
+.crimson .accentColor,.crimson .accentHover:hover,.crimson .accentHover a:hover,.crimson .accentLink a,.crimson .accentLink a:hover,.crimson .accentLink a:visited,.crimson a.accentLink,.crimson a.accentLink:hover,.crimson a.accentLink:visited {
+    color: #a20025;
+}
+
+.crimson .accentBorder {
+    border-color: #a20025;
+}
+
+.crimson .accentBorderBottom {
+    border-bottom-color: #a20025;
+}
+
+.crimson .accentBorderLeft {
+    border-left-color: #a20025;
+}
+
+.crimson .accentBorderRight {
+    border-right-color: #a20025;
+}
+
+.crimson .accentBorderTop {
+    border-top-color: #a20025;
+}
+
+.cyan .accent,.cyan .live-tile>div,.cyan .copy-tile>div,.cyan .live-tile>.face,.cyan .copy-tile>.face,.cyan .live-tile>.slide,.cyan .live-tile>.flip-back,.cyan .live-tile>.flip-front,.cyan .live-tile>.slide-back,.cyan .live-tile>.slide-front,.cyan .list-tile>div,.cyan .flip-list>li>div {
+    background-color: #1ba0e1;
+}
+
+.cyan .accentColor,.cyan .accentHover:hover,.cyan .accentHover a:hover,.cyan .accentLink a,.cyan .accentLink a:hover,.cyan .accentLink a:visited,.cyan a.accentLink,.cyan a.accentLink:hover,.cyan a.accentLink:visited {
+    color: #1ba0e1;
+}
+
+.cyan .accentBorder {
+    border-color: #1ba0e1;
+}
+
+.cyan .accentBorderBottom {
+    border-bottom-color: #1ba0e1;
+}
+
+.cyan .accentBorderLeft {
+    border-left-color: #1ba0e1;
+}
+
+.cyan .accentBorderRight {
+    border-right-color: #1ba0e1;
+}
+
+.cyan .accentBorderTop {
+    border-top-color: #1ba0e1;
+}
+
+.emerald .accent,.emerald .live-tile>div,.emerald .copy-tile>div,.emerald .live-tile>.face,.emerald .copy-tile>.face,.emerald .live-tile>.slide,.emerald .live-tile>.flip-back,.emerald .live-tile>.flip-front,.emerald .live-tile>.slide-back,.emerald .live-tile>.slide-front,.emerald .list-tile>div,.emerald .flip-list>li>div {
+    background-color: #008a00;
+}
+
+.emerald .accentColor,.emerald .accentHover:hover,.emerald .accentHover a:hover,.emerald .accentLink a,.emerald .accentLink a:hover,.emerald .accentLink a:visited,.emerald a.accentLink,.emerald a.accentLink:hover,.emerald a.accentLink:visited {
+    color: #008a00;
+}
+
+.emerald .accentBorder {
+    border-color: #008a00;
+}
+
+.emerald .accentBorderBottom {
+    border-bottom-color: #008a00;
+}
+
+.emerald .accentBorderLeft {
+    border-left-color: #008a00;
+}
+
+.emerald .accentBorderRight {
+    border-right-color: #008a00;
+}
+
+.emerald .accentBorderTop {
+    border-top-color: #008a00;
+}
+
+.green .accent,.green .live-tile>div,.green .copy-tile>div,.green .live-tile>.face,.green .copy-tile>.face,.green .live-tile>.slide,.green .live-tile>.flip-back,.green .live-tile>.flip-front,.green .live-tile>.slide-back,.green .live-tile>.slide-front,.green .list-tile>div,.green .flip-list>li>div {
+    background-color: #393;
+}
+
+.green .accentColor,.green .accentHover:hover,.green .accentHover a:hover,.green .accentLink a,.green .accentLink a:hover,.green .accentLink a:visited,.green a.accentLink,.green a.accentLink:hover,.green a.accentLink:visited {
+    color: #393;
+}
+
+.green .accentBorder {
+    border-color: #393;
+}
+
+.green .accentBorderBottom {
+    border-bottom-color: #393;
+}
+
+.green .accentBorderLeft {
+    border-left-color: #393;
+}
+
+.green .accentBorderRight {
+    border-right-color: #393;
+}
+
+.green .accentBorderTop {
+    border-top-color: #393;
+}
+
+.indigo .accent,.indigo .live-tile>div,.indigo .copy-tile>div,.indigo .live-tile>.face,.indigo .copy-tile>.face,.indigo .live-tile>.slide,.indigo .live-tile>.flip-back,.indigo .live-tile>.flip-front,.indigo .live-tile>.slide-back,.indigo .live-tile>.slide-front,.indigo .list-tile>div,.indigo .flip-list>li>div {
+    background-color: #6a00ff;
+}
+
+.indigo .accentColor,.indigo .accentHover:hover,.indigo .accentHover a:hover,.indigo .accentLink a,.indigo .accentLink a:hover,.indigo .accentLink a:visited,.indigo a.accentLink,.indigo a.accentLink:hover,.indigo a.accentLink:visited {
+    color: #6a00ff;
+}
+
+.indigo .accentBorder {
+    border-color: #6a00ff;
+}
+
+.indigo .accentBorderBottom {
+    border-bottom-color: #6a00ff;
+}
+
+.indigo .accentBorderLeft {
+    border-left-color: #6a00ff;
+}
+
+.indigo .accentBorderRight {
+    border-right-color: #6a00ff;
+}
+
+.indigo .accentBorderTop {
+    border-top-color: #6a00ff;
+}
+
+.lime .accent,.lime .live-tile>div,.lime .copy-tile>div,.lime .live-tile>.face,.lime .copy-tile>.face,.lime .live-tile>.slide,.lime .live-tile>.flip-back,.lime .live-tile>.flip-front,.lime .live-tile>.slide-back,.lime .live-tile>.slide-front,.lime .list-tile>div,.lime .flip-list>li>div {
+    background-color: #a2c139;
+}
+
+.lime .accentColor,.lime .accentHover:hover,.lime .accentHover a:hover,.lime .accentLink a,.lime .accentLink a:hover,.lime .accentLink a:visited,.lime a.accentLink,.lime a.accentLink:hover,.lime a.accentLink:visited {
+    color: #a2c139;
+}
+
+.lime .accentBorder {
+    border-color: #a2c139;
+}
+
+.lime .accentBorderBottom {
+    border-bottom-color: #a2c139;
+}
+
+.lime .accentBorderLeft {
+    border-left-color: #a2c139;
+}
+
+.lime .accentBorderRight {
+    border-right-color: #a2c139;
+}
+
+.lime .accentBorderTop {
+    border-top-color: #a2c139;
+}
+
+.magenta .accent,.magenta .live-tile>div,.magenta .copy-tile>div,.magenta .live-tile>.face,.magenta .copy-tile>.face,.magenta .live-tile>.slide,.magenta .live-tile>.flip-back,.magenta .live-tile>.flip-front,.magenta .live-tile>.slide-back,.magenta .live-tile>.slide-front,.magenta .list-tile>div,.magenta .flip-list>li>div {
+    background-color: #d80073;
+}
+
+.magenta .accentColor,.magenta .accentHover:hover,.magenta .accentHover a:hover,.magenta .accentLink a,.magenta .accentLink a:hover,.magenta .accentLink a:visited,.magenta a.accentLink,.magenta a.accentLink:hover,.magenta a.accentLink:visited {
+    color: #d80073;
+}
+
+.magenta .accentBorder {
+    border-color: #d80073;
+}
+
+.magenta .accentBorderBottom {
+    border-bottom-color: #d80073;
+}
+
+.magenta .accentBorderLeft {
+    border-left-color: #d80073;
+}
+
+.magenta .accentBorderRight {
+    border-right-color: #d80073;
+}
+
+.magenta .accentBorderTop {
+    border-top-color: #d80073;
+}
+
+.mango .accent,.mango .live-tile>div,.mango .copy-tile>div,.mango .live-tile>.face,.mango .copy-tile>.face,.mango .live-tile>.slide,.mango .live-tile>.flip-back,.mango .live-tile>.flip-front,.mango .live-tile>.slide-back,.mango .live-tile>.slide-front,.mango .list-tile>div,.mango .flip-list>li>div {
+    background-color: #f09609;
+}
+
+.mango .accentColor,.mango .accentHover:hover,.mango .accentHover a:hover,.mango .accentLink a,.mango .accentLink a:hover,.mango .accentLink a:visited,.mango a.accentLink,.mango a.accentLink:hover,.mango a.accentLink:visited {
+    color: #f09609;
+}
+
+.mango .accentBorder {
+    border-color: #f09609;
+}
+
+.mango .accentBorderBottom {
+    border-bottom-color: #f09609;
+}
+
+.mango .accentBorderLeft {
+    border-left-color: #f09609;
+}
+
+.mango .accentBorderRight {
+    border-right-color: #f09609;
+}
+
+.mango .accentBorderTop {
+    border-top-color: #f09609;
+}
+
+.mauve .accent,.mauve .live-tile>div,.mauve .copy-tile>div,.mauve .live-tile>.face,.mauve .copy-tile>.face,.mauve .live-tile>.slide,.mauve .live-tile>.flip-back,.mauve .live-tile>.flip-front,.mauve .live-tile>.slide-back,.mauve .live-tile>.slide-front,.mauve .list-tile>div,.mauve .flip-list>li>div {
+    background-color: #765f89;
+}
+
+.mauve .accentColor,.mauve .accentHover:hover,.mauve .accentHover a:hover,.mauve .accentLink a,.mauve .accentLink a:hover,.mauve .accentLink a:visited,.mauve a.accentLink,.mauve a.accentLink:hover,.mauve a.accentLink:visited {
+    color: #765f89;
+}
+
+.mauve .accentBorder {
+    border-color: #765f89;
+}
+
+.mauve .accentBorderBottom {
+    border-bottom-color: #765f89;
+}
+
+.mauve .accentBorderLeft {
+    border-left-color: #765f89;
+}
+
+.mauve .accentBorderRight {
+    border-right-color: #765f89;
+}
+
+.mauve .accentBorderTop {
+    border-top-color: #765f89;
+}
+
+.olive .accent,.olive .live-tile>div,.olive .copy-tile>div,.olive .live-tile>.face,.olive .copy-tile>.face,.olive .live-tile>.slide,.olive .live-tile>.flip-back,.olive .live-tile>.flip-front,.olive .live-tile>.slide-back,.olive .live-tile>.slide-front,.olive .list-tile>div,.olive .flip-list>li>div {
+    background-color: #6d8764;
+}
+
+.olive .accentColor,.olive .accentHover:hover,.olive .accentHover a:hover,.olive .accentLink a,.olive .accentLink a:hover,.olive .accentLink a:visited,.olive a.accentLink,.olive a.accentLink:hover,.olive a.accentLink:visited {
+    color: #6d8764;
+}
+
+.olive .accentBorder {
+    border-color: #6d8764;
+}
+
+.olive .accentBorderBottom {
+    border-bottom-color: #6d8764;
+}
+
+.olive .accentBorderLeft {
+    border-left-color: #6d8764;
+}
+
+.olive .accentBorderRight {
+    border-right-color: #6d8764;
+}
+
+.olive .accentBorderTop {
+    border-top-color: #6d8764;
+}
+
+.orange .accent,.orange .live-tile>div,.orange .copy-tile>div,.orange .live-tile>.face,.orange .copy-tile>.face,.orange .live-tile>.slide,.orange .live-tile>.flip-back,.orange .live-tile>.flip-front,.orange .live-tile>.slide-back,.orange .live-tile>.slide-front,.orange .list-tile>div,.orange .flip-list>li>div {
+    background-color: #fa6801;
+}
+
+.orange .accentColor,.orange .accentHover:hover,.orange .accentHover a:hover,.orange .accentLink a,.orange .accentLink a:hover,.orange .accentLink a:visited,.orange a.accentLink,.orange a.accentLink:hover,.orange a.accentLink:visited {
+    color: #fa6801;
+}
+
+.orange .accentBorder {
+    border-color: #fa6801;
+}
+
+.orange .accentBorderBottom {
+    border-bottom-color: #fa6801;
+}
+
+.orange .accentBorderLeft {
+    border-left-color: #fa6801;
+}
+
+.orange .accentBorderRight {
+    border-right-color: #fa6801;
+}
+
+.orange .accentBorderTop {
+    border-top-color: #fa6801;
+}
+
+.pink .accent,.pink .live-tile>div,.pink .copy-tile>div,.pink .live-tile>.face,.pink .copy-tile>.face,.pink .live-tile>.slide,.pink .live-tile>.flip-back,.pink .live-tile>.flip-front,.pink .live-tile>.slide-back,.pink .live-tile>.slide-front,.pink .list-tile>div,.pink .flip-list>li>div {
+    background-color: #e671b8;
+}
+
+.pink .accentColor,.pink .accentHover:hover,.pink .accentHover a:hover,.pink .accentLink a,.pink .accentLink a:hover,.pink .accentLink a:visited,.pink a.accentLink,.pink a.accentLink:hover,.pink a.accentLink:visited {
+    color: #e671b8;
+}
+
+.pink .accentBorder {
+    border-color: #e671b8;
+}
+
+.pink .accentBorderBottom {
+    border-bottom-color: #e671b8;
+}
+
+.pink .accentBorderLeft {
+    border-left-color: #e671b8;
+}
+
+.pink .accentBorderRight {
+    border-right-color: #e671b8;
+}
+
+.pink .accentBorderTop {
+    border-top-color: #e671b8;
+}
+
+.purple .accent,.purple .live-tile>div,.purple .copy-tile>div,.purple .live-tile>.face,.purple .copy-tile>.face,.purple .live-tile>.slide,.purple .live-tile>.flip-back,.purple .live-tile>.flip-front,.purple .live-tile>.slide-back,.purple .live-tile>.slide-front,.purple .list-tile>div,.purple .flip-list>li>div {
+    background-color: #a200ff;
+}
+
+.purple .accentColor,.purple .accentHover:hover,.purple .accentHover a:hover,.purple .accentLink a,.purple .accentLink a:hover,.purple .accentLink a:visited,.purple a.accentLink,.purple a.accentLink:hover,.purple a.accentLink:visited {
+    color: #a200ff;
+}
+
+.purple .accentBorder {
+    border-color: #a200ff;
+}
+
+.purple .accentBorderBottom {
+    border-bottom-color: #a200ff;
+}
+
+.purple .accentBorderLeft {
+    border-left-color: #a200ff;
+}
+
+.purple .accentBorderRight {
+    border-right-color: #a200ff;
+}
+
+.purple .accentBorderTop {
+    border-top-color: #a200ff;
+}
+
+.violet .accent,.violet .live-tile>div,.violet .copy-tile>div,.violet .live-tile>.face,.violet .copy-tile>.face,.violet .live-tile>.slide,.violet .live-tile>.flip-back,.violet .live-tile>.flip-front,.violet .live-tile>.slide-back,.violet .live-tile>.slide-front,.violet .list-tile>div,.violet .flip-list>li>div {
+    background-color: #a200ff;
+}
+
+.violet .accentColor,.violet .accentHover:hover,.violet .accentHover a:hover,.violet .accentLink a,.violet .accentLink a:hover,.violet .accentLink a:visited,.violet a.accentLink,.violet a.accentLink:hover,.violet a.accentLink:visited {
+    color: #a200ff;
+}
+
+.violet .accentBorder {
+    border-color: #a200ff;
+}
+
+.violet .accentBorderBottom {
+    border-bottom-color: #a200ff;
+}
+
+.violet .accentBorderLeft {
+    border-left-color: #a200ff;
+}
+
+.violet .accentBorderRight {
+    border-right-color: #a200ff;
+}
+
+.violet .accentBorderTop {
+    border-top-color: #a200ff;
+}
+
+.red .accent,.red .live-tile>div,.red .copy-tile>div,.red .live-tile>.face,.red .copy-tile>.face,.red .live-tile>.slide,.red .live-tile>.flip-back,.red .live-tile>.flip-front,.red .live-tile>.slide-back,.red .live-tile>.slide-front,.red .list-tile>div,.red .flip-list>li>div {
+    background-color: #e51400;
+}
+
+.red .accentColor,.red .accentHover:hover,.red .accentHover a:hover,.red .accentLink a,.red .accentLink a:hover,.red .accentLink a:visited,.red a.accentLink,.red a.accentLink:hover,.red a.accentLink:visited {
+    color: #e51400;
+}
+
+.red .accentBorder {
+    border-color: #e51400;
+}
+
+.red .accentBorderBottom {
+    border-bottom-color: #e51400;
+}
+
+.red .accentBorderLeft {
+    border-left-color: #e51400;
+}
+
+.red .accentBorderRight {
+    border-right-color: #e51400;
+}
+
+.red .accentBorderTop {
+    border-top-color: #e51400;
+}
+
+.sienna .accent,.sienna .live-tile>div,.sienna .copy-tile>div,.sienna .live-tile>.face,.sienna .copy-tile>.face,.sienna .live-tile>.slide,.sienna .live-tile>.flip-back,.sienna .live-tile>.flip-front,.sienna .live-tile>.slide-back,.sienna .live-tile>.slide-front,.sienna .list-tile>div,.sienna .flip-list>li>div {
+    background-color: #7b3a3e;
+}
+
+.sienna .accentColor,.sienna .accentHover:hover,.sienna .accentHover a:hover,.sienna .accentLink a,.sienna .accentLink a:hover,.sienna .accentLink a:visited,.sienna a.accentLink,.sienna a.accentLink:hover,.sienna a.accentLink:visited {
+    color: #7b3a3e;
+}
+
+.sienna .accentBorder {
+    border-color: #7b3a3e;
+}
+
+.sienna .accentBorderBottom {
+    border-bottom-color: #7b3a3e;
+}
+
+.sienna .accentBorderLeft {
+    border-left-color: #7b3a3e;
+}
+
+.sienna .accentBorderRight {
+    border-right-color: #7b3a3e;
+}
+
+.sienna .accentBorderTop {
+    border-top-color: #7b3a3e;
+}
+
+.steel .accent,.steel .live-tile>div,.steel .copy-tile>div,.steel .live-tile>.face,.steel .copy-tile>.face,.steel .live-tile>.slide,.steel .live-tile>.flip-back,.steel .live-tile>.flip-front,.steel .live-tile>.slide-back,.steel .live-tile>.slide-front,.steel .list-tile>div,.steel .flip-list>li>div {
+    background-color: #657688;
+}
+
+.steel .accentColor,.steel .accentHover:hover,.steel .accentHover a:hover,.steel .accentLink a,.steel .accentLink a:hover,.steel .accentLink a:visited,.steel a.accentLink,.steel a.accentLink:hover,.steel a.accentLink:visited {
+    color: #657688;
+}
+
+.steel .accentBorder {
+    border-color: #657688;
+}
+
+.steel .accentBorderBottom {
+    border-bottom-color: #657688;
+}
+
+.steel .accentBorderLeft {
+    border-left-color: #657688;
+}
+
+.steel .accentBorderRight {
+    border-right-color: #657688;
+}
+
+.steel .accentBorderTop {
+    border-top-color: #657688;
+}
+
+.teal .accent,.teal .live-tile>div,.teal .copy-tile>div,.teal .live-tile>.face,.teal .copy-tile>.face,.teal .live-tile>.slide,.teal .live-tile>.flip-back,.teal .live-tile>.flip-front,.teal .live-tile>.slide-back,.teal .live-tile>.slide-front,.teal .list-tile>div,.teal .flip-list>li>div {
+    background-color: #00aba9;
+}
+
+.teal .accentColor,.teal .accentHover:hover,.teal .accentHover a:hover,.teal .accentLink a,.teal .accentLink a:hover,.teal .accentLink a:visited,.teal a.accentLink,.teal a.accentLink:hover,.teal a.accentLink:visited {
+    color: #00aba9;
+}
+
+.teal .accentBorder {
+    border-color: #00aba9;
+}
+
+.teal .accentBorderBottom {
+    border-bottom-color: #00aba9;
+}
+
+.teal .accentBorderLeft {
+    border-left-color: #00aba9;
+}
+
+.teal .accentBorderRight {
+    border-right-color: #00aba9;
+}
+
+.teal .accentBorderTop {
+    border-top-color: #00aba9;
+}
+
+.yellow .accent,.yellow .live-tile>div,.yellow .copy-tile>div,.yellow .live-tile>.face,.yellow .copy-tile>.face,.yellow .live-tile>.slide,.yellow .live-tile>.flip-back,.yellow .live-tile>.flip-front,.yellow .live-tile>.slide-back,.yellow .live-tile>.slide-front,.yellow .list-tile>div,.yellow .flip-list>li>div {
+    background-color: #d8c101;
+}
+
+.yellow .accentColor,.yellow .accentHover:hover,.yellow .accentHover a:hover,.yellow .accentLink a,.yellow .accentLink a:hover,.yellow .accentLink a:visited,.yellow a.accentLink,.yellow a.accentLink:hover,.yellow a.accentLink:visited {
+    color: #d8c101;
+}
+
+.yellow .accentBorder {
+    border-color: #d8c101;
+}
+
+.yellow .accentBorderBottom {
+    border-bottom-color: #d8c101;
+}
+
+.yellow .accentBorderLeft {
+    border-left-color: #d8c101;
+}
+
+.yellow .accentBorderRight {
+    border-right-color: #d8c101;
+}
+
+.yellow .accentBorderTop {
+    border-top-color: #d8c101;
+}
+
+.trans .accent,.trans .live-tile>div,.trans .copy-tile>div,.trans .live-tile>.face,.trans .copy-tile>.face,.trans .live-tile>.slide,.trans .live-tile>.flip-back,.trans .live-tile>.flip-front,.trans .live-tile>.slide-back,.trans .live-tile>.slide-front,.trans .list-tile>div,.trans .flip-list>li>div {
+    background-color: transparent;
+}
+
+.trans .accentColor,.trans .accentHover:hover,.trans .accentHover a:hover,.trans .accentLink a,.trans .accentLink a:hover,.trans .accentLink a:visited,.trans a.accentLink,.trans a.accentLink:hover,.trans a.accentLink:visited {
+    color: transparent;
+}
+
+.trans .accentBorder {
+    border-color: transparent;
+}
+
+.trans .accentBorderBottom {
+    border-bottom-color: transparent;
+}
+
+.trans .accentBorderLeft {
+    border-left-color: transparent;
+}
+
+.trans .accentBorderRight {
+    border-right-color: transparent;
+}
+
+.trans .accentBorderTop {
+    border-top-color: transparent;
+}
+
+.white .accent,.white .live-tile>div,.white .copy-tile>div,.white .live-tile>.face,.white .copy-tile>.face,.white .live-tile>.slide,.white .live-tile>.flip-back,.white .live-tile>.flip-front,.white .live-tile>.slide-back,.white .live-tile>.slide-front,.white .list-tile>div,.white .flip-list>li>div {
+    background-color: #fff;
+}
+
+.white .accentColor,.white .accentHover:hover,.white .accentHover a:hover,.white .accentLink a,.white .accentLink a:hover,.white .accentLink a:visited,.white a.accentLink,.white a.accentLink:hover,.white a.accentLink:visited {
+    color: #fff;
+}
+
+.white .accentBorder {
+    border-color: #fff;
+}
+
+.white .accentBorderBottom {
+    border-bottom-color: #fff;
+}
+
+.white .accentBorderLeft {
+    border-left-color: #fff;
+}
+
+.white .accentBorderRight {
+    border-right-color: #fff;
+}
+
+.white .accentBorderTop {
+    border-top-color: #fff;
+}
+
+.black .accent,.black .live-tile>div,.black .copy-tile>div,.black .live-tile>.face,.black .copy-tile>.face,.black .live-tile>.slide,.black .live-tile>.flip-back,.black .live-tile>.flip-front,.black .live-tile>.slide-back,.black .live-tile>.slide-front,.black .list-tile>div,.black .flip-list>li>div {
+    background-color: #000;
+}
+
+.black .accentColor,.black .accentHover:hover,.black .accentHover a:hover,.black .accentLink a,.black .accentLink a:hover,.black .accentLink a:visited,.black a.accentLink,.black a.accentLink:hover,.black a.accentLink:visited {
+    color: #000;
+}
+
+.black .accentBorder {
+    border-color: #000;
+}
+
+.black .accentBorderBottom {
+    border-bottom-color: #000;
+}
+
+.black .accentBorderLeft {
+    border-left-color: #000;
+}
+
+.black .accentBorderRight {
+    border-right-color: #000;
+}
+
+.black .accentBorderTop {
+    border-top-color: #000;
+}
+
+html body .amber.accent,html body .amber.live-tile>.accent,html body .amber.list-tile>.accent,html body .amber.copy-tile>.accent,html body .amber.live-tile>div,html body .amber.copy-tile>div,html body .amber.list-tile>div,html body .amber.live-tile>.face,html body .amber.list-tile>.face,html body .amber.copy-tile>.face,html body .amber.live-tile>.slide,html body .amber.live-tile>.flip-back,html body .amber.live-tile>.flip-front,html body .amber.live-tile>.slide-back,html body .amber.live-tile>.slide-front,html body .amber.flip-list>li>.accent,html body .amber.flip-list>li>.flip-back,html body .amber.flip-list>li>.flip-front,html body .amber.slide.accent,html body .amber.slide-front.accent,html body .amber.slide-back.accent,html body .amber.flip-front.accent,html body .amber.flip-back.accent {
+    background-color: #f1a30b;
+}
+
+html body .amber.accentColor,html body .amber.accentHover:hover,html body .amber.accentHover a:hover,html body .amber.accentLink a,html body .amber.accentLink a:hover,html body .amber.accentLink a:visited,a.accentLinkhtml body .amber,a.accentLinkhtml body .amber:hover,a.accentLinkhtml body .amber:visited {
+    color: #f1a30b;
+}
+
+html body .amber.accentBorder {
+    border-color: #f1a30b;
+}
+
+html body .amber.accentBorderBottom {
+    border-bottom-color: #f1a30b;
+}
+
+html body .amber.accentBorderLeft {
+    border-left-color: #f1a30b;
+}
+
+html body .amber.accentBorderRight {
+    border-right-color: #f1a30b;
+}
+
+html body .amber.accentBorderTop {
+    border-top-color: #f1a30b;
+}
+
+html body .blue.accent,html body .blue.live-tile>.accent,html body .blue.list-tile>.accent,html body .blue.copy-tile>.accent,html body .blue.live-tile>div,html body .blue.copy-tile>div,html body .blue.list-tile>div,html body .blue.live-tile>.face,html body .blue.list-tile>.face,html body .blue.copy-tile>.face,html body .blue.live-tile>.slide,html body .blue.live-tile>.flip-back,html body .blue.live-tile>.flip-front,html body .blue.live-tile>.slide-back,html body .blue.live-tile>.slide-front,html body .blue.flip-list>li>.accent,html body .blue.flip-list>li>.flip-back,html body .blue.flip-list>li>.flip-front,html body .blue.slide.accent,html body .blue.slide-front.accent,html body .blue.slide-back.accent,html body .blue.flip-front.accent,html body .blue.flip-back.accent {
+    background-color: #1ba1e2;
+}
+
+html body .blue.accentColor,html body .blue.accentHover:hover,html body .blue.accentHover a:hover,html body .blue.accentLink a,html body .blue.accentLink a:hover,html body .blue.accentLink a:visited,a.accentLinkhtml body .blue,a.accentLinkhtml body .blue:hover,a.accentLinkhtml body .blue:visited {
+    color: #1ba1e2;
+}
+
+html body .blue.accentBorder {
+    border-color: #1ba1e2;
+}
+
+html body .blue.accentBorderBottom {
+    border-bottom-color: #1ba1e2;
+}
+
+html body .blue.accentBorderLeft {
+    border-left-color: #1ba1e2;
+}
+
+html body .blue.accentBorderRight {
+    border-right-color: #1ba1e2;
+}
+
+html body .blue.accentBorderTop {
+    border-top-color: #1ba1e2;
+}
+
+html body .brown.accent,html body .brown.live-tile>.accent,html body .brown.list-tile>.accent,html body .brown.copy-tile>.accent,html body .brown.live-tile>div,html body .brown.copy-tile>div,html body .brown.list-tile>div,html body .brown.live-tile>.face,html body .brown.list-tile>.face,html body .brown.copy-tile>.face,html body .brown.live-tile>.slide,html body .brown.live-tile>.flip-back,html body .brown.live-tile>.flip-front,html body .brown.live-tile>.slide-back,html body .brown.live-tile>.slide-front,html body .brown.flip-list>li>.accent,html body .brown.flip-list>li>.flip-back,html body .brown.flip-list>li>.flip-front,html body .brown.slide.accent,html body .brown.slide-front.accent,html body .brown.slide-back.accent,html body .brown.flip-front.accent,html body .brown.flip-back.accent {
+    background-color: #a05000;
+}
+
+html body .brown.accentColor,html body .brown.accentHover:hover,html body .brown.accentHover a:hover,html body .brown.accentLink a,html body .brown.accentLink a:hover,html body .brown.accentLink a:visited,a.accentLinkhtml body .brown,a.accentLinkhtml body .brown:hover,a.accentLinkhtml body .brown:visited {
+    color: #a05000;
+}
+
+html body .brown.accentBorder {
+    border-color: #a05000;
+}
+
+html body .brown.accentBorderBottom {
+    border-bottom-color: #a05000;
+}
+
+html body .brown.accentBorderLeft {
+    border-left-color: #a05000;
+}
+
+html body .brown.accentBorderRight 

@@ -1,0 +1,50 @@
+<div class="social_bookmarks">
+<p>Share this</p>
+<ul> 
+<li class="gplusone"><g:plusone size="small" count="false"></g:plusone></li>
+<li class="twitter"> 
+<a class="tweetlink" title="Tweet this!" href="http://twitter.com/intent/tweet?text=<txp:rah_replace from="&amp;,&#39;,&,:,/" to="%26,%27,%26,%3A,%2F"><txp:title no_widow="0" /></txp:rah_replace>&url=<txp:rah_replace from="&amp;,&#39;,&,:,/" to="%26,%27,%26,%3A,%2F"><txp:permlink />?utm_source=council-website&utm_medium=share-buttons&utm_campaign=social-media</txp:rah_replace>&related=MosmanCouncil,MosmanLibrary">Tweet this!</a> 
+</li> 
+<li class="facebook"> 
+<a title="Post to Facebook" href="http://www.facebook.com/share.php?u=<txp:permlink />?utm_source=council-website&utm_medium=share-buttons&utm_campaign=social-media&amp;h=<txp:title no_widow="0" />">Post to Facebook</a> 
+</li> 
+<li class="stumble_upon"> 
+<a title="Add to Stumble Upon" href="http://www.stumbleupon.com/submit?url=<txp:permlink />?utm_source=council-website&utm_medium=share-buttons&utm_campaign=social-media&amp;title=<txp:title no_widow="0" />">Add to Stumble Upon</a> 
+</li>  
+<txp:hide><li class="delicious"> 
+<a title="Bookmark with Delicious" href="http://del.icio.us/post?url=<txp:permlink />?utm_source=council-website&utm_medium=share-buttons&utm_campaign=social-media&amp;title=<txp:rah_replace from="&amp;,&#39;,&" to="%26,%27,%26"><txp:title no_widow="0" /></txp:rah_replace>">Bookmark with Delicious</a> 
+</li> </txp:hide>
+<li class="email"> 
+<a title="Email this link" href="mailto:?subject=<txp:rah_replace from="&amp;,&#39;,&" to="%26,%27,%26"><txp:title no_widow="0" /></txp:rah_replace>&amp;body=<txp:permlink />">Email this link</a> 
+</li>	          			
+</ul> 
+</div>
+
+<txp:hide>
+<script>
+var TweetThisLink = {
+    shorten : function(e) {
+        // this stops the click, which will later be handled in the  response method
+        e.preventDefault();
+        // find the link starting at the second 'http://'
+        var url = this.href.substr(this.href.indexOf('http:',5));
+        BitlyClient.shorten(url, 'TweetThisLink.response');
+    },
+    
+    response : function(data) {
+        var bitly_link = null;
+        for (var r in data.results) {
+            bitly_link = data.results[r]['shortUrl']; 
+            break;
+        }
+        var tweet_text = "<txp:rah_replace from="&amp;,&#39;,&" to="&,',&"><txp:title no_widow="0" /></txp:rah_replace>"
+        document.location = "http://twitter.com/home?status=" + encodeURIComponent(tweet_text + ' ' + bitly_link);
+    }
+}
+
+jQuery('.tweetlink').bind('click', TweetThisLink.shorten);
+
+// this is cool if you are adding links to dom on the fly
+//jQuery('.tweetlink').live('click', TweetThisLink.shorten);
+</script>
+</txp:hide>

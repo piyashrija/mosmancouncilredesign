@@ -1,0 +1,12 @@
+<item><title><txp:atb_html_special_chars><txp:title no_widow="0" /></txp:atb_html_special_chars></title>
+<description>
+<![CDATA[
+<txp:excerpt />
+]]>
+</description>
+<link><txp:permlink /></link>
+<pubDate><txp:posted format="%a, %d %b %Y %H:%M:%S +1000" /></pubDate>
+<dc:creator>Mosman Council</dc:creator>
+<guid isPermaLink="false">tag:www.mosman.nsw.gov.au,<txp:article_id /></guid>
+<txp:upm_if_article_image><enclosure url="<txp:upm_article_image form="art-img-url" />" type="image/jpeg" /></txp:upm_if_article_image>
+</item>

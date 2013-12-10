@@ -1,0 +1,103 @@
+<txp:if_article_section name="council/consultation">
+<txp:wet_if_live>
+<div id="intro">
+<h2><txp:section link=0 title=1 /></h2>
+</div>
+<div class="box-employment">
+<h3><txp:title /></h3>
+<txp:body />
+<txp:upm_article_file_list wraptag="ul" break="li" class="icon-doc" label="Documents" labeltag="h4" />
+<h4>Closing date</h4>
+<p><txp:chh_if_data><txp:zem_article_event><txp:zem_event_finish_date wraptag="" format="%A %e %B %Y" /></txp:zem_article_event><txp:else />Open</txp:chh_if_data></p>
+<txp:if_article_category name="consultation-with-survey"><txp:else />
+
+
+<txp:zem_article_event>
+
+<txp:php>
+// Format string '%s' doesn't work on this system :-(
+
+$finish_date = zem_event_finish_date( array('format' => '%Y-%m-%d', 'wraptag' => '') );
+$finish_time = zem_event_finish_time( array('format' => '%H:%M:%S', 'wraptag' => '') );
+
+$finish_date = (empty($finish_date)) ? zem_event_date( array('format' => '%Y-%m-%d', 'wraptag' => '') ) : $finish_date;
+$finish_time = (empty($finish_time)) ? '23:59' : $finish_time;
+
+$full_date = $finish_date.' '.$finish_time;
+$finish_stamp = strtotime($full_date);
+
+if (time() > $finish_stamp) {
+   echo '<ul style="margin:21px 0;" class="icon-alert"><li><strong>Submissions have now closed for this item.</strong> You are viewing an archived web page.</li></ul>';
+}
+
+if (time() <= $finish_stamp) {
+   echo '<txp:output_form form="contact-generic" />';
+}
+
+</txp:php>
+
+</txp:zem_article_event>
+
+
+<txp:hide>
+<p><txp:section name="contact">Have your say now by using our online form</txp:section></p>
+<txp:output_form form="contact-generic" />
+</txp:hide>
+
+</txp:if_article_category>
+
+<txp:hide><txp:chh_if_data><h4>Contact</h4>
+<txp:excerpt /></txp:chh_if_data></txp:hide>
+
+</div>
+<txp:else />
+<div id="intro">
+<h2><txp:title /></h2>
+</div>
+<txp:body />
+</txp:wet_if_live>
+</txp:if_article_section>
+
+
+
+
+<txp:if_article_section name="council/employment">
+<txp:wet_if_live>
+<div id="intro">
+<h2>Positions vacant</h2>
+</div>
+<div class="box-employment">
+<h3><txp:title /></h3>
+<txp:body />
+<p><strong>All documents put forward such as resumes and responses to selection criteria <em>must</em> be in Microsoft Word or PDF format.</strong></p>
+<txp:upm_article_file_list wraptag="ul" break="li" class="icon-doc" label="Position Description" labeltag="h4" />
+<h4>Closing date</h4>
+<p><txp:chh_if_data><txp:zem_article_event><txp:zem_event_finish_date wraptag="" format="%A %e %B %Y" /></txp:zem_article_event><txp:else />Ongoing</txp:chh_if_data></p>
+
+<txp:if_article_id id="1496"><txp:else />
+<h4>Applying for a position</h4>
+<ul>
+<li><txp:permlink id="293">How to apply</txp:permlink></li>
+<li><txp:permlink id="178">Frequently asked questions</txp:permlink></li>
+<li><txp:section name="council/employment">Positions vacant</txp:section></li>
+</ul>
+</txp:if_article_id>
+
+</div>
+<txp:else />
+<div id="intro">
+<h2><txp:title /></h2>
+</div>
+<txp:body />
+</txp:wet_if_live>
+</txp:if_article_section>
+
+
+
+
+<txp:if_article_section name="council/employment,council/consultation"><txp:else />
+<div id="intro">
+<h2><txp:title /></h2>
+</div>
+<txp:body />
+</txp:if_article_section>

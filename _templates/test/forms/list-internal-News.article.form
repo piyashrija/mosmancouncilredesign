@@ -1,0 +1,1 @@
+<txp:if_custom_field name="keep off home page"><txp:else /><li><a title="<txp:etz_striptags><txp:excerpt /></txp:etz_striptags>" href="<txp:permlink />"><strong><txp:if_article_section name="news/mayor">Mayor: </txp:if_article_section><txp:title /></strong></a></li></txp:if_custom_field>

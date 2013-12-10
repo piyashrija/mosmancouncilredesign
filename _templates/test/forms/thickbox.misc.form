@@ -1,0 +1,1 @@
+<a class="thickbox" rel="<txp:upm_img_category />" href="<txp:upm_img_full_url />" title="<txp:upm_img_caption />"><img src="<txp:upm_img_thumb_url />" width="<txp:upm_img_thumb_width />" height="<txp:upm_img_thumb_height />" alt="<txp:upm_img_alt escape="html" />"  /></a>

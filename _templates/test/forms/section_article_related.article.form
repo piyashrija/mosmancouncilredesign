@@ -1,0 +1,13 @@
+<txp:chh_if_data>
+<h3><span>Related</span> Info</h3>
+<ul class="site_nav">
+
+<txp:if_section name="mosman/recreation">
+<li><txp:file_download id="814" /></li>
+</txp:if_section>
+
+<txp:related_articles wraptag="" break="li" sort="title" />
+
+</ul>
+</txp:chh_if_data>
+

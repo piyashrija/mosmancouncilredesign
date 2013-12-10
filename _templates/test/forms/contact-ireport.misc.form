@@ -1,0 +1,103 @@
+<txp:zem_contact to="norest@gmail.com" from="council@mosman.nsw.gov.au" subject="Mosman Council web form submission" label="" thanks_form="contact-report-thanks">
+
+<txp:asy_wondertag><txp:zem_contact_secret name="WebRequestNumber" label="WebRequestNumber" value="<txp:upm_datetime format="%y%m%d%H%M%S" /><txp:php>echo mt_rand(1000, 9999);</txp:php>" /></txp:asy_wondertag>
+
+<txp:if_article_id id="7001">
+<txp:zem_contact_secret name="intRequestType" label="intRequestType" value="9" />
+<txp:asy_wondertag><txp:zem_contact_secret name="strActionReq" label="strActionReq" value="<txp:title no_widow="0" />" /></txp:asy_wondertag>
+</txp:if_article_id>
+
+<fieldset>
+<legend>Property / location:</legend>
+
+<table><tr>
+<td><txp:zem_contact_text label="Unit" name="FlatUnit" required="0" break="br" size="5" /> /&nbsp;</td>
+<td><txp:zem_contact_text label="" label="House No(s)" name="HouseNumber" required="1" break="br" size="5" /> - <txp:zem_contact_text name="HouseNumberEndRange" label="" required="0" break="" size="5" /></td>
+<td><txp:zem_contact_text label="Street Name" name="StreetNameOrPOBox" required="1" break="br" /></td>
+</tr></table>
+
+<table><tr>
+<td><txp:zem_contact_text label="Suburb / Locality / Town" name="SuburbLocalityTown" required="1" break="br" default="Mosman" /></td>
+<td><txp:zem_contact_select label="State" list="NSW,ACT,VIC,QLD,SA,WA,NT" name="StateTerritory" required="1" break="br" /></td>
+<td><txp:zem_contact_text label="Postcode" default="2088" name="Postcode" required="1" break="br" size="5" /></td>
+</tr></table>
+
+</fieldset>
+
+
+<txp:if_article_id id="2561">
+<fieldset>
+<legend>Missed service(s):  <em>optional</em></legend>
+<txp:zem_contact_checkbox label="Domestic green waste" required="0" name="MissedServiceDomesticGreen" /><br />
+<txp:zem_contact_checkbox label="Domestic garbage" required="0" name="MissedServiceDomesticGarbage" /><br />
+<txp:zem_contact_checkbox label="Domestic paper recycling" required="0" name="MissedServiceDomesticPaper" /><br />
+<txp:zem_contact_checkbox label="Domestic glass and containers recycling" required="0" name="MissedServiceDomesticCommingled" /><br />
+<txp:zem_contact_checkbox label="Other" required="0"  name="MissedServiceOther" /><br /
+</fieldset>
+</txp:if_article_id>
+
+<fieldset>
+<legend>Description of the issue:</legend>
+<txp:zem_contact_textarea label="Comments" name="Submission" required="1" break="" />
+</fieldset>
+
+
+
+
+
+
+<fieldset>
+
+<fieldset>
+<legend>Your name:</legend>
+<table><tr>
+<td><txp:zem_contact_select label="Title" name="NameTitle" list=",Mr,Mrs,Ms,Miss,Dr,Prof,Sir,Mstr" required="1" break="br" /></td>
+<td><txp:zem_contact_text label="Given Name" name="GivenName" required="1" break="br" /></td>
+<td><txp:zem_contact_text label="Family Name" name="FamilyName" required="1" break="br" /></td>
+</tr></table>
+</fieldset>
+
+<fieldset>
+<legend>Email: <em>optional</em></legend>
+<table>
+<tr><td class="nffw"><txp:zem_contact_email label="Email address" name="EmailAddress" required="0" break="" /></td></tr>
+</table>
+<txp:hide><p><small><em>To assist us with contacting you on this matter electronically, please provide us with a valid email address</em></small></p></txp:hide>
+</fieldset>
+
+<fieldset>
+<legend>Telephone: <em>optional</em></legend>
+<table>
+<tr><td class="nffw"><txp:zem_contact_text label="Telephone" name="TelephoneNumber" required="0" break="" max="20" /></td></tr>
+<tr><td class="nffw"><txp:zem_contact_text label="Mobile" name="MobileNumber" required="0" break="" max="20" /></td></tr>
+</table>
+<txp:hide><p><small><em>To assist us with contacting you, please provide a telephone contact</em></small></p></txp:hide>
+</fieldset>
+
+</fieldset>
+
+<txp:hide>
+<fieldset>
+<txp:zem_contact_checkbox label="I do not require a formal response from Council on this matter" required="0" break=" " />
+</fieldset>
+</txp:hide>
+
+
+<fieldset>
+<p>Please ensure a valid email and/or telephone number is provided. We will contact you to action this waste request within 10 days (usually 3 to 5 days).</p>
+<txp:zem_contact_submit label="Submit your report" />
+</fieldset>
+
+
+
+<txp:php>
+  global $zem_contact_values, $zem_contact_labels;
+
+  foreach ($zem_contact_values as $name => $value)
+  {
+    $zem_contact_labels[$name] = '';
+    $zem_contact_values[$name] = '<'.$name.'>'.htmlspecialchars($value).'</'.$name.'>';
+  }
+</txp:php>
+
+</txp:zem_contact>

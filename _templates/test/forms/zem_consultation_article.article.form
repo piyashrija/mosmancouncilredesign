@@ -1,0 +1,4 @@
+<tr>
+<td><txp:permlink><strong><txp:title /></strong></txp:permlink></td>
+<td><txp:zem_event_finish_date wraptag="" format="%A %e %B %Y" /></td>
+</tr>

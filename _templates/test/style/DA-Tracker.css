@@ -1,0 +1,159 @@
+#header *, #navbar * {margin:0;padding:0}
+
+
+/* HIDE PRINT ELEMENTS */
+
+.print-element {
+display:none;
+}
+
+
+/* WIREFRAME */
+
+div.container {
+}
+
+
+/* ANCHORS */
+
+#header a,#navbar a {
+font-weight:normal !important;
+}
+#header ul li a {
+text-decoration:underline;
+}
+#header a:link {
+color:#2A78AC;
+}
+#header a:visited {
+color:#2A78AC;
+}
+#header a:hover {
+color:#AE3B26;
+}
+#header a:active {
+color:#2A78AC;
+}
+#header a img {
+border:0;
+}
+
+
+/* DIV */
+
+#header {
+height:92px;
+position:relative;
+background:url(http://www.mosman.nsw.gov.au/images/10.jpg) repeat-x;
+}
+#navbar {
+background-color:#2A78AC;
+color:#fff;
+border-bottom:5px solid #e2d167;
+margin-bottom:7px;
+}
+#header, #navbar {
+color:#505050;
+font:13px Arial,Verdana, sans-serif;
+line-height:1.5;
+}
+
+
+
+/* HEADER */
+
+#header {
+text-align:right;
+}
+#header img {
+position:absolute;
+top:27px;
+left:19px;
+}
+#header ul {
+padding:12px 21px 0 0;
+list-style:none;
+line-height:1;
+}
+#header li, #header input {
+font-size:0.9em;
+}
+#header li {
+display: inline;
+list-style-type: none;
+padding:0 0 0 8px;
+background:none;
+}
+#header form {
+display: inline;
+}
+#header input {
+padding:2px;
+}
+#header input.button {
+margin-left:2px;
+}
+
+
+/* NAVBAR */
+
+#navbar .container:after {
+content:""; 
+display:block; 
+height:0; 
+clear:both;
+}
+#navbar .container {
+height:100%;
+}
+#navbar {
+height:29px;
+}
+
+ul#nav {
+margin:0 0 0 19px;
+border-top:4px solid #2a78ac;
+list-style: none;
+font-family: arial, helvetica, sans-serif;
+font-size:0.9em;
+color: #fff;
+}
+ul#nav li {
+display:inline;
+position: relative;
+z-index: 1000;
+float: left;
+background-image:none;
+padding:0;
+margin:0;
+}
+ul#nav li a {
+display:block;
+float:left;
+width:auto;
+padding:4px 7px;
+text-decoration: none;
+color: #fff;
+}
+
+ul#nav li.subMenu a
+{
+	background-image: url(/js/images/arrow-right.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+
+ul#nav li.subMenu li a
+{
+	background-image: none;
+}
+
+ul#nav .active, 
+ul#nav li a.active:hover {
+background-color:#e1d066;
+color:#000;
+}
+ul#nav li a:hover, ul#nav li.hover a {
+background-color:#ece19c;
+color:#000;
+}

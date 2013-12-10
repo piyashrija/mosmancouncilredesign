@@ -1,0 +1,258 @@
+<txp:if_section name="community/youth"> 
+<div class="col nudge40l">
+
+<div style="margin-bottom:2em;">
+<a title="Get involved!"  href="http://www.mosman.nsw.gov.au/community/volunteers/youth"><txp:image id="5291" /></a>
+</div>
+<txp:hide>
+<div class="box-list">
+<h3>School <strong>Holidays</strong></h3>
+<ul class="icon-doc"><li><txp:file_download id="3069" /></li></ul>
+</div>
+</txp:hide>
+<div class="box-list">
+<h3>Youth <strong>Guide</strong></h3>
+<ul class="icon-doc"><li><txp:file_download id="2137" /></li></ul>
+</div>
+
+<txp:hide>
+
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>Happening</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="youth" limit=5 form="list-internal-Events" />
+<li class="default"><a href="/events">Events</a></li>
+</ul>
+</div></txp:chh_if_data>
+<div class="box-list">
+<h3>Youth <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom section="news" category="youth" form="list-internal-News" status="live" limit=3 index=0 />
+<li class="default"><a href="/news">News</a></li>
+</ul>
+</div>
+</txp:hide>
+</div>
+</txp:if_section>
+
+
+
+
+<txp:if_section name="community/business">
+<div class="col nudge40l">
+<txp:chh_if_data><div class="box-list">
+<h3>Business <strong>Events</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="business-community" limit=5 form="list-internal-Events" />
+<li class="default"><a href="/events">Events</a></li>
+</ul>
+</div></txp:chh_if_data>
+<div class="box-list">
+<h3>Business <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom section="news" category="business" form="list-internal-News" status="live" limit=2 index=0 />
+<li class="default"><a href="/news">News</a></li>
+</ul>
+</div>
+</div>
+</txp:if_section>
+
+
+
+
+
+
+<txp:if_section name="mosman/transport">
+<div class="col nudge40l">
+<div class="box-homepage-ad" style="text-align:center;border-color:#a7b3bf;background-color:#fff;">
+<p><a href="http://active.mosman.nsw.gov.au/survey/"><txp:image id="3828" /></a></p>
+<p><a href="http://active.mosman.nsw.gov.au/survey/"><strong>Council seeks residents' input to bicycle needs in Mosman</strong></a></p><p>A simple survey to help us<br />with our planning</p>
+</div>
+</div>
+</txp:if_section>
+
+
+
+
+
+
+<txp:if_section name="environment/sustainability">
+<div class="col nudge40l">
+<div class="box-list">
+<h3>Sustainability <strong>Fact Sheets</strong></h3>
+<ul class="icon-doc">
+<li><txp:file_download id="1876" /></li>
+<li><txp:file_download id="1877" /></li>
+<li><txp:file_download id="1878" /></li>
+</ul>
+</div>
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>Happening</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="environment" limit=5 form="list-internal-Events" />
+<li class="default"><a href="/events">Events</a></li>
+</ul>
+</div></txp:chh_if_data>
+</div>
+</txp:if_section>
+
+
+
+<txp:if_section name="community/children">
+<div class="col nudge40l">
+
+<txp:hide>
+<div style="margin-bottom:2em;padding:15px 10px 0 10px;text-align:center;border:1px solid #a7b3bf">
+<txp:image id="4167" class="image" />
+<p style="padding-top:7px;">
+<strong>Holiday hours!</strong> Children's Services office closed from Friday 21 December, re-opening Monday 7 January 2013</p>
+</div>
+</txp:hide>
+
+<div class="box-list">
+<h3>Your <strong>Contacts</strong></h3>
+<ul>
+<li>Enquiries <strong>9978&#160;4161</strong></li>
+<li>MOCC <strong>9978 4197</strong></li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Quick <strong>Find</strong></h3>
+<ul class="icon-doc">
+<li><txp:file_download_list category="children-vacation-care" sort="created desc" limit=1 /></li>
+<li class="nudge10t"><txp:file_download_list category="children-leisure-learning" sort="created desc" limit=1 /></li>
+<li class="nudge10t"><txp:file_download id="163" /></li>
+</ul>
+</div>
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>Happening</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="childrens-services" limit=5 form="list-internal-Events" />
+<li class="default"><a href="/events">Events</a></li>
+</ul>
+</div></txp:chh_if_data>
+</div>
+</txp:if_section>
+
+
+
+
+
+
+<txp:if_section name="community/older">
+<div class="col nudge40l">
+<div class="box-list">
+<h3>Our <strong>Services</strong></h3>
+<ul class="icon-doc">
+<li><txp:file_download id="2552" /></li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Your <strong>Contacts</strong></h3>
+<ul>
+<li>Telephone <strong>9978&#160;4128</strong></li>
+<li class="nudge10t">Seniors Centre (<txp:file_download_link id="351">map</txp:file_download_link>)<br />Mosman Square<br />Mon-Fri, 9am-5pm</li>
+</ul>
+</div>
+
+<div class="box-list">
+<h3>Over 55s <strong>Newsletter</strong></h3>
+<txp:file_download_list category="newsletter-seniors" sort="created desc" limit=1 wraptag="ul" break="li" class="icon-doc" />
+</div>
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>Happening</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="seniors" limit="3" form="list-internal-Events" />
+<li class="default"><a href="/events">Events</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+<div style="margin-bottom:2em;padding:5px 0 0 0;text-align:center;border:1px solid #a7b3bf">
+<p style="padding-top:7px;"><a href="http://www.mosman.nsw.gov.au/news/2011/03/18/positive-ageing-in-mosman-key-findings"><strong>Positive ageing in Mosman:<br />your feedback</strong></a></p>
+</div>
+
+</div>
+</txp:if_section>
+
+
+<txp:if_section name="library/about">
+<div class="col nudge40l">
+<div class="box-list">
+<h3>Your <strong>Library</strong></h3>
+<ul>
+<li><strong>Mon, Wed, Fri</strong> 9.30–5.30<br />
+<strong>Tue &amp; Thu</strong> 9.30-9pm<br />
+<strong>Sat, Sun</strong> 10–4pm</li>
+<li class="nudge10t">Library Walk (<txp:file_download_link id="351">map</txp:file_download_link>)<br />605 Military Road, Mosman</li>
+<li class="nudge10t">Telephone <strong>9978&#160;4091</strong> or <strong>9978&#160;4090</strong></li>
+</ul>
+</div>
+
+<div class="box-list">
+<h3><a style="text-decoration:none" href="http://www.aurorashore.com.au/OPAC/Mosman/Default.aspx">Library <strong>Catalogue</strong></a></h3>
+<ul class="icon-list">
+<li class="default" style="margin-bottom:0.3em"><a href=http://www.aurorashore.com.au/OPAC/Mosman/Default.aspx>Search catalogue</a></li>
+<li class="default" style="margin-bottom:0.3em"><a href="http://www.aurorashore.com.au/OPAC/Mosman/Member.aspx">Renew my items</a></li>
+<li class="default" style="margin-bottom:0.3em"><a href="http://www.aurorashore.com.au/OPAC/Mosman/Member.aspx">Update my account details</a></li>
+<li class="default"><a href="http://www.mosman.nsw.gov.au/library/information/ebooks">eBooks and eAudiobooks</a></li>
+</ul>
+</div>
+
+<div class="box-list">
+<h3>What's <strong>New</strong></h3>
+<txp:file_download_list category="newsletter-library" sort="created desc" limit=1 wraptag="ul" break="li" class="icon-doc" form="library-newsletter" />
+<txp:file_download_list category="library-booklist" sort="created desc" limit=1 wraptag="ul" break="li" class="icon-doc" form="library-booklist" />
+<ul class="icon-list">
+<txp:article_custom section="news" category="library" form="list-internal-News" status="live" limit=2 index=0 />
+<li class="default"><a href="/news">News</a></li>
+</ul>
+</div>
+
+</div>
+</txp:if_section>
+
+
+
+<txp:if_section name="residents/waste">
+<div class="col nudge40l">
+<div class="box-list">
+<h3>Your <strong>Contacts</strong></h3>
+<ul>
+<li>Waste Hotline<br /><strong>9978&#160;4076</strong></li>
+<li class="nudge10t"><txp:section name="contact">Online customer request</txp:section></li>
+</ul>
+</div>
+<txp:chh_if_data><div class="box-list">
+<h3>Environment <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom section="news" category="environment" form="list-internal-News" status="live" limit=2 index=0 />
+<li class="default"><a href="/news">News</a></li>
+</ul>
+</div></txp:chh_if_data>
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>Happening</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="waste-and-recycling" limit=5 form="list-internal-Events" />
+<li class="default"><a href="/events">Events</a></li>
+</ul>
+</div></txp:chh_if_data>
+<div style="margin-bottom:2em;padding:15px 7px 0 7px;text-align:center;border:1px solid #a7b3bf"> 
+<a href="http://www.mosman.nsw.gov.au/news/2012/01/04/new-waste-collection-system"><txp:image id="4245" /></a>
+<p style="padding-top:0.5em;"><a href="http://www.mosman.nsw.gov.au/news/2012/01/04/new-waste-collection-system"><strong>The new waste collection system</strong></a></p>
+</div> 
+<div style="margin-bottom:2em;padding:15px 7px 0 7px;text-align:center;border:1px solid #a7b3bf"> 
+<a href="http://www.mosman.nsw.gov.au/residents/waste/compost-bins-worm-farms"><txp:image id="3834" /></a>
+<p style="padding-top:0.5em;"><a href="http://www.mosman.nsw.gov.au/residents/waste/compost-bins-worm-farms"><strong>Worm farming in style</strong><br />Compact units available at great prices – and, we deliver.</a></p>
+</div> 
+</div>
+</txp:if_section>
+
+<txp:if_section name="library/lounge">
+<div class="col nudge40l">
+<div class="box-list">
+<h3>On The <strong>Shelves</strong></h3>
+<txp:file_download_list category="library-booklist" sort="created desc" limit=1 wraptag="ul" break="li" class="icon-doc" form="library-booklist" />
+</ul>
+</div>
+</div>
+</txp:if_section>

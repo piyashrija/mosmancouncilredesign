@@ -1,0 +1,1 @@
+<txp:if_custom_field name="keep off home page"><txp:else /><li style="background-color:transparent"><txp:permlink><strong><txp:title /></strong></txp:permlink><txp:upm_if_article_image><txp:permlink><txp:article_image class="news-thumb" /></txp:permlink></txp:upm_if_article_image><txp:excerpt /></li></txp:if_custom_field>

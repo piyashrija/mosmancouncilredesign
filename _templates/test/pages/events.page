@@ -1,0 +1,138 @@
+<txp:output_form form="include-head" />
+
+<txp:anc_hide><!-- ############# CALENDAR ############## --></txp:anc_hide>
+
+<txp:if_section name="events/calendar"><div class="widest-col">
+
+<txp:output_form form="alert-new-events-website" />
+
+<txp:zem_event_calendar_nav wraptag="" />
+<txp:zem_event_calendar wraptag="" break="" class="data zem_event_calendar" class_noday="empty" />
+<p class="article-nav"><a href="/events">List all events</a><a href="/events/find">Search events</a></p>
+</div></txp:if_section>
+
+<txp:anc_hide><!-- ############## EVENT ############### --></txp:anc_hide>
+
+<txp:if_section name="events"><div class="wide-col">
+
+<txp:output_form form="alert-new-events-website" />
+
+<txp:if_article_list>
+
+<txp:article pgonly=1 /> 
+
+<h2>What's On <span>in Mosman</span></h2>
+<txp:if_search>
+<div class="event-cat-info"><a href="/events/find">Search again?</a></div>
+<txp:else />
+<txp:if_category><div class="event-cat-info">You are browsing all current or upcoming events tagged <em><txp:category type="event" this_section=1 title=1 link=0 /></em>.</div></txp:if_category>
+</txp:if_search>
+
+<txp:if_category name="childrens-library,children">
+<ul class="graphic">
+<li><a rel="bookmark" href="http://www.mosman.nsw.gov.au/library/children#schoolage" class="zem_event_permlink"><img src="http://www.mosman.nsw.gov.au/images/3373.jpg" width="41" height="40" alt="" /></a><a rel="bookmark" href="http://www.mosman.nsw.gov.au/library/children#schoolage" class="zem_event_permlink"><strong>Thursday Kids</strong></a><br /><strong><em>Every Thursday during school term</em></strong><br />
+<em><span class="zem_event_location">Mosman Library</span>, <span class="zem_event_time"> 4:00PM</span></em><br />
+<p>Story reading, games, crafts, trivia competitions and heaps of other fun stuff. For school aged children aged 5+</p></li>
+
+<li><a rel="bookmark" href="http://www.mosman.nsw.gov.au/library/children#schoolage" class="zem_event_permlink"><img src="http://www.mosman.nsw.gov.au/images/4463.jpg" width="41" height="40" alt="" /></a><a rel="bookmark" href="http://www.mosman.nsw.gov.au/library/children#schoolage" class="zem_event_permlink"><strong>Star Fish Club</strong></a><br /><strong><em>First Wednesday of the month during school term</em></strong><br />
+<em><span class="zem_event_location">Mosman Library</span>, <span class="zem_event_time"> 4:00PM</span></em><br />
+<p>Share stories, games, writing, craft, competitions and fun activities with a monthly theme. For book loving kids aged 8-12.</p></li>
+
+</ul>
+</txp:if_category>
+
+<txp:chh_if_data>
+<ul class="graphic">
+<txp:if_search><txp:zem_event_list section="events" /><txp:else /><txp:zem_event_list section="events" /></txp:if_search>
+</ul>
+<txp:else />
+<txp:if_category name="mosman-art-gallery">
+<ul class="graphic">
+<txp:smd_xml data="http://mosmanartgallery.org.au/feed?c=MAG-on-MMC" record="item" fields="title,description,link,comments" form="gallery-import" limit="999" cache_time="3600" break="li" />
+</ul>
+<txp:else />
+<txp:if_search><p class="no-results">Sorry, no events matched your search request.</p><txp:else /><txp:if_category name="childrens-library,children"><txp:else /><p class="no-results">Sorry, no events listed.</p><p class="no-results"><span>Use the <a href="/events/find">search</a> tool to find past events.</span></p></txp:if_category></txp:if_search>
+</p>
+</txp:if_category>
+</txp:chh_if_data>
+
+<p class="article-nav"><txp:if_search><a href="/events">View all events</a><txp:else /><txp:if_category><a href="/events">View all events</a></txp:if_category></txp:if_search><a href="/events/calendar">Calendar view</a><a href="/events/find">Search events</a></p>
+
+<txp:else />
+
+<div id="internal">
+<txp:article form="zem_event_single" />
+<p class="article-nav"><a href="/events">View all events</a><a href="/events/calendar">Calendar view</a><a href="/events/find">Search events</a></p>
+</div>
+
+</txp:if_article_list>
+
+</div>
+
+<div class="side-col">
+<txp:zem_event_calendar_nav />
+<txp:zem_event_mini_calendar class="minical data" class_noday="empty" section="events" />
+<div class="minical-meta"><a href="/events/calendar">Calendar view</a><a class="event-feed" rel="alternate" type="application/rss+xml" href="/feed/?c=events" title="Mosman Council Events feed (RSS)">Events Feed</a></div>
+<div class="box-list">
+<h3>Event <strong>Categories</strong></h3>
+<ul class="event_cat_nav"><li><txp:section name="events">All events</txp:section></li></ul>
+<txp:category_list type="event" parent="events" exclude="events" wraptag="ul" break="li" class="event_cat_nav" active_class="active" section="events" />
+</div>
+
+</div>
+
+</txp:if_section>
+
+<txp:anc_hide><!-- ############# EVENT SEARCH ############# --></txp:anc_hide>
+
+<txp:if_section name="events/find"><div class="wide-col">
+
+<txp:output_form form="alert-new-events-website" />
+
+<h2>Search events</h2>
+<div class="event-cat-info">By default this search engine will look for events that are current or in the future. To search past events, enter a date in the <em>Date from</em> field.</div>
+
+<form action="/events/" method="get">
+<ul class="zem_event_search_input">
+<li><label for="q">Keywords:</label>&nbsp;&nbsp;<input type="text" name="q" id="q" value="" /></li>
+<li><label for="date_from">Date from:</label>&nbsp;&nbsp;<input type="text" name="date_from" id="date_from" class="zem_date_select" value="" /> <em>e.g. January 2009</em></li>
+<li><label for="date_to">Date to:</label>&nbsp;&nbsp;<input type="text" name="date_to" id="date_to" class="zem_date_select" value="" /> <em>e.g. next month</em></li>
+<li><fieldset id="category"><legend>Category <span>optional</span></legend>
+<input type="checkbox" name="c[business-community]" id="c[business-community]" value="business-community" />&nbsp;&nbsp;<label for="c[business-community]">Business Community</label><br />
+<input type="checkbox" name="c[children]" id="c[children]" value="children" />&nbsp;&nbsp;<label for="c[children]">Children</label><br />
+<input type="checkbox" name="c[childrens-library]" id="c[childrens-library]" value="childrens-library" />&nbsp;&nbsp;<label for="c[childrens-library]">Children's Library</label><br />
+<input type="checkbox" name="c[community-events]" id="c[community-events]" value="community-events" />&nbsp;&nbsp;<label for="c[community-events]">Community organised events</label><br />
+<input type="checkbox" name="c[council]" id="c[council]" value="council" />&nbsp;&nbsp;<label for="c[council]">Council</label><br />
+<input type="checkbox" name="c[environment]" id="c[environment]" value="environment" />&nbsp;&nbsp;<label for="c[environment]">Environment</label><br />
+<input type="checkbox" name="c[sustainability-workshops]" id="c[sustainability-workshops]" value="sustainability-workshops" />&nbsp;&nbsp;<label for="c[sustainability-workshops]">Sustainability Workshops</label><br />
+<input type="checkbox" name="c[families]" id="c[families]" value="families" />&nbsp;&nbsp;<label for="c[families]">Families</label><br />
+<input type="checkbox" name="c[heritage]" id="c[heritage]" value="heritage" />&nbsp;&nbsp;<label for="c[heritage]">Heritage</label><br />
+<input type="checkbox" name="c[mosman-library]" id="c[mosman-library]" value="mosman-library" />&nbsp;&nbsp;<label for="c[mosman-library]">Mosman Library</label><br />
+<input type="checkbox" name="c[mosman-library-teens]" id="c[mosman-library-teens]" value="mosman-library-teens" />&nbsp;&nbsp;<label for="c[mosman-library-teens]">Mosman Library Teens</label><br />
+<input type="checkbox" name="c[planning]" id="c[planning]" value="planning" />&nbsp;&nbsp;<label for="c[planning]">Planning</label><br />
+<input type="checkbox" name="c[seniors]" id="c[seniors]" value="seniors" />&nbsp;&nbsp;<label for="c[seniors]">Seniors</label><br />
+<input type="checkbox" name="c[youth]" id="c[youth]" value="youth" />&nbsp;&nbsp;<label for="c[youth]">Youth</label><br />
+</fieldset></li>
+<li><input type="submit" name="search" value="Search Events" class="event-button" /></li>
+</ul></form>
+
+</div>
+
+<div class="side-col">
+<txp:zem_event_calendar_nav />
+<txp:zem_event_mini_calendar class="minical data" class_noday="empty" />
+<div class="minical-meta"><a href="/events/calendar">Calendar view</a><a class="event-feed" rel="alternate" type="application/rss+xml" href="/feed/?c=events" title="Mosman Council Events feed (RSS)">Events Feed</a></div>
+<div class="box-list">
+<h3>Event <strong>Categories</strong></h3>
+<txp:category_list type="event" parent="events" exclude="events" wraptag="ul" break="li" class="event_cat_nav" active_class="active" section="events" />
+</div>
+
+</div>
+
+</txp:if_section>
+
+
+
+
+
+<txp:output_form form="include-footer" />

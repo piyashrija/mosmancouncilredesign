@@ -1,0 +1,1024 @@
+<txp:output_form form="include-head" />
+
+<txp:if_index_page>
+
+<txp:if_section_level level=1>
+
+<txp:anc_hide><!-- ### SECTION PAGE ### --></txp:anc_hide>
+
+
+
+<txp:anc_hide><!-- ### CONTACT SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="contact">
+<txp:article pgonly=1 />
+
+<div class="double-col"><div class="double-col-wrap"><div id="ncontact">
+<h3 class="ncontact">Make a request online</h3>
+<ul class="graphic">
+<txp:article_custom section="." status="sticky" form="subsection_list" limit="999" sort="custom_10 asc" index=0 />
+</ul>
+<h3 class="ncontact">Respond to an item on public exhibition</h3>
+<txp:chh_if_data>
+<table class="data" summary="Mosman Council - items for community consultation">
+<thead>
+<tr>
+<th>Open for comment</th>
+<th>Closing Date</th>
+</tr>
+</thead>
+<tbody>
+<txp:zem_event_list sort="zem_event_date.finish_date asc" form="zem_consultation_article" section="council/consultation" />
+<txp:article_custom section="council/consultation" category="sticky-consultation" status="live" index=0 limit=999 form="zem_consultation_article_alt" sort="custom_10" />
+</tbody>
+</table>
+<txp:else /><p>There are currently no items listed.</p>
+</txp:chh_if_data>
+<txp:chh_if_data>
+<table class="data" summary="Mosman Council - Community Consultation event">
+<caption>Events</caption>
+<thead>
+<tr>
+<th>Event</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<txp:zem_event_list form="zem_consultation_event" section="events" category="community-consultation" />
+</tbody>
+</table>
+<txp:else /></txp:chh_if_data>
+<h3>Policies &amp; procedures</h3>
+<ul class="icon-doc">
+<li><txp:file_download id="1159" /></li>
+<li><txp:file_download id="130" /></li>
+<li><txp:file_download id="128" /></li>
+<li><txp:file_download id="85" /></li>
+</ul>
+<txp:hide><txp:output_form form="contact-generic" /></txp:hide>
+
+</div></div></div>
+
+<div class="col">
+
+<div class="box-list">
+<h3>Civic <strong>Centre</strong></h3>
+<ul>
+<li>Mosman Square<br />Spit Junction <txp:file_download_link id="351">map</txp:file_download_link></li>
+<li class="nudge10t">Phone (02) 9978 4000 (24hrs)<br />Fax (02) 9978 4132</li>
+<li class="nudge10t">Rangers (02) 9978 4081<br />Mobile 0419 784 081</li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Postal <strong>Address</strong></h3>
+<ul>
+<li>General Manager<br />
+PO Box 211<br />
+Spit Junction NSW 2088<br />Australia</li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Business <strong>Hours</strong></h3>
+<ul>
+<li>Mon to Fri - 8.30am to 5pm</li>
+</ul>
+</div>
+<div class="box-list">
+<h3>Email <strong>Newsletters</strong></h3>
+Get news, events and updates on current projects delivered to your email inbox.
+<ul class="icon-web nudge10t">
+<li><txp:permlink id="1497">Newsletters</txp:permlink></li>
+</ul>
+</div>
+</div>
+</txp:if_section>
+
+<txp:anc_hide><!-- ### WEBSITE ABOUT SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="web"> 
+<div class="double-col"><div class="double-col-wrap">
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="2559" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="web/about-this-website" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="1499" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="web/terms-of-use" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="1497" form="section_list" /></li>
+<li><txp:article_custom id="20" form="section_list" /></li>
+<li><txp:article_custom id="1363" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="web/external" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+</div></div>
+<div class="col">
+<div class="box-list">
+<h3>Quick <strong>Search</strong></h3>
+<txp:linklist form="Links" category="quick-search" limit="999" sort="linksort asc" wraptag="ul" break="li" class="linklist" />
+</div>
+</div>
+</txp:if_section>
+
+
+<txp:anc_hide><!-- ### COUNCIL SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="council">
+<div class="double-col"><div class="double-col-wrap">
+
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="228" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/about" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="235" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/plans" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="236" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/reports" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="237" form="section_list" /></li>
+<li><txp:article_custom id="238" form="section_list" /></li>
+<li><txp:article_custom id="2217" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/information" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="424" form="section_list" /></li>
+</ul>
+</div>
+
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="232" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/meetings" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+
+<li><txp:article_custom id="3701" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/community-consultative-committees" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+
+<txp:hide>
+<li><txp:article_custom id="233" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/consultative-groups" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</txp:hide>
+
+<li><txp:article_custom id="234" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/consultation" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="239" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/community-safety" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="179" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="council/employment" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="218" form="section_list" /></li>
+</ul>
+</div>
+
+</div></div>
+
+<div class="col">
+
+
+<div style="margin-bottom:2em;padding:15px 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://www.mosman.nsw.gov.au/development/MDAP"><txp:image id="3701" class="image" /></a>
+<p style="padding: 9px 7px 0 7px;"><a href="http://www.mosman.nsw.gov.au/development/MDAP">Mosman Development Assessment Panel (MDAP)</a></p>
+</div>
+
+<txp:output_form form="directors-box-pay-rates" />
+
+<txp:chh_if_data><div class="box-list">
+<h3>Council <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom section="news" category="council-news" form="list-internal-News" status="live" limit=3 index=0 />
+<li class="default"><a href="/news">News</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+<txp:chh_if_data><div class="box-list">
+<h3>Council <strong>Events</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="council" limit=3 form="list-internal-Events" />
+<li class="default"><a href="/events">Events</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+<txp:chh_if_data><div class="box-list">
+<h3>Your <strong>Say</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="community-consultation" limit=6 form="list-internal-Events-alt" />
+<txp:zem_event_list sort="zem_event_date.finish_date asc" form="list-internal-YourSay" limit=5 section="council/consultation" />
+<li class="default"><a href="/council/consultation">Community Consultation</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+<div style="margin-bottom:2em;border:0p;text-align:center;padding:0 0 0em 0;">
+<p><a href="http://www.mosman.nsw.gov.au/web/newsletters"><txp:image id="2785" /></a></p>
+<p style="padding-bottom:0.5em;"><a href="http://www.mosman.nsw.gov.au/web/newsletters"><strong>Sign up for news by email</strong></a></p>
+</div>
+
+
+</div>
+</txp:if_section>
+
+<txp:anc_hide><!-- ### RESIDENTS SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="residents">
+<div class="double-col"><div class="double-col-wrap">
+
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="4" form="section_list" /></li>
+<li><txp:article_custom id="13" form="section_list" /></li>
+<li><txp:article_custom id="12" form="section_list" /></li>
+<li><txp:article_custom id="32" form="section_list" /></li>
+<li><txp:article_custom id="156" form="section_list" /></li>
+<li><txp:article_custom id="157" form="section_list" /></li>
+</ul>
+</div>
+
+<div class="col">
+
+<ul class="graphic">
+<li><txp:article_custom id="17" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="residents/waste" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="155" form="section_list" /></li>
+</ul>
+</div>
+
+</div></div>
+
+<div class="col">
+
+<txp:output_form form="directors-box-pay-rates" />
+
+
+<div style="margin-bottom:2em;padding:15px 0 0 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://ideas.mosman.nsw.gov.au"><txp:image id="3572" class="image" /></a>
+<p style="padding: 4px 7px 9px 7px;"><a href="http://ideas.mosman.nsw.gov.au">What is your Big Idea<br />for Mosman?</a></p>
+</div>
+
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>News</strong></h3>
+<ul class="icon-list">
+<!-- <txp:article_custom section="news/mayor" form="list-internal-News" status="live" limit=1 index=0 /> -->
+<txp:article_custom section="news" category="residents" form="list-internal-News" status="live" limit=3 index=0 />
+<li class="default"><txp:section name="news">News</txp:section></li>
+</ul>
+</div></txp:chh_if_data>
+
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>Happening</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="residents" limit=3 form="list-internal-Events" />
+<li class="default"><a href="/events">Events</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+<txp:chh_if_data><div class="box-list">
+<h3>Your <strong>Say</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="community-consultation" limit=5 form="list-internal-Events" />
+<txp:zem_event_list sort="zem_event_date.finish_date asc" form="list-internal-YourSay" limit=5 section="council/consultation" />
+<li class="default"><a href="/council/consultation">Community Consultation</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+</div>
+</txp:if_section>
+
+<txp:anc_hide><!-- ### PLANNING SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="planning">
+<div class="double-col"><div class="double-col-wrap">
+
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="303" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="planning/controls" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="336" form="section_list" /></li>
+<li><txp:article_custom id="306" form="section_list" /></li>
+</ul>
+</div>
+
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="3144" form="section_list" /></li>
+<li><txp:article_custom id="304" form="section_list" /></li>
+<li><txp:article_custom id="2774" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="planning/spit-junction" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="305" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="planning/heritage" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+
+</div></div>
+
+<div class="col">
+
+<txp:hide>
+<div style="margin-bottom:2em;padding:15px 7px 0 7px;text-align:center;border:1px solid #a7b3bf"> 
+<a href="http://mosmandesignawards.com.au/2011/blog/and-the-winner-is"><txp:image id="3641" /></a>
+<p style="padding-top:0.5em;"><a href="http://mosmandesignawards.com.au/2011/blog/and-the-winner-is"><strong>Award-winning builds</strong></a></p>
+</div>
+<div style="margin-bottom:2em;padding:15px 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://mosmanplanning.net"><txp:image id="4344" /></a>
+<p style="padding: 15px 7px 0 7px;"><a href="http://mosmanplanning.net"><strong>What is your vision for<br />Spit Junction?</strong></a></p>
+</div>
+</txp:hide>
+
+
+
+<div style="margin-bottom:1em;">
+<a title="mosmanplanning.net"  href="http://mosmanplanning.net/"><txp:image id="5373" /></a>
+</div>
+
+
+
+
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>Happening</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="planning,heritage" limit=3 form="list-internal-Events" />
+<li class="default"><a href="/events">Events</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom section="news" category="planning" form="list-internal-News" status="live" limit=2 index=0 />
+<li class="default"><a href="/news">News</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+</div>
+</txp:if_section>
+
+<txp:anc_hide><!-- ### BUILDING + DEVELOPMENT SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="development">
+<div class="double-col"><div class="double-col-wrap">
+
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="329" form="section_list" /></li>
+
+<li><a rel="bookmark" href="/planning/controls/"><img src="/images/422t.jpg" alt=""></a><a rel="bookmark" href="/planning/controls/"><strong>Controls and Policies</strong></a><p>Development controls and policies for building in Mosman. </li>
+
+<li><txp:article_custom id="693" form="section_list" /></li>
+<li><txp:article_custom id="694" form="section_list" /></li>
+<li><txp:article_custom id="330" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="development/construction-sites" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+
+</ul>
+</div>
+
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="322" form="section_list" /><ul class="subgraphic">
+<txp:article_custom section="development/applications" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="2593" form="section_list" /></li>
+<li><txp:article_custom id="324" form="section_list" /></li>
+<li><txp:article_custom id="335" form="section_list" /></li>
+</ul>
+</div>
+
+</div></div>
+
+<div class="col">
+
+<div class="box-list ad-block">
+<a href="http://portal.mosman.nsw.gov.au"><txp:image class="ad-DA" id="314" /></a>
+<p>Tracking your development application <a href="http://portal.mosman.nsw.gov.au">online</a></p>
+</div>
+
+<div class="box-list ad-block">
+<txp:permlink id="719"><txp:image class="ad-DA" id="796" /></txp:permlink>
+<p>Mosman Council's <txp:permlink id="719">Duty Planner</txp:permlink> is available to answer your planning questions</p>
+</div>
+
+<div style="margin-bottom:2em;padding:15px 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://www.mosman.nsw.gov.au/development/MDAP"><txp:image id="3701" class="image" /></a>
+<p style="padding: 9px 7px 0 7px;"><a href="http://www.mosman.nsw.gov.au/development/MDAP">Mosman Development Assessment Panel (MDAP)</a></p>
+</div>
+
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom section="news" category="development" form="list-internal-News" status="live" limit=2 index=0 />
+<li class="default"><a href="/news">News</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+</div>
+</txp:if_section>
+
+<txp:anc_hide><!-- ### ENVIRONMENT SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="environment">
+<div class="double-col"><div class="double-col-wrap">
+
+<txp:output_form form="include-living-mosman" />
+
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="145" form="section_list" />
+<li><txp:article_custom id="148" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/cec" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="787" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/sustainability" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+
+<li><txp:article_custom id="1887" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/food-safety" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+
+<li><txp:article_custom id="153" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/public-health" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="152" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/noise" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="119" form="section_list" /></li>
+<li><txp:article_custom id="149" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/bushland" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+
+<li><txp:article_custom id="2605" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/pests" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+
+<li><txp:article_custom id="150" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/gardening" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="283" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/marine" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="151" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/water" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="1405" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/atmosphere" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="3930" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/responsible-pet-ownership" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+
+<li><txp:article_custom id="3929" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="environment/dog-poo-fairy" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+
+</div></div>
+
+<div class="col">
+
+<txp:hide><txp:output_form form="directors-box-IYB" /></txp:hide>
+
+<txp:output_form form="directors-box-ewaste" />
+
+<div style="margin-bottom:2em;padding:15px 5px;text-align:center;border:1px solid #a7b3bf">
+<a href="http://www.yourcarbonprice.com.au/"><txp:image id="4702" /></a>
+</div>
+
+<div style="margin-bottom:1.5em;padding:15px 5px;text-align:center;border:1px solid #a7b3bf">
+<a href="http://compostrevolution.com.au/mosman/"><txp:image id="4674" /></a>
+<p style="margin-bottom:5px;"><strong><a href="http://compostrevolution.com.au/mosman/">Be part of the Compost Revolution!</a></strong></p>
+</div>
+
+
+<div style="margin-bottom:2em;padding:15px 5px;text-align:center;border:1px solid #a7b3bf">
+<a href="http://www.mosman.nsw.gov.au/news/2011/10/14/get-to-know-the-residents-of-underwater-mosman"><txp:image id="4079" /></a>
+</div>
+
+
+<txp:chh_if_data><div class="box-list">
+<h3>Environment <strong>Events</strong></h3>
+<ul class="icon-list">
+<txp:smd_xml data="http://events.mosman.nsw.gov.au/?rah_external_output=xml&category=environment" record="event" fields="date_string, headline, url" form="list-MosmanEvents-alt"  break="li" limit="5" />
+<li class="default"><a href="http://events.mosman.nsw.gov.au/genres/?c=environment">Events</a></li>
+</ul>
+</div>
+</txp:chh_if_data>
+
+<txp:chh_if_data><div class="box-list">
+<h3>Environment <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom section="news" category="environment" form="list-internal-News" status="live" limit="5" index=0 />
+<li class="default"><a href="/news">News</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+</div>
+</txp:if_section>
+
+
+
+<txp:anc_hide><!-- ### LIBRARY SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="library">
+
+<div class="double-col"><div class="double-col-wrap">
+
+<txp:hide>
+<txp:output_form form="include-library-webcat" />
+</txp:hide>
+
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="120" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="library/about" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="67" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="library/information" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="85" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="library/local-studies" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="1422" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="library/lounge" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="89" form="section_list" /></li>
+<li><txp:article_custom id="96" form="section_list" /></li>
+<li><txp:article_custom id="98" form="section_list" /></li>
+<li><txp:article_custom id="99" form="section_list" /></li>
+<li><txp:article_custom id="101" form="section_list" /></li>
+<li><txp:article_custom id="173" form="section_list" /></li>
+<li><txp:article_custom id="70" form="section_list" /></li>
+<li><txp:article_custom id="102" form="section_list" /></li>
+<txp:hide><li><txp:article_custom id="2908" form="section_list" /></li></txp:hide>
+</ul>
+</div>
+
+</div></div>
+
+<div class="col">
+
+<div class="box-list ad-block"><div class="ad-block-whale">
+<a href="http://www.aurorashore.com.au/OPAC/Mosman/Default.aspx"><txp:image id="871" class="ad-direct-webcat" /></a>
+<ul class="icon-list">
+<li class="default" style="margin-bottom:0.3em"><a href=http://www.aurorashore.com.au/OPAC/Mosman/Default.aspx>Search catalogue</a></li>
+<li class="default" style="margin-bottom:0.3em"><a href="http://www.aurorashore.com.au/OPAC/Mosman/Member.aspx">Renew my items</a></li>
+<li class="default" style="margin-bottom:0.3em"><a href="http://www.aurorashore.com.au/OPAC/Mosman/Member.aspx">Update my account details</a></li>
+<li class="default"><a href="http://www.mosman.nsw.gov.au/library/information/ebooks">eBooks and eAudiobooks</a></li>
+</ul>
+<a href="http://www.datadiction.com.au/bin/dd.dll/Lincs?xps&MBR=MOS"><txp:image id="872" class="ad-LINCS" /></a>
+<ul class="icon-list">
+<li class="default"><a href="http://www.datadiction.com.au/bin/dd.dll/Lincs?xps&MBR=MOS">Find local organisations, services and facilities</a></li>
+</ul>
+</div></div>
+
+<txp:hide>
+
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FMosman-Library%2F119167878179358&amp;width=215&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:215px; height:215px;" allowTransparency="true"></iframe>
+
+<div style="margin-bottom:2em;padding:15px 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://www.mosman.nsw.gov.au/news/2012/12/14/merry-christmas"><strong>Holiday Opening Hours</strong></a>
+</div>
+
+</txp:hide>
+
+<div style="margin-bottom:2em;text-align:center;border:1px solid #a7b3bf;padding:10px 0 0 4px;">
+<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fmosmanlibrary&amp;send=false&amp;layout=standard&amp;width=210&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:210px; height:35px;" allowTransparency="true"></iframe>
+</div>
+
+<txp:hide>
+<div style="margin-bottom:2em;padding:1px 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://www.love2read.org.au/index.cfm"><txp:image id="4019" class="image" /></a>
+</div>
+</txp:hide>
+
+
+
+
+<txp:hide> 
+<div class="box-list">
+<h3>Holiday <strong>Opening Hours</strong></h3>
+<ul class="icon-list">
+        <li>Friday 23 Dec 9.30am &#8211; 3pm</li>
+        <li>Saturday 24 Dec 10am &#8211; 4pm</li>
+        <li>Sunday 25 Dec <span class="caps"><span class="caps">CHRISTMAS</span></span> <span class="caps"><span class="caps">DAY</span></span></li>
+        <li>Monday 26 Dec <span class="caps"><span class="caps">BOXING</span></span> <span class="caps"><span class="caps">DAY</span></span></li>
+        <li>Tuesday 27 Dec <span class="caps"><span class="caps">PUBLIC</span></span> <span class="caps"><span class="caps">HOLIDAY</span></span></li>
+        <li>Wednesday 28 Dec 9.30am &#8211; 5.30pm</li>
+        <li>Thursday 29 Dec 9.30am &#8211; 5.30pm</li>
+        <li>Friday 30 Dec 9.30am &#8211; 3pm</li>
+        <li>Saturday 31 Dec 10am &#8211; 4pm</li>
+        <li>Sunday 1 Jan <span class="caps"><span class="caps">NEW</span></span> <span class="caps"><span class="caps">YEARS</span></span> <span class="caps"><span class="caps">DAY</span></span></li>
+        <li>Monday 2 Jan <span class="caps"><span class="caps">PUBLIC</span></span> <span class="caps"><span class="caps">HOLIDAY</span></span></li>
+        <li>Tuesday 3 Jan 9.30am &#8211; 9pm</li>
+    </ul>
+</div>
+</txp:hide>
+
+
+<txp:hide>
+<div class="box-list">
+<h3>What's <strong>Hot</strong></h3>
+<ul class="icon-list">
+<li class="default" style="margin-bottom:0.3em"><a href="/events/?c=mosman-library">Events at the Library</a></li>
+<li class="default" style="margin-bottom:0.3em"><a href="http://mosmanfuturelibrary.tumblr.com/">Mosman Library Of The Future</a></li>
+<li class="default" style="margin-bottom:0.3em"><a href="http://teens.mosmanlibraryblogs.com/article/304/the-verdict-is-in">Lens of Youth photography competition</a></li>
+</ul>
+</div>
+</txp:hide>
+
+<div class="box-list">
+<h3>Library <strong>Events</strong></h3>
+<ul class="icon-list">
+<txp:smd_xml data="http://events.mosman.nsw.gov.au/?rah_external_output=xml&venue=mosman-library" record="event" fields="date_string, headline, url" form="list-MosmanEvents-alt"  break="li" limit="5" />
+<li class="default"><a href="http://events.mosman.nsw.gov.au/events/?v=mosman-library">Events</a></li>
+</ul>
+</div>
+
+<txp:chh_if_data><div class="box-list">
+<h3>Library <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom section="news" category="library" form="list-internal-News" status="live" limit=1 index=0 />
+<li class="default"><a href="/news">News</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+
+<txp:output_form form="include-library-social-media-linklist" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</txp:if_section>
+
+
+<txp:anc_hide><!-- ### COMMUNITY SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="community">
+<div class="double-col"><div class="double-col-wrap">
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="54" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/children" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="105" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/older" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="103" form="section_list" /></li>
+<li><txp:article_custom id="847" form="section_list" /></li>
+<li><txp:article_custom id="2964" form="section_list" /></li>
+<li><txp:article_custom id="2181" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/volunteers" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="2580" form="section_list" /></li>
+</ul>
+</div>
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="92" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/business" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="104" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/youth" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+<li><txp:article_custom id="161" form="section_list" /></li>
+<li><txp:article_custom id="520" form="section_list" /></li>
+<li><txp:article_custom id="219" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="community/friendship" status="sticky" sort="custom_10" form="list-static-articles" index=0 /></ul></li>
+</ul>
+</div>
+</div></div>
+<div class="col">
+
+
+<txp:hide>
+<txp:output_form form="directors-box-saving-life" />
+
+<div style="margin-bottom:2em;text-align:center;">
+<a href="https://www.facebook.com/events/168825733226097/"><txp:image id="4402" class="image" /></a>
+</div>
+
+</txp:hide>
+
+
+
+
+<div class="box-list ad-block">
+<a href="http://www.datadiction.com.au/bin/dd.dll/Lincs?xps&MBR=MOS"><txp:image id="324" class="ad-commdirectory" /></a>
+<p><a href="http://www.datadiction.com.au/bin/dd.dll/Lincs?xps&MBR=MOS">Find</a> contacts and information for community services, sport &amp; leisure, health &amp; education</p>
+</div>
+
+
+<txp:hide>
+
+
+<p style="padding: 0 7px 2px 7px;"><strong>Tax Returns - We Can Help!</strong></p>
+<p style="padding: 0 7px 5px 7px;">
+<p style="padding: 0 7px 5px 7px;">Are your tax affairs simple?<br />
+Earn around $50,000 or less?</p>
+<p style="padding: 0 7px 5px 7px;">Get free help with your tax return from a Tax Help Volunteer</p>
+<p style="padding: 0 7px 0 7px;"><em>Call Olivier 9978 4128</em></p>
+</div>
+
+<div style="margin-bottom:2em;padding:15px 0;text-align:center;border:1px solid #a7b3bf">
+<p style="padding: 0 7px 0 7px;"><strong>Anger Management Group</strong><br />
+with Tim Harvey<br />
+<em>Register with Olivier 9978 4128</em></p>
+</div>
+
+</txp:hide>
+
+
+
+
+
+
+
+<txp:chh_if_data><div class="box-list">
+<h3>What's <strong>Happening</strong></h3>
+<ul class="icon-list">
+<txp:smd_xml data="http://events.mosman.nsw.gov.au/?rah_external_output=xml" record="event" fields="date_string, headline, url" form="list-MosmanEvents-alt"  break="li" limit="6" />
+<li class="default"><a href="http://events.mosman.nsw.gov.au">Events</a></li>
+</ul>
+</div>
+</txp:chh_if_data>
+
+<txp:chh_if_data><div class="box-list">
+<h3>Community <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom section="news" category="community" form="list-internal-News" status="live" limit=3 index=0 />
+<li class="default"><a href="/news">Community News</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+</div>
+</txp:if_section>
+
+
+
+
+<txp:anc_hide><!-- ### MOSMAN SECTION PAGE ### --></txp:anc_hide>
+
+<txp:if_section name="mosman">
+<div class="double-col"><div class="double-col-wrap">
+<div class="col nudge20r">
+<ul class="graphic">
+<li><txp:article_custom id="190" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/recreation" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+<li><txp:article_custom id="201" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/culture" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+<li><txp:article_custom id="207" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/history" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+</ul>
+</div>
+<div class="col">
+<ul class="graphic">
+<li><txp:article_custom id="2553" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/transport" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+<li><txp:article_custom id="191" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/venues" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+<li><txp:article_custom id="183" form="section_list" />
+<ul class="subgraphic"><txp:article_custom section="mosman/place" status="sticky" sort="custom_10" form="list-static-articles" index=0 limit="99" /></ul></li>
+</ul>
+</div>
+</div></div>
+
+<div class="col">
+
+
+<div style="margin-bottom:2em;border:0p;text-align:center;padding:0 0 0em 0;">
+<p><a href="http://www.mosman.nsw.gov.au/web/newsletters"><txp:image id="2785" /></a></p>
+<p style="padding-bottom:0.5em;"><a href="http://www.mosman.nsw.gov.au/web/newsletters"><strong>Sign up for news by email</strong></a></p>
+</div>
+
+<txp:chh_if_data><div class="box-list">
+<h3>What's On in <strong>Mosman</strong></h3>
+<ul class="icon-list">
+<txp:smd_xml data="http://events.mosman.nsw.gov.au/?rah_external_output=xml" record="event" fields="date_string, headline, url" form="list-MosmanEvents-alt"  break="li" limit="6" />
+<li class="default"><a href="http://events.mosman.nsw.gov.au">Events</a></li>
+</ul>
+</div>
+</txp:chh_if_data>
+
+<!--
+<txp:chh_if_data><div class="box-list">
+<h3>Mosman <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom section="news" category="mosman" form="list-internal-News" status="live" limit=3 index=0 />
+<li class="default"><a href="/news">News</a></li>
+</ul>
+</div></txp:chh_if_data>
+-->
+
+</div>
+</txp:if_section>
+
+
+
+<txp:anc_hide><!-- ### END SECTION PAGES ### --></txp:anc_hide>
+
+<txp:else />
+
+<txp:anc_hide><!-- ### START SUBSECTION PAGE ### --></txp:anc_hide>
+
+
+<div id="sidebar">
+<txp:site_nav headertag="h3" active_link=0 wraptag="ul" break="li" sort="Custom_10" indent="" parent=".." depth=2 />
+<txp:article index=1 sub_indexes=0 form="section_article_related" />
+
+<txp:if_section within="community">
+<h3><span>Community</span> Directory</h3>
+<ul class="related_articles"><li><a href="http://www.datadiction.com.au/bin/dd.dll/Lincs?xps&MBR=MOS">Find services and facilities</a></li>
+<li><txp:permlink id="61">Print directories</txp:permlink></li>
+</ul>
+</txp:if_section>
+
+</div>
+
+<div id="internal">
+
+<txp:article index=1 sub_indexes=0 form="section_article_description" />
+
+<txp:if_section name="council/consultation">
+
+<txp:chh_if_data>
+<table class="data" summary="Mosman Council - items for community consultation">
+<caption>Have your say</caption>
+<thead>
+<tr>
+<th>Open for comment</th>
+<th>Closing Date</th>
+</tr>
+</thead>
+<tbody>
+<txp:zem_event_list sort="zem_event_date.finish_date asc" form="zem_consultation_article" section="council/consultation" />
+<txp:article_custom section="council/consultation" category="sticky-consultation" status="live" index=0 limit=999 form="zem_consultation_article_alt" sort="custom_10" />
+</tbody>
+</table>
+<txp:else /><p>There are currently no items listed.</p>
+</txp:chh_if_data>
+<txp:chh_if_data>
+<table class="data" summary="Mosman Council - Community Consultation event">
+<caption>Events</caption>
+<thead>
+<tr>
+<th>Event</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<txp:zem_event_list form="zem_consultation_event" section="events" category="community-consultation" />
+</tbody>
+</table>
+<txp:else /></txp:chh_if_data>
+
+<ul class="icon-alert"><li>Any submissions (including personal information in the submission such as the identifying particulars of the writer) made to Council are deemed to be for the purpose of public process and will be available for public inspection in accordance with Council's <txp:file_download id="1681" />. Council will give consideration to the ‚Äòpublic interest‚Äô and requests for confidentiality by submitters in determining access to submission letters. However, the provisions of the <em>Government Information (Public Access) Act</em> may, after due process, result in submissions marked confidential by the writer being released to an applicant.</li></ul>
+<h3>Stay informed</h3>
+<txp:output_form form="feedburner-consultations" />
+<h5>Subscribe with RSS</h5>
+<ul class="icon-feed"><li><a rel="alternate" type="application/rss+xml" href="http://www.mosman.nsw.gov.au/feed/?c=consultation">RSS feed of community consultations</a></li></ul>
+
+
+<h3>What would you do to make Mosman a better place?</h3>
+<a href="http://ideas.mosman.nsw.gov.au/forums/96167-big-ideas-for-mosman"><img src="http://www.mosman.nsw.gov.au/images/3545.gif" width="250" height="132" alt="" class="image-right" /></a> 
+ 
+	<p><strong>We are constantly on the look-out for ideas that will help secure a great future for Mosman.</strong></p> 
+ 
+	<p>And we also recognise that good ideas can spark at any time &#8211; not just when we're actively seeking community views, or even during normal business hours.</p> 
+ 
+	<p>We wanted a space where residents can post, rate and discuss their big ideas 24 hours a day, 7 days a week. A space where community conversations take place on the kinds of initiatives that will shape the Mosman of tomorrow.  </p> 
+ 
+	<p>Our <a href="http://ideas.mosman.nsw.gov.au/forums/96167-big-ideas-for-mosman">Big Ideas forum</a> seeks responses to the question "What would you do to make Mosman a better place?"  We want people to think creatively and innovatively about Mosman's future, to share their ideas and to comment on the ideas of others.</p> 
+ 
+	<p>The ideas, conversations and ratings that flow from Big Ideas will help in the ongoing development of <span class="caps">MOSPLAN</span>, not just at a particular point in time but as an ongoing input to Council planning.</p> 
+ 
+	<p><strong>Big Ideas is live now.  Enter the site here: <a href="http://ideas.mosman.nsw.gov.au/forums/96167-big-ideas-for-mosman">ideas.mosman.nsw.gov.au</a> </strong></p>
+
+</txp:if_section>
+
+<txp:if_section name="council/employment">
+<txp:chh_if_data>
+<table class="data" summary="Mosman Council - Positions Vacant">
+<caption>Positions vacant</caption>
+<thead>
+<tr>
+<th>Position Title</th>
+<th>Closing Date</th>
+</tr>
+</thead>
+<tbody>
+<txp:zem_event_list form="zem_employment_article" section="council/employment" sort="zem_event_date.finish_date asc" />
+<txp:article_custom section="council/employment" category="sticky-job-ad" status="live" index=0 limit=999 form="zem_employment_article_alt" sort="custom_10" />
+</tbody>
+</table>
+<txp:else /><p>There are currently no positions vacant.</p>
+</txp:chh_if_data>
+<h3>Job alerts</h3>
+<txp:output_form form="feedburner-jobs" />
+<h5>Subscribe with RSS</h5>
+<ul class="icon-feed"><li><a rel="alternate" type="application/rss+xml" href="http://www.mosman.nsw.gov.au/feed/?c=employment">RSS feed of positions vacant</a></li></ul>
+</txp:if_section>
+
+<txp:if_section name="council/tenders">
+<txp:chh_if_data>
+<table class="data" summary="Mosman Council - Tenders">
+<caption>Items for tender</caption>
+<thead>
+<tr>
+<th>Item</th>
+<th>Closing Date</th>
+</tr>
+</thead>
+<tbody>
+<txp:zem_event_list form="zem_consultation_article" section="council/tenders" />
+</tbody>
+</table>
+<txp:else /><p>There are currently no items listed.</p>
+</txp:chh_if_data>
+</txp:if_section>
+
+
+
+
+<div class="subsection-col">
+<txp:if_section name="council/employment"><h3>Applying for a position</h3></txp:if_section>
+
+
+
+<txp:output_form form="subsection_sidebar" />
+
+
+
+
+<ul class="graphic">
+<txp:article_custom section="." status="sticky" form="subsection_list" limit="999" sort="custom_10 asc" index=0 />
+</ul>
+<txp:if_section name="community/business">
+
+<h3>Business Web Links</h3>
+
+<ul>
+<li>(icon-web) Department of Industry, Innovation, Climate Change, Science, Research and Tertiary Education (Fed Govt) <a href="http://innovation.gov.au/">innovation.gov.au<a></li>
+<li>NSW Trade &amp; Investment (NSW Govt) <a href="http://www.business.nsw.gov.au/">www.business.nsw.gov.au</a></li>
+<li>Small Business Commissioner (NSW Govt) <a href="http://www.smallbusiness.nsw.gov.au/">www.smallbusiness.nsw.gov.au</a></li>
+<li>Austrade (Fed Govt) <a href="http://www.austrade.gov.au">www.austrade.gov.au</a></li>
+<li>Australian Competition & Consumer Commission (Fed Govt) <a href="http://www.accc.gov.au">www.accc.gov.au</a></li>
+<li>Australian Taxation Office (Fed Govt) <a href="http://www.ato.gov.au">www.ato.gov.au</a></li>
+<li>Australian Securities & Investments Commission (Fed Govt) <a href="http://www.asc.gov.au">www.asc.gov.au</a></li>
+<li>Business Entry Point (Fed Govt) <a href="http://www.business.gov.au">www.business.gov.au</a></li>
+<li>Small Business Information Point and Toolkit (NSW Govt) <a href="http://www.smallbiz.nsw.gov.au">www.smallbiz.nsw.gov.au</a></li>
+<li>Home-Based Business Manual (Vic Govt) <a href="http://www.homebusinessmanual.com.au">www.homebusinessmanual.com.au</a></li>
+<li>AusIndustry (Fed Govt) <a href="http://www.ausindustry.gov.au">www.ausindustry.gov.au</a></li>
+<li>Enterprise Connect (Fed Govt) <a href="http://www.enterpriseconnect.gov.au">www.enterpriseconnect.gov.au/</a></li>
+<li>Skills Connect (Fed Govt) <a href="http://skillsconnect.gov.au">skillsconnect.gov.au/</a></li>
+</ul>
+
+<h4>Business Awards</h4>
+<ul>
+<li>Australian Business Awards <a href="http://www.businessawards.com.au">www.businessawards.com.au/</a></li>
+<li>Telstra Business Awards <a href="http://www.telstrabusinessawards.com">www.telstrabusinessawards.com/</a></li>
+<li>Australian Small Business Champion Awards <a href="http://www.businesschampions.com.au">www.businesschampions.com.au/ </a></li>
+<li>Australian Excellence Awards <a href="http://australianexcellenceawards.com">australianexcellenceawards.com/<a></li>
+<li>NSW Business Chamber Annual Awards <a href="http://www.businessannualawards.com.au">www.businessannualawards.com.au/ </a></li>
+</ul>
+</txp:if_section>
+
+
+
+
+</div>
+
+</div>
+
+
+<txp:anc_hide><!-- ### END SUBSECTION PAGE ### --></txp:anc_hide>
+
+</txp:if_section_level>
+
+
+<txp:else />
+
+<txp:if_article_list>
+this is a section list page that doesn't have an __index__ article
+<txp:site_map parent="." include_parent=0 sort="Custom_10" />
+<txp:else />
+
+<txp:anc_hide><!-- ### INDIVIDUAL PAGE ### --></txp:anc_hide>
+
+
+
+<div id="sidebar">
+
+<txp:if_section_level level=1><txp:site_nav headertag="h3" active_link=0 wraptag="ul" break="li" sort="Custom_10" indent="" parent="." depth=1 /><txp:else /><txp:site_nav headertag="h3" active_link=0 wraptag="ul" break="li" sort="Custom_10" indent="" parent=".." depth=2 /></txp:if_section_level>
+<txp:chh_if_data><h3><span>Related</span> Info</h3>
+<txp:related_articles wraptag="ul" break="li" sort="title" /></txp:chh_if_data>
+<txp:if_section within="community">
+<h3><span>Community</span> Directory</h3>
+<ul class="related_articles"><li><a href="http://www.datadiction.com.au/bin/dd.dll/Lincs?xps&MBR=MOS">Find services and facilities</a></li>
+<li><txp:permlink id="61">Print directories</txp:permlink></li>
+</ul>
+</txp:if_section>
+</div>
+
+<div id="internal">
+
+<txp:article />
+</div>
+
+
+
+<txp:anc_hide><!-- ### END INDIVIDUAL PAGE ### --></txp:anc_hide>
+
+</txp:if_article_list>
+</txp:if_index_page>
+
+<txp:output_form form="include-footer" />

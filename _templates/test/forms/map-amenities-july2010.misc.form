@@ -1,0 +1,130 @@
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+addLoadEvent(function() {
+  /* more code to run on page load */ 
+var mapOpts = {
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  scaleControl: true,
+  scrollwheel: true
+}
+
+var map = new google.maps.Map(document.getElementById("Lmap"), mapOpts);
+
+var infoWindow = new google.maps.InfoWindow();
+var markerBounds = new google.maps.LatLngBounds();
+var markerArray = [];
+
+var icontoilets = 'http://www.mosman.nsw.gov.au/images/2950.png';
+var icontoiletstemp = 'http://www.mosman.nsw.gov.au/images/2951.png';
+var iconconstruct = 'http://www.mosman.nsw.gov.au/images/2949.png';
+ 
+function makeMarker(options){
+  var pushPin = new google.maps.Marker({map:map});
+  pushPin.setOptions(options);
+  google.maps.event.addListener(pushPin, "click", function(){
+    infoWindow.setOptions(options);
+    infoWindow.open(map, pushPin);
+  });
+  markerBounds.extend(options.position);
+  markerArray.push(pushPin);
+  return pushPin;
+}
+ 
+google.maps.event.addListener(map, "click", function(){
+  infoWindow.close();
+});
+
+makeMarker({
+  position: new google.maps.LatLng(-33.822138643209406, 151.25080436468124),
+  title: "Bathers Pavilion",
+  content: "<strong>Bathers Pavilion</strong><br />Change rooms &amp; toilets with disability access",
+  icon: icontoilets 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.82415188614996, 151.25101625919342),
+  title: "Temporary toilets",
+  content: "<strong>Temporary toilets</strong>",
+  icon: icontoiletstemp 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.82926555521217, 151.25333905220032),
+  title: "Balmoral Oval Pavilion",
+  content: "<strong>Balmoral Oval Pavilion</strong><br />Change rooms &amp; toilets with disability access",
+  icon: icontoilets 
+});
+
+
+
+makeMarker({
+  position: new google.maps.LatLng(-33.824420389235414, 151.25108733773232),
+  title: "Balmoral Tramshed amenities upgrade",
+  content: "<strong>Balmoral Tramshed</strong><br />Amenities upgrade in progress",
+zIndex: 9999,
+  icon: iconconstruct 
+});    
+makeMarker({
+  position: new google.maps.LatLng(-33.8277983311283, 151.252651065588),
+  title: "Balmoral Baths amenities upgrade",
+  content: "<strong>Balmoral Baths</strong><br />Amenities upgrade in progress<br /><em>Note: the disability accessible toilets here<br />are not part of the construction project<br />and will remain open during this period</em>",
+zIndex: 9999,
+  icon: iconconstruct 
+});  
+makeMarker({
+  position: new google.maps.LatLng(-33.83823323403843, 151.2527959048748),
+  title: "Clifton Gardens amenities upgrade",
+  content: "<strong>Clifton Gardens</strong><br />Amenities upgrade in progress",
+zIndex: 9999,
+  icon: iconconstruct 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.81451195554217, 151.2479417771101),
+  title: "Rosherville Reserve amenities upgrade",
+  content: "<strong>Rosherville Reserve</strong><br />Amenities upgrade in progress",
+zIndex: 9999,
+  icon: iconconstruct 
+});
+
+makeMarker({
+  position: new google.maps.LatLng(-33.83963010204441, 151.23850643634796),
+  title: "Sirius Cove",
+  content: "<strong>Sirius Cove</strong><br />Toilets with disability access",
+  icon: icontoilets 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.805454868214866, 151.2459897994995),
+  title: "Spit West Reserve",
+  content: "<strong>Spit West Reserve</strong><br />Toilets with disability access",
+  icon: icontoilets 
+});
+
+makeMarker({
+  position: new google.maps.LatLng(-33.838511718317925, 151.2528321146965),
+  title: "Temporary toilets",
+  content: "<strong>Temporary toilets</strong>",
+  icon: icontoiletstemp 
+});
+makeMarker({
+  position: new google.maps.LatLng(-33.8144696141069, 151.24814361333847),
+  title: "Temporary toilets",
+  content: "<strong>Temporary toilets</strong>",
+  icon: icontoiletstemp 
+});
+
+
+map.fitBounds(markerBounds);
+
+});
+</script>
+
+<div id="Lmap" style="width:609px; height:400px;"></div><p style="padding:5px 0 13px 0"><small><em>Zoom in to each site for more detail (you can use the  scroll-wheel on your mouse)</em></small></p>

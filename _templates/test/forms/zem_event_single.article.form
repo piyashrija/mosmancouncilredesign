@@ -1,0 +1,36 @@
+<txp:zem_article_event>
+
+<txp:php>
+// Format string '%s' doesn't work on this system :-(
+
+$finish_date = zem_event_finish_date( array('format' => '%Y-%m-%d', 'wraptag' => '') );
+$finish_time = zem_event_finish_time( array('format' => '%H:%M:%S', 'wraptag' => '') );
+
+$finish_date = (empty($finish_date)) ? zem_event_date( array('format' => '%Y-%m-%d', 'wraptag' => '') ) : $finish_date;
+$finish_time = (empty($finish_time)) ? '23:59' : $finish_time;
+
+$full_date = $finish_date.' '.$finish_time;
+$finish_stamp = strtotime($full_date);
+
+if (time() > $finish_stamp) {
+   echo '<ul style="margin-bottom:21px;" class="icon-alert"><li><strong>This event has concluded.</strong> You are now viewing an archived web page.<br />For current and upcoming events, see  <a href="http://www.mosman.nsw.gov.au/events"><strong>What&#39;s On in Mosman</strong></a>.</li></ul>';
+}
+</txp:php>
+
+<h2><txp:title /></h2>
+
+<div class="table-event-wrap">
+<dl class="table-event-display">
+<dt>Date </dt><dd><strong><txp:zem_event_date wraptag="" format="%A %e %B %Y" label="" /> <txp:chh_if_data>&#8211; <txp:zem_event_finish_date wraptag="" format="%A %e %B %Y" /></txp:chh_if_data></strong></dd>
+<txp:chh_if_data><dt>Time </dt><dd class="zem_event_time"><txp:zem_event_time label="" wraptag="" format="%l:%M%p" /><txp:zem_event_finish_time label=" - " sep="" wraptag="" format="%l:%M%p" /></dd></txp:chh_if_data>
+<txp:chh_if_data><dt>Place </dt><dd><txp:zem_event_location /> &nbsp;<txp:zem_event_location_url>map link</txp:zem_event_location_url></dd></txp:chh_if_data>
+<txp:chh_if_data><dt>Link</dt><dd><txp:zem_event_url>Event website</txp:zem_event_url></dd></txp:chh_if_data>
+</dl>
+<br clear="all" />
+</div>
+
+<txp:body />
+
+<txp:output_form form="social_bookmarks" />
+
+</txp:zem_article_event>

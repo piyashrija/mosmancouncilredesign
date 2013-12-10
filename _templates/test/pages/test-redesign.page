@@ -1,0 +1,197 @@
+<txp:output_form form="include-head" />
+
+<div class="wider-col home-1">
+
+<div class="box-list">
+<h3><a style="padding-right:0.3em;" rel="alternate" type="text/xml" href="http://events.mosman.nsw.gov.au/?rah_external_output=xml" title="XML Feed"><txp:image id="326" /></a>Mosman <strong>Events</strong></h3>
+<ul class="graphic">
+<txp:smd_xml data="http://events.mosman.nsw.gov.au/?rah_external_output=xml" record="event" fields="description, date_string_short, headline, url, thumbnail" form="event-import"  break="li" limit="21" />
+<li class="default"><a href="http://events.mosman.nsw.gov.au">Mosman Events</a></li>
+</ul>
+</div>
+
+<txp:hide>
+
+<div class="box-list">
+<h3><a style="padding-right:0.3em;" rel="alternate" type="application/rss+xml" href="/feed/?c=events" title="RSS Feed"><txp:image id="326" /></a>What's <strong>Happening</strong></h3>
+<ul class="graphic">
+<txp:zem_event_list form="zem_event_Home" limit="12" section="events" category="community-consultation,business-community,children,childrens-library,childrens-services,community-events,council,environment,families,heritage,hsc-students,mosman-library,mosman-library-teens,planning,residents,seniors,youth"  />
+<li class="default"><txp:section name="events">Events</txp:section></li>
+</ul>
+</div>
+
+<div class="box-list">
+<h3>Mosman <strong>Art Gallery</strong></h3>
+<ul class="graphic">
+<txp:smd_xml data="http://mosmanartgallery.org.au/feed?c=MAG-on-MMC" record="item" fields="title,description,link,comments" form="gallery-import" limit="10"  break="li" />
+<li class="default"><a href="http://mosmanartgallery.org.au">Mosman Art Gallery</a></li>
+</ul>
+</div>
+
+</txp:hide>
+
+
+</div>
+
+<div class="col home-2">
+<div class="box-list">
+<h3><a style="padding-right:0.3em;" rel="alternate" type="application/rss+xml" href="/feed" title="RSS Feed"><txp:image id="326" /></a>What's <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom status="live" section="news" limit="13" form="list-home-News" index=0 />
+<li class="default"><txp:section name="news" link=1>News</txp:section></li>
+</ul>
+</div>
+</div>
+
+<div class="col">
+
+<txp:hide> ########## DIRECTORS BOX ############## </txp:hide>
+
+<txp:hide>
+
+ARCHIVE OLD DIRECTOR'S BOX ITEMS INTO THIS AREA DELIMITED BY 'HIDE' TAGS
+
+<div style="margin-bottom:2em;padding:15px 0 0 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://www.mosman.nsw.gov.au/news/2012/12/04/council-christmas-gift-appeal-2012"><txp:image id="5024" /></a>
+<p style="padding-top:12px;"><a href="http://www.mosman.nsw.gov.au/news/2012/12/04/council-christmas-gift-appeal-2012"><strong>Christmas Gift Appeal<br />for Bear Cottage</strong></a></p>
+</div>
+
+<div style="margin-bottom:2em;">
+<a href="http://www.mosman.nsw.gov.au/news/2012/12/14/merry-christmas"><txp:image id="5056" /></a>
+</div>
+
+<div style="margin-bottom:2em;padding:13px 0 0 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://mosmandesignawards.com.au/2013/"><txp:image id="3415" /></a>
+<p style="padding-top:7px;"><a href="http://mosmandesignawards.com.au/2013/"><strong>Mosman Design Awards</strong><br />View nominated properties and<br />vote for People's Choice!</a></p>
+</div>
+
+<div style="margin-bottom:2em;padding:13px 0 0 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://www.mosman.nsw.gov.au/community/volunteers/youth"><txp:image id="5198" /></a>
+<p style="padding-top:7px;"><a href="http://www.mosman.nsw.gov.au/community/volunteers/youth"><strong>Youth volunteers program</strong><br />Interested?</a></p>
+</div>
+
+<div style="margin-bottom:2em;padding:0 0 0 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://www.mosman.nsw.gov.au/news/2013/02/19/youth-survey-win-an-ipad-mini"><txp:image id="5172" /></a>
+<p style="padding-top:7px;"><a href="http://www.mosman.nsw.gov.au/news/2013/02/19/youth-survey-win-an-ipad-mini"><strong>Youth Survey<br />Win an iPad mini</strong></p>
+</div>
+
+<div style="margin-bottom:1em;">
+<a title="Community Consultative Committees: Call for Members"  href="http://www.mosman.nsw.gov.au/news/2013/03/06/call-for-members-community-consultative-committees"><txp:image id="5239" /></a>
+</div>
+
+<div style="margin-bottom:2em;">
+<a title="Expressions of Interest in Appointment to Mosman Penalty Notice Review Panel"  href="http://www.mosman.nsw.gov.au/news/2013/03/13/appointment-to-mosman-penalty-notice-review-panel"><txp:image id="5240" /></a>
+</div>
+
+<div style="margin-bottom:1em;">
+<a title="DA process: Mosman residents invited to comment"  href="http://www.mosman.nsw.gov.au/news/2013/02/28/da-process-mosman-residents-invited-to-comment"><txp:image id="5238" /></a>
+</div>
+
+<div style="margin-bottom:2em;">
+<a title="Code of Meeting Practice"  href="http://www.mosman.nsw.gov.au/council/consultation/3738/code-of-meeting-practice"><txp:image id="5275" /></a>
+</div>
+
+<div style="margin-bottom:2em;">
+<a title="Draft MOSPLAN &amp; Budget 2013/2014"  href="http://www.mosman.nsw.gov.au/council/consultation/3782/draft-mosplan-2013-2023"><txp:image id="5350" /></a>
+</div>
+
+<div style="margin-bottom:1em;">
+<a title="Balmoral Resident Parking Scheme (Area 15) Survey"  href="http://www.mosman.nsw.gov.au/council/consultation/3831/balmoral-rps-area-15-survey"><txp:image id="5372" /></a>
+</div>
+
+</txp:hide>
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.mosman.nsw.gov.au/css/MetroJs.css" /> 
+<div style="margin-bottom:1em;">
+	<div id="title" class="live-tile" data-mode="flip" data-direction="horizontal"  data-delay="5000">           
+		 <div>
+			<a href="http://www.mosman.nsw.gov.au/council/plans/MOSPLAN"><txp:image id="5391" width="215" class="full" escape="html"/></a>
+		</div>
+		<div>
+			<a href="http://www.mosman.nsw.gov.au/council/plans/MOSPLAN"><txp:image id="5392" width="215" class="full" escape="html"/></a>
+		</div>
+	</div>
+<script type="text/javascript">
+	$(".live-tile").liveTile();
+	</script>
+</div>
+
+<div style="margin-bottom:1em;">
+<a title="The case for independence"  href="http://www.mosman.nsw.gov.au/news/2013/05/02/putting-the-community-first"><txp:image id="5330" /></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+<txp:chh_if_data><div class="box-list">
+<h3><a style="padding-right:0.3em;" rel="alternate" type="application/rss+xml" href="/feed/?c=consultation" title="RSS Feed"><img src="/images/326.gif" width="12" height="12" alt="RSS feed" /></a>Your <strong>Say</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="community-consultation" limit="3" form="list-internal-Events-alt" />
+<txp:zem_event_list sort="zem_event_date.finish_date asc" form="list-home-YourSay" limit=5 section="council/consultation" />
+<li class="default"><a href="/council/consultation">Community Consultation</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+<txp:output_form form="include-works-alerts" />
+
+<div style="margin-bottom:1.5em;padding:15px 0 0 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://mosplan.mosman.nsw.gov.au"><img src="http://www.mosman.nsw.gov.au/images/4870.png" width="180" alt="" /></a>
+<p style="padding: 4px 7px 9px 7px;"><a href="http://mosplan.mosman.nsw.gov.au">Make your mark on Mosman's Community Strategic Plan</a></p>
+</div>
+
+<div style="margin-bottom:2em;padding:15px 0 0 0;text-align:center;border:1px solid #a7b3bf">
+<a href="http://ideas.mosman.nsw.gov.au"><txp:image id="3572" class="image" /></a>
+<p style="padding: 4px 7px 9px 7px;"><a href="http://ideas.mosman.nsw.gov.au">What is your Big Idea<br />for Mosman?</a></p>
+</div>
+
+
+
+
+
+<txp:output_form form="include-social-media-linklist" />
+
+
+<txp:output_form form="enews-home" />
+
+
+
+<div class="box-list">
+<h3>Quick <strong>Links</strong></h3>
+<txp:linklist form="Links" category="quick-links" limit="999" sort="linksort asc" wraptag="ul" break="li" />
+</div>
+
+<div class="box-list">
+<h3>Quick <strong>Search</strong></h3>
+<txp:linklist form="Links" category="quick-search" limit="999" sort="linksort asc" wraptag="ul" break="li" />
+</div>
+
+
+
+
+<txp:hide><txp:output_form form="directors-box-saving-life" /></txp:hide>
+
+
+<txp:hide>
+
+<div style="margin-bottom:2em;border:0p;text-align:center;padding:1em 0 0em 0;">
+<p><a href="http://www.mosman.nsw.gov.au/web/newsletters"><txp:image id="2785" /></a></p>
+<p style="padding-bottom:0.5em;"><a href="http://www.mosman.nsw.gov.au/web/newsletters"><strong>Sign up for news by email</strong></a></p>
+</div>
+
+</txp:hide>
+
+
+
+
+
+
+</div>
+
+<txp:article pgonly=1 />
+
+<txp:output_form form="include-footer" />

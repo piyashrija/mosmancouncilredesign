@@ -1,0 +1,312 @@
+<txp:output_form form="include-head" />
+
+<txp:if_index_page>
+<txp:if_section_level level=1>
+
+<txp:anc_hide><!-- ### SECTION PAGE ### --></txp:anc_hide>
+
+<txp:anc_hide><!-- ### SEARCH PAGE ### --></txp:anc_hide>
+
+<txp:if_search>
+<div id="sidebar">
+<h3 class="site_nav"><txp:section name="news" title=1 link=1 /></h3>
+<ul class="site_nav">
+<li><txp:section name="news">Latest</txp:section></li>
+<txp:site_nav active_link=0 wraptag="" break="li" sort="Custom_10" indent="" parent="." include_parent=0 depth=1 />
+</ul>
+<h3><span>News</span> Sections</h3>
+<txp:category_list parent="news" exclude="news" section="news" active_class="active" break="li" wraptag="ul" class="site_nav" />
+</div>
+<div id="internal">
+<div id="intro">
+<h2>News search results</h2>
+<txp:zem_result_count wraptag="p" text="{total} articles found" text_single="{total} article found" />
+</div>
+<txp:article searchform="search_results" limit=10 index=0 searchall=0 recurse=1 />
+<p class="article-nav"><span class="nudge1emr">Result page:</span><txp:zem_newer text="Previous" /><txp:zem_pages max=10 min=1 /><txp:zem_older text="Next" /></p>
+<form action="<txp:site_url />news/" method="get" id="search_form"><br /><input name="q" value="" size="21" type="text" /><input type="submit" value="Search News" class="button" /></form><br clear="left" />
+<p><em>You are currently searching the News section. You can also <txp:section name="search" link=1>search all web pages</txp:section>.</em></p>
+</div>
+
+<txp:else />
+
+<txp:anc_hide><!-- ### CATEGORY PAGE ### --></txp:anc_hide>
+
+<txp:if_category>
+<div id="sidebar">
+<h3 class="site_nav"><txp:section name="news" title=1 link=1 /></h3>
+<ul class="site_nav">
+<li><txp:section name="news">Latest</txp:section></li>
+<txp:site_nav active_link=0 wraptag="" break="li" sort="Custom_10" indent="" parent="." include_parent=0 depth=1 />
+</ul>
+<h3><span>News</span> Sections</h3>
+<txp:category_list parent="news" exclude="news" section="news" active_class="active" break="li" wraptag="ul" class="site_nav" />
+</div>
+<div id="internal">
+<div id="intro"><h2><txp:category title=1 link=0 /> News</h2>
+<p class="news-byline">You are currently browsing news filed under section <txp:category title=1 link=0 />.</p></div>
+<txp:article limit=10 listform="news-list" index=0 sub_indexes=0 recurse=0 />
+<p class="article-nav"><span class="nudge1emr">Pages:</span><txp:zem_newer text="Previous" /><txp:zem_pages max=5 min=1 /><txp:zem_older text="Next" /></p>
+<form action="<txp:site_url />news/" method="get" id="search_form"><br /><input name="q" value="" size="21" type="text" /><input type="submit" value="Search News" class="button" /></form><br clear="left" />
+<p class="feed" style="margin-top:1.5em;"><txp:feed_link flavor="rss" title="Mosman Council News feed (RSS)" label="News Feed" /> - subscribe to Mosman Council News for this section</p>
+</div>
+
+<txp:anc_hide><!-- ### NEWS HOME PAGE ### --></txp:anc_hide>
+
+<txp:else />
+
+<div class="double-col"><div class="double-col-wrap">
+
+<div class="col nudge20r">
+
+<div>
+<object width="250" height="250"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fmosmancouncil%2Fshow%2F&page_show_back_url=%2Fphotos%2Fmosmancouncil%2F&user_id=31209984@N06&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=104087"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=104087" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fmosmancouncil%2Fshow%2F&page_show_back_url=%2Fphotos%2Fmosmancouncil%2F&user_id=31209984@N06&jump_to=" width="250" height="250"></embed></object>
+<p style="padding-top:9px"><a href="http://www.flickr.com/photos/mosmancouncil/">See all our photos on Flickr</a></p>
+</div>
+
+<txp:hide>
+<txp:bos_image_display capt=1 capt_class="news-caption" wrap_capt="div" textilize=1 wrap="div" cat="news-photo-feature" />
+</txp:hide>
+
+<!--
+<div class="news-list-box">
+<h3 class="news-h">From the <strong>Mayor</strong></h3>
+<txp:article_custom status="live" section="news/mayor" limit=1 form="news-list" index=0 />
+</div>
+-->
+
+<div class="news-list-box">
+<h3 class="news-h">Council <strong>Newsletter</strong></h3>
+<div class="news_list_item">
+<txp:file_download_list limit=1 category="newsletter-mosman-news" sort="created desc" wraptag="ul" break="li" class="icon-doc" />
+<p>Published quarterly and letterbox dropped to all Mosman residents.</p>
+<ul class="icon-web nudge10t">
+<li><txp:permlink id="2132">Digital edition &amp; archive</txp:permlink></li>
+</ul>
+</div>
+</div>
+
+<div class="news-list-box">
+<h3 class="news-h">Email <strong>Newsletters</strong></h3>
+Get news, events and updates on current projects delivered to your email inbox.
+<ul class="icon-web nudge10t">
+<li><txp:permlink id="1497">Newsletters</txp:permlink></li>
+</ul>
+</div>
+
+<div class="news-list-box">
+<h3 class="news-h">Public <strong>Notices</strong></h3>
+
+<ul class="icon-doc">
+<txp:smd_xml data="http://portal.mosman.nsw.gov.au/pages/tools/listing/feedme.aspx" record="Notice" fields="Title,PublicationDate,URL" limit="3">
+<li><a href="{URL}">{Title}</a></li>
+</txp:smd_xml>
+</ul>
+
+<txp:hide>
+<txp:file_download_list form="public-notices-4-section" wraptag="" break="" limit="3" category="public-notices" sort="created desc" wraptag="ul" break="li" class="icon-doc" />
+</txp:hide>
+
+<ul class="icon-web nudge10t">
+<li><txp:section name="news/public-notices">More</txp:section></li>
+</ul>
+</div>
+
+<div class="news-list-box">
+<h3 class="news-h">Council <strong>Tweets</strong></h3>
+<div style="margin-top:2px;"> 
+
+<a class="twitter-timeline" data-dnt=true href="https://twitter.com/MosmanCouncil" data-widget-id="297105568521388032">Tweets by @MosmanCouncil</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<txp:hide>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#a7b3bf',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#333333',
+      links: '#2a78ac'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    avatars: false,
+    behavior: 'default'
+  }
+}).render().setUser('MosmanCouncil').start();
+</script>
+</txp:hide>
+
+</div>
+</div>
+
+
+
+</div>
+
+<div class="col news-col">
+<h3 class="news-h">Latest <strong>News</strong></h3>
+<txp:article limit=15 listform="news-list" index=0 sub_indexes=0 recurse=0 />
+</div>
+
+</div></div>
+
+
+<div class="col">
+
+<div class="box-list">
+<h3>News <strong>Sections</strong></h3>
+<ul class="news_nav">
+<txp:category_list parent="news" exclude="news" section="news" active_class="active" break="li" class="" />
+</ul>
+<ul class="news_nav">
+<li><txp:section name="/news/archive">News Archive</txp:section></li>
+</ul>
+</div>
+
+<div class="box-list">
+<h3>News <strong>Search</strong></h3>
+<form action="<txp:site_url />news/" method="get" id="search_form"><input name="q" value="" size="21" type="text" /><br /><input type="submit" value="Search News" class="button" /></form>
+</div>
+
+<txp:chh_if_data><div class="box-list">
+<h3>Your <strong>Say</strong></h3>
+<ul class="icon-list">
+<txp:hide><txp:zem_event_list section="events" category="community-consultation" limit=3 form="list-internal-Events-alt" /></txp:hide>
+<txp:zem_event_list form="list-internal-YourSay" limit="5" section="council/consultation" />
+<li class="default"><a href="/council/consultation">Community Consultation</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+<div class="box-list">
+<h3>Shaping <strong>Our Future</strong></h3>
+<ul class="icon-list">
+<txp:smd_xml data="http://shoroc.com/category/shaping-our-future/feed/rss/" record="item" fields="title,description,link" form="shapingourfuture-import" limit="5"  break="li" />
+<li class="default"><a href="http://www.shoroc.com">www.shoroc.com</a></li>
+</ul>
+</div>
+
+<txp:output_form form="include-social-media-linklist" />
+
+<txp:hide>
+<div class="box-list">
+<h3>Open <strong>Tenders</strong></h3>
+<txp:pie_feed items="999" showtitle="false" error="Error getting feed" showdesc="false">http://www.tenderlink.com/webapps/jadehttp.dll?WebTender&tenderer=2744.114&rss=2682.54&checksum=1537248729118</txp:pie_feed>
+<ul class="icon-web">
+<li class="default"><a href="https://www.tenderlink.com/mosman/">Tenderlink</a></li>
+</ul>
+</div>
+</txp:hide>
+
+</div>
+
+</txp:if_category></txp:if_search>
+
+<txp:anc_hide><!-- ### END SECTION PAGES ### --></txp:anc_hide>
+
+<txp:else />
+
+<txp:anc_hide><!-- ### START SUBSECTION PAGE ### --></txp:anc_hide>
+
+<div id="sidebar">
+<h3 class="site_nav"><txp:section name="news" title=1 link=1 /></h3>
+<ul class="site_nav">
+<li><txp:section name="news">Latest</txp:section></li>
+<txp:site_nav active_link=0 wraptag="" break="li" sort="Custom_10" indent="" parent=".." include_parent=0 depth=1 />
+</ul>
+<h3><span>News</span> Sections</h3>
+<txp:category_list parent="news" exclude="news" section="news" active_class="active" break="li" wraptag="ul" class="site_nav" />
+</div>
+
+<div id="internal">
+
+<txp:article index=1 sub_indexes=0 form="section_article_description" />
+
+<txp:if_section name="news/public-notices">
+
+<txp:hide>
+<txp:file_download_list form="public-notices" wraptag="ul" break="li" class="icon-doc" limit=1 label="Latest" labeltag="h3" category="public-notices" sort="created desc" />
+<txp:file_download_list form="public-notices" wraptag="ul" break="li" class="icon-doc" limit=8 offset=1 label="Archive" labeltag="h3" category="public-notices" sort="created desc" />
+<p><em><br />Public Notices are archived here for two months.</em></p>
+</txp:hide>
+
+</txp:if_section>
+
+<txp:if_section name="news/mayor">
+<ul class="icon-alert">
+<li><strong>This section has now been archived.</strong></li>
+</ul>
+<txp:article index=0 status="live" limit="99999" offset=1 sort="Posted desc" listform="list-calendar" />
+</txp:if_section>
+
+<txp:if_section name="news/archive">
+<form action="<txp:site_url />news/" method="get" id="search_form"><br /><input name="q" value="" size="21" type="text" /><input type="submit" value="Search News" class="button" /></form><br clear="left" />
+<table class="data">
+<thead><tr><th>Archive</th></tr></thead>
+<tbody>
+<txp:article_custom section="news" limit=99999 form="news-archive" status="live" index=0 sort="posted desc" />
+</tbody>
+</table>
+</txp:if_section>
+
+</div>
+
+<txp:anc_hide><!-- ### END SUBSECTION PAGE ### --></txp:anc_hide>
+
+</txp:if_section_level>
+
+<txp:else />
+
+<txp:if_article_list>
+this is a section list page that doesn't have an __index__ article
+<txp:site_map parent="." include_parent=0 sort="Custom_10" />
+<txp:else />
+
+<txp:anc_hide><!-- ### START CONTENT PAGE ### --></txp:anc_hide>
+
+<div id="sidebar">
+<h3 class="site_nav"><txp:section name="news" title=1 link=1 /></h3>
+<ul class="site_nav">
+<li><txp:section name="news">Latest</txp:section></li>
+<txp:if_section_level level=1><txp:site_nav active_link=0 wraptag="" break="li" sort="Custom_10" indent="" parent="." include_parent=0 depth=1 /><txp:else /><txp:site_nav active_link=0 wraptag="" break="li" sort="Custom_10" indent="" parent=".." include_parent=0 depth=2 /></txp:if_section_level>
+</ul>
+<h3><span>News</span> Sections</h3>
+<txp:category_list parent="news" exclude="news" section="news" active_class="active" break="li" wraptag="ul" class="site_nav" />
+</div>
+
+<div id="internal">
+
+<txp:if_section name="news">
+<txp:article form="news-single" />
+<p class="article-nav"><txp:link_to_prev>Previous</txp:link_to_prev><txp:section name="news" link=1>News home</txp:section><txp:link_to_next>Next</txp:link_to_next></p>
+</txp:if_section>
+
+<txp:if_section name="news/mayor">
+<txp:article status="live" form="mayor-single" />
+<p class="article-nav"><span class="nudge1emr">Browse:</span><txp:link_to_prev>Previous</txp:link_to_prev><txp:section name="news/mayor">Mayor's Column home</txp:section><txp:link_to_next>Next</txp:link_to_next></p>
+</txp:if_section>
+
+</div>
+
+<txp:anc_hide><!-- ### END CONTENT PAGE ### --></txp:anc_hide>
+
+</txp:if_article_list>
+</txp:if_index_page>
+
+<txp:output_form form="include-footer" />

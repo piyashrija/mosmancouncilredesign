@@ -1,0 +1,3 @@
+<a rel="bookmark" href="{url}" class="zem_event_permlink"><img src="{thumbnail}" width="41" height="41" alt="" /></a><a rel="bookmark" href="{url}" class="zem_event_permlink"><strong>{headline}</strong></a><br />
+<strong><em>{date_string_short}</em></strong><br/>
+{description}

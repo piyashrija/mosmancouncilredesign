@@ -1,0 +1,71 @@
+<form action="http://newsletters.mosman.nsw.gov.au/t/r/s/aftu/" method="post" id="CMonitor">
+
+<div><fieldset>
+<legend>My contact details</legend>
+<table>
+<tr>
+<td class="td-label" valign="top"><label for="name">Name</label></td>
+<td valign="top"><input type="text" name="cm-name" id="name" size="20" /></td>
+</tr>
+<tr>
+<td class="td-label" valign="top"><label for="aftu-aftu">Email address</label></td>
+<td valign="top"><input type="text" name="cm-aftu-aftu" id="aftu-aftu" size="20" /></td>
+</tr>
+</table>
+</fieldset></div>
+
+<div><fieldset>
+<legend>About me</legend>
+<table>
+<tr>
+  <td class="td-label" valign="top"><label class="autolabel">I live in Mosman</label></td>
+  <td><input class="radio" type="radio" name="cm-fo-kder" id="cm37681" value="37681" /> <label class="autolabel" for="cm37681">yes</label> 
+<input class="radio" type="radio" name="cm-fo-kder" id="cm37682" value="37682" /> <label class="autolabel" for="cm37682">no</label></td>
+</tr>
+<tr>
+  <td class="td-label" valign="top"><label class="autolabel">I own a property in Mosman</label></td>
+  <td><input class="radio" type="radio" name="cm-fo-kdey" id="cm37683" value="37683" /> <label class="autolabel" for="cm37683">yes</label> 
+<input class="radio" type="radio" name="cm-fo-kdey" id="cm37684" value="37684" /> <label class="autolabel" for="cm37684">no</label></td>
+</tr>
+<tr>
+  <td class="td-label" valign="top"><label class="autolabel">I have a business in Mosman</label></td>
+  <td><input class="radio" type="radio" name="cm-fo-kdkhh" id="cm37916" value="37916" /> <label class="autolabel" for="cm37916">yes</label> 
+<input class="radio" type="radio" name="cm-fo-kdkhh" id="cm37917" value="37917" /> <label class="autolabel" for="cm37917">no</label></td>
+</tr>
+<tr>
+  <td class="td-label" valign="top"><label class="autolabel">I work in Mosman</label></td>
+  <td><input class="radio" type="radio" name="cm-fo-kkkhh" id="cm39401" value="39401" /> <label class="autolabel" for="cm39401">yes</label> 
+<input class="radio" type="radio" name="cm-fo-kkkhh" id="cm39402" value="39402" /> <label class="autolabel" for="cm39402">no</label></td>
+</tr>
+
+</table>
+</fieldset></div>
+
+<div><fieldset>
+<legend>Newsletters</legend>
+<table>
+<tr>
+<!-- <td class="td-label" valign="top"><label>I am interested in...</label></td> -->
+<td valign="top" style="padding-left:10px">
+<input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm828958" value="828958" /> <label class="autolabel" for="cm828958">Mosman News</label><br />
+<input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm37679" value="37679" /> <label class="autolabel" for="cm37679">Mosman Library</label><br />
+<input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm37678" value="37678" /> <label class="autolabel" for="cm37678">Mosman Art Gallery</label><br />
+<input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm37680" value="37680" /> <label class="autolabel" for="cm37680">Sustainability and the environment</label><br />
+<input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm38316" value="38316" /> <label class="autolabel" for="cm38316">Urban planning, development and heritage</label>
+</td>
+</tr>
+</table>
+</fieldset></div>
+
+<p><input class="submit-alt" type="submit" value=" Subscribe " /></p>
+</form>
+
+
+ <br /><br />
+
+<h4>Privacy policy</h4>
+
+<ul>
+<li>Provision of any personal information is voluntary. Subscribers may request of Council that this information be removed if they wish.</li>
+<li>Subscribers are assured that Council will not give their email address to any other organisation or group. A subscriber's email address will only be used for the delivery of Mosman Council newsletters.</li>
+</ul>

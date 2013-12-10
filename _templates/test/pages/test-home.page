@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico" />
+
+<txp:if_section name=""><meta name="description" content="Located on the northern shores of Sydney Harbour, Mosman offers a rich cultural life amidst beautiful bushland surrounds. Mosman Council plans for building and development, maintains parks, beaches and sporting facilities, provides services for children, youth and seniors and runs cultural activities, a library and an art gallery." /></txp:if_section>
+
+<txp:rvm_css n="default" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="layout" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="header-footer" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="nav" format="link" media="screen" rel="stylesheet" />
+<txp:rvm_css n="events" format="link" media="screen" rel="stylesheet" />
+<!--[if lte ie 6]>
+<txp:rvm_css n="ie" format="link" media="screen" rel="stylesheet" />
+<![endif]-->
+<txp:rvm_css n="wide" format="link" media="screen" rel="stylesheet" title="Wide" rel="alternate stylesheet" />
+<txp:rvm_css n="print" format="link" media="print" rel="stylesheet" />
+
+<script type="text/javascript" src="/js/schedule.js"></script>
+<script type="text/javascript" src="/js/dom_extras.js"></script>
+<script type="text/javascript" src="/js/class_names.js"></script>
+<script type="text/javascript" src="/js/resolution.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<txp:if_section name=""><script type="text/javascript" src="/js/swfobject.js"></script><txp:else /><script type="text/javascript" src="/js/striped_tables.js"></script>
+<script type="text/javascript" src="/js/sortable_tables.js"></script></txp:if_section>
+
+<script type="text/javascript" src="/textpattern/js/jquery.js"></script>
+<script type="text/javascript" src="/js/thickbox-compressed.js"></script>
+
+<title><txp:page_title /></title>
+</head>
+<body id="s_<txp:if_section_level level=1><txp:section title=0 link=0 /><txp:else /><txp:if_section name="">home<txp:else />subsection</txp:section></txp:if_section_level>">
+
+<div id="header"><div class="container">
+<h1 class="print-element">Mosman Municipal Council</h1>
+<a rel="home" href="/" id="top"><txp:image id="12" /></a>
+<ul>
+<li><a href="/contact">Contact us</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/events">Events</a></li>
+<li><a title="A directory of services and facilities for people in Mosman" href="http://www.datadiction.com.au/bin/dd.dll/Lincs?xps&amp;MBR=MOS">Community Directory</a></li>
+<li><form action="/search/" method="get"><input name="q" value="" size="21" type="text" /><input type="submit" value="Search" class="button" /></form></li>
+</ul>
+</div></div>
+
+<txp:anc_hide> ### START NAV ### </txp:anc_hide>
+
+<txp:output_form form="include-nav" />
+
+<txp:anc_hide> ### END NAV ### </txp:anc_hide>
+
+<div id="wrapper"><div class="container">
+
+<txp:if_section name="test">
+<div id="intro">
+<div id="flashcontent"><img src="/ssp_director/albums/mosman-general/lg/slideshow-default.jpg" width="310" height="187" alt="" /></div>
+<script type="text/javascript">
+   var so = new SWFObject("http://www.mosman.nsw.gov.au/swf/slideshow.swf", "slideshow", "310", "187", "7", "#ffffff");
+so.addParam("wmode", "opaque");
+   so.write("flashcontent");
+</script>
+<h2>Welcome <span>to Mosman <span class="w800">Municipal </span>Council</span></h2> 
+<p>Located on the northern shores of Sydney Harbour, <txp:section name="mosman" link=1>Mosman</txp:section> offers a rich cultural life amidst beautiful bushland surrounds. <txp:section name="council">Mosman Council</txp:section> <txp:section name="planning">plans</txp:section> for <txp:section name="development">building and development</txp:section>, maintains <txp:permlink id="192">parks</txp:permlink>, <txp:permlink id="196">beaches</txp:permlink> and <txp:permlink id="195">sporting facilities</txp:permlink>, provides <txp:permlink id="90">services</txp:permlink> for <txp:permlink id="54">children</txp:permlink>, <txp:permlink id="104">youth</txp:permlink> and <txp:permlink id="105">seniors</txp:permlink> and runs <txp:permlink id="201">cultural activities</txp:permlink>, a <txp:section name="library">library</txp:section> and an <txp:permlink id="202">art gallery</txp:permlink>.</p>
+
+<!--
+<div id="box-mosfest">
+asdasda asd asda sda sdas dasdasdasd asd asd asd as dasd asd asda sdas dasd asda sdas dasd asd asda sdad
+</div>
+-->
+
+</div>
+
+
+
+</txp:if_section>
+
+<div id="content">
+
+
+
+
+
+
+<div class="wider-col home-1">
+
+<div class="box-list">
+<h3>What's <strong>Happening</strong></h3>
+<ul class="graphic">
+<txp:zem_event_list form="zem_event_Home" limit=5 section="events" category="community-consultation,business-community,children,childrens-library,childrens-services,community-events,council,environment,families,heritage,hsc-students,mosman-library,mosman-library-teens,planning,residents,seniors,youth"  />
+<li class="default"><txp:section name="events">Events</txp:section></li>
+</ul>
+</div>
+
+<div class="box-list">
+<h3>Mosman <strong>Art Gallery</strong></h3>
+<ul class="graphic">
+<txp:zem_event_list form="zem_event_Home" limit=2 section="events" category="mosman-art-gallery"  />
+<li class="default"><txp:section name="events">Events</txp:section></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="box-list">
+<h3>Flickr <strong>Photos</strong></h3>
+
+<txp:hide><txp:vdh_flickr_thumbnails nsid="61713553@N00" open="flickr" thumbnails_form="flickr-thumbs" latest="20" thumbnail_size="s" /></txp:hide>
+
+<ul class="graphic">
+<li class="default"><txp:section name="events">Mosman Council Flickr</txp:section></li>
+<li class="default"><txp:section name="events">Mosman Library Flickr</txp:section></li>
+</ul>
+</div>
+
+
+<!-- Start of Flickr Badge -->
+<style type="text/css">
+/*
+Images are wrapped in divs classed "flickr_badge_image" with ids "flickr_badge_imageX" where "X" is an integer specifying ordinal position. Below are some styles to get you started!
+*/
+#flickr_badge_uber_wrapper {text-align:center; width:150px;}
+#flickr_badge_wrapper {padding:10px 0 10px 0;}
+.flickr_badge_image {margin:0 10px 10px 10px;}
+.flickr_badge_image img {border: 1px solid black !important;}
+#flickr_badge_source {text-align:left; margin:0 10px 0 10px;}
+#flickr_badge_icon {float:left; margin-right:5px;}
+#flickr_www {display:block; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+#flickr_badge_wrapper {background-color:#ffffff;border: solid 1px #000000}
+#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+</style>
+<div id="flickr_badge_uber_wrapper"><a href="http://www.flickr.com" id="flickr_www">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a><div id="flickr_badge_wrapper">
+<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=10&display=latest&size=s&layout=x&source=user&user=31209984%40N06"></script>
+</div></div>
+<!-- End of Flickr Badge -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<txp:hide>
+<div class="box-list">
+<h3>Mosman <strong>Mosaic Project</strong></h3>
+<ul class="graphic">
+<li><a rel="bookmark" href="http://www.mosman.nsw.gov.au/mosaic-project" class="zem_event_permlink"><img src="http://www.mosman.nsw.gov.au/images/1469.jpg" alt="" width="41" height="41"></a><a rel="bookmark" href="http://www.mosman.nsw.gov.au/mosaic-project" class="zem_event_permlink"><strong>Fragments</strong></a><!--<br><strong><em>Sat 2 August – Sun 31 August</em></strong>-->
+<p>You're invited to be part of a true community artwork! Participate in the design and making of a wall mosaic.</p></li>
+<li class="default"><a href="http://www.mosman.nsw.gov.au/mosaic-project" title="Events">mosman.nsw.gov.au/mosaic-project</a></li>
+</ul>
+</div>
+</txp:hide>
+
+</div>
+
+<div class="col home-2">
+<div class="box-list">
+<h3><a style="padding-right:0.3em;" rel="alternate" type="application/rss+xml" href="/feed" title="RSS Feed"><txp:image id="326" /></a>What's <strong>News</strong></h3>
+<ul class="icon-list">
+<txp:article_custom status="live" section="news" limit=12 form="list-home-News" index=0 />
+<li class="default"><txp:section name="news" link=1>News</txp:section></li>
+</ul>
+</div>
+</div>
+
+<div class="col">
+
+
+
+
+
+<div style="margin-bottom:2em;padding:19px 7px 0 7px;text-align:center;border:1px solid #a7b3bf">
+
+<txp:image id="3356" />
+
+<form action="http://newsletters.mosman.nsw.gov.au/t/r/s/aftu/" method="post" id="CMonitorSmall">
+
+<input type="email" name="cm-aftu-aftu" id="aftu-aftu" size="20" placeholder="Your email address" />
+
+<table>
+<tr><td><input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm828958" value="828958" /></td><td><label class="autolabel" for="cm828958">Mosman News</label></td></tr>
+<tr><td><input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm37678" value="37678" /></td><td><label class="autolabel" for="cm37678">Mosman Art Gallery</label></td></tr>
+<tr><td><input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm37679" value="37679" /></td><td><label class="autolabel" for="cm37679">Mosman Library</label></td></tr>
+<tr><td><input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm37680" value="37680" /></td><td><label class="autolabel" for="cm37680">Sustainability and the environment</label></td></tr>
+<tr><td><input checked class="checkbox" type="checkbox" name="cm-fo-kdqu" id="cm38316" value="38316" /></td><td><label class="autolabel" for="cm38316">Urban planning, development and heritage</label></td></tr>
+</table>
+
+<p><input class="submit-alt" type="submit" value=" Subscribe " /></p>
+</form>
+
+</div>
+
+
+
+
+
+
+
+<txp:chh_if_data><div class="box-list">
+<h3><a style="padding-right:0.3em;" rel="alternate" type="application/rss+xml" href="/feed/?c=consultation" title="RSS Feed"><txp:image id="326" /></a>Your <strong>Say</strong></h3>
+<ul class="icon-list">
+<txp:zem_event_list section="events" category="community-consultation" limit=3 form="list-internal-Events" />
+<txp:zem_event_list sort="zem_event_date.finish_date asc" form="list-home-YourSay" limit=5 section="council/consultation" />
+<li class="default"><a href="/council/consultation">Community Consultation</a></li>
+</ul>
+</div></txp:chh_if_data>
+
+<div class="box-list">
+<h3>Quick <strong>Links</strong></h3>
+<txp:linklist form="Links" category="quick-links" limit="999" sort="linksort asc" wraptag="ul" break="li" />
+</div>
+
+<div class="box-list">
+<h3>Quick <strong>Search</strong></h3>
+<txp:linklist form="Links" category="quick-search" limit="999" sort="linksort asc" wraptag="ul" break="li" />
+</div>
+
+</div>
+
+<txp:article pgonly=1 />
+
+<txp:output_form form="include-footer" />

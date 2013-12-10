@@ -1,0 +1,142 @@
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+addLoadEvent(function() {
+var mapOpts = {
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  scaleControl: true,
+  scrollwheel: true
+}
+
+var map = new google.maps.Map(document.getElementById("Lmap"), mapOpts);
+
+var infoWindow = new google.maps.InfoWindow();
+var markerBounds = new google.maps.LatLngBounds();
+var markerArray = [];
+
+var iblue = 'http://www.mosman.nsw.gov.au/images/4777.png';
+var ibrown = 'http://www.mosman.nsw.gov.au/images/4778.png';
+var igreen = 'http://www.mosman.nsw.gov.au/images/4779.png';
+var ipink = 'http://www.mosman.nsw.gov.au/images/4780.png';
+var ired = 'http://www.mosman.nsw.gov.au/images/4781.png';
+
+function makeMarker(options){
+  var pushPin = new google.maps.Marker({map:map});
+  pushPin.setOptions(options);
+  google.maps.event.addListener(pushPin, "click", function(){
+    infoWindow.setOptions(options);
+    infoWindow.open(map, pushPin);
+  });
+  markerBounds.extend(options.position);
+  markerArray.push(pushPin);
+  return pushPin;
+}
+ 
+google.maps.event.addListener(map, "click", function(){
+  infoWindow.close();
+});
+ 
+			
+makeMarker({ position: new google.maps.LatLng(-33.820640100123995, 151.2409794330597),title: "Road Renewal - AWABA STREET",  content: "<p><strong>AWABA STREET</strong><br />Road Renewal</p><p>Spit Rd to Bond St</p><p>Estimated Cost $365,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.82388449634733, 151.24011039733887),title: "Road Renewal - BRADY STREET",  content: "<p><strong>BRADY STREET</strong><br />Road Renewal</p><p>80 metres from intersection of Military Rd</p><p>Estimated Cost  $25,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.82043509293141, 151.23371064662933),title: "Road Renewal - BRAY STREET",  content: "<p><strong>BRAY STREET</strong><br />Road Renewal</p><p>Congewoi Rd to Macpherson St</p><p>Estimated Cost  $200,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.82395580037645, 151.23706340789795),title: "Road Renewal - BURROGY LANE",  content: "<p><strong>BURROGY LANE</strong><br />Road Renewal</p><p>Bond St to Cardinal St </p><p>Part of a $27,000 package that includes  Burrogy Lane, Cartref Lane, Dream House Lane and Kallaroo Street</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.83231578558769, 151.23088896274567),title: "Road Renewal - CARTREF LANE",  content: "<p><strong>CARTREF LANE</strong><br />Road Renewal</p><p>Brierley St to Rangers Ave </p><p>Part of a $27,000 package that includes  Burrogy Lane, Cartref Lane, Dream House Lane and Kallaroo Street</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.81169954730632, 151.24445021152496),title: "Road Renewal - DREAM HOUSE LANE",  content: "<p><strong>DREAM HOUSE LANE</strong><br />Road Renewal</p><p>Spit Rd to dead end</p><p>Part of a $27,000 package that includes  Burrogy Lane, Cartref Lane, Dream House Lane and Kallaroo Street</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.83763616068478, 151.23911261558533),title: "Road Renewal - KALLAROO STREET",  content: "<p><strong>KALLAROO STREET</strong><br />Road Renewal</p><p>Clanalpine St to dead end</p><p>Part of a $27,000 package that includes  Burrogy Lane, Cartref Lane, Dream House Lane and Kallaroo Street</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.82982035320243, 151.235990524292),title: "Road Renewal - CABRAMATTA ROAD",  content: "<p><strong>CABRAMATTA ROAD</strong><br />Road Renewal</p><p>Cowles Rd to Bardwell St</p><p>Estimated Cost $88,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.83379073011973, 151.24964833259583),title: "Road Renewal - CROQUET LANE",  content: "<p><strong>CROQUET LANE</strong><br />Road Renewal</p><p>Alexander Ave to Middle Head Rd</p><p>Estimated Cost  $130,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.824419275116476, 151.24963760375977),title: "Road Renewal - HUNTER ROAD",  content: "<p><strong>HUNTER ROAD</strong><br />Road Renewal</p><p>The Esplande to dead end </p><p>Estimated Cost  $85,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.82525708846374, 151.2313824892044),title: "Road Renewal - MACPHERSON STREET ",  content: "<p><strong>MACPHERSON STREET </strong><br />Road Renewal</p><p>Prince St to Erith St</p><p>Estimated Cost  $65,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.83573797440375, 151.2308406829834),title: "Road Renewal - ROYALIST ROAD",  content: "<p><strong>ROYALIST ROAD</strong><br />Road Renewal</p><p>Boyle Rd to dead end</p><p>Estimated Cost  $25,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.83906200058604, 151.23749256134033),title: "Road Renewal - SIRIUS PARK ",  content: "<p><strong>SIRIUS PARK </strong><br />Road Renewal</p><p>Curlew Camp Rd to Sirius Cove Rd</p><p>Estimated Cost  $290,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.83158498793181, 151.22957468032837),title: "Road Renewal - SPOFFORTH STREET",  content: "<p><strong>SPOFFORTH STREET</strong><br />Road Renewal</p><p>Florence Ln to Military Rd</p><p>Estimated Cost  $150,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.826041416923495, 151.25120401382446),title: "Road Renewal - THE ESPLANADE ",  content: "<p><strong>THE ESPLANADE </strong><br />Road Renewal</p><p>Awaba St to dead end</p><p>Estimated Cost  $390,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.8179921, 151.2454239),title: "Road Renewal - WARRINGAH ROAD",  content: "<p><strong>WARRINGAH ROAD</strong><br />Road Renewal</p><p></p><p>Estimated Cost  $45,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.818714795821286, 151.23587250709534),title: "Road Renewal - WYONG ROAD",  content: "<p><strong>WYONG ROAD</strong><br />Road Renewal</p><p>Inkerman St to Congewoi Rd </p><p>Estimated Cost  $15,000</p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.83079179803996, 151.24207377433777),title: "Footpath Renewal  - AVENUE ROAD",  content: "<p><strong>AVENUE ROAD</strong><br />Footpath Renewal </p><p>Noble St to Military Rd </p><p>Part of a $20,000 package that includes footpaths in Avenue Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83471311452086, 151.23414516448975),title: "Footpath Renewal  - AVENUE ROAD",  content: "<p><strong>AVENUE ROAD</strong><br />Footpath Renewal </p><p>Reid Park to Upper Avenue Rd</p><p>Part of a $20,000 package that includes footpaths in Avenue Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.82110359283484, 151.24471306800842),title: "Footpath Renewal  - AWABA STREET",  content: "<p><strong>AWABA STREET</strong><br />Footpath Renewal </p><p>Moruben Rd to Spit Rd</p><p>Estimated Cost  $30,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.8167482, 151.241545),title: "Footpath Renewal  - BICKELL ROAD",  content: "<p><strong>BICKELL ROAD</strong><br />Footpath Renewal </p><p></p><p>Estimated Cost  $15,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.8369595, 151.2300632),title: "Footpath Renewal  - BOYLE STREET",  content: "<p><strong>BOYLE STREET</strong><br />Footpath Renewal </p><p></p><p>Estimated Cost  $25,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.824174168595775, 151.24002993106842),title: "Footpath Renewal  - BRADY STREET",  content: "<p><strong>BRADY STREET</strong><br />Footpath Renewal </p><p>80 metres from intersection of Military Rd</p><p>Estimated Cost  $15,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.84020265537944, 151.24762058258057),title: "Footpath Renewal  - BURRAWONG AVENUE",  content: "<p><strong>BURRAWONG AVENUE</strong><br />Footpath Renewal </p><p>Iluka Rd to dead end</p><p>Estimated Cost  $10,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.824365797390065, 151.24298572540283),title: "Footpath Renewal  - CLIFFORD STREET",  content: "<p><strong>CLIFFORD STREET</strong><br />Footpath Renewal </p><p>Moruben Rd to Spit Rd</p><p>Estimated Cost  $60,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.8230377564562, 151.2385654449463),title: "Footpath Renewal  - COWLES ROAD",  content: "<p><strong>COWLES ROAD</strong><br />Footpath Renewal </p><p>Mlitary Rd to Ourimbah Rd</p><p>Estimated Cost  $30,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.8141995, 151.247222),title: "Footpath Renewal  - CYPRIAN STREET",  content: "<p><strong>CYPRIAN STREET</strong><br />Footpath Renewal </p><p></p><p>Estimated Cost  $35,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83392886561542, 151.24671936035156),title: "Footpath Renewal  - EFFINGHAM STREET",  content: "<p><strong>EFFINGHAM STREET</strong><br />Footpath Renewal </p><p>King Max St to Middle Head Rd</p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.831166113288, 151.2562519311905),title: "Footpath Renewal  - GOOSEBERRY LANE",  content: "<p><strong>GOOSEBERRY LANE</strong><br />Footpath Renewal </p><p>Pretoria Ave to dead end</p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.82012758122109, 151.24352753162384),title: "Footpath Renewal  - KILLARNEY STREET",  content: "<p><strong>KILLARNEY STREET</strong><br />Footpath Renewal </p><p>30 metres from intersection of Spit Rd</p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83377736215669, 151.25575304031372),title: "Footpath Renewal  - MIDDLE HEAD ROAD",  content: "<p><strong>MIDDLE HEAD ROAD</strong><br />Footpath Renewal </p><p>Cobbittee St to Kahibah Rd </p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83670044032186, 151.2341344356537),title: "Footpath Renewal  - MOSMAN STREET",  content: "<p><strong>MOSMAN STREET</strong><br />Footpath Renewal </p><p>Trumfield Ln to Badham Ave</p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.81435596067702, 151.2415373325348),title: "Footpath Renewal  - QUAKERS ROAD",  content: "<p><strong>QUAKERS ROAD</strong><br />Footpath Renewal </p><p></p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.84061034666112, 151.23929768800735),title: "Footpath Renewal  - RICKARD AVENUE",  content: "<p><strong>RICKARD AVENUE</strong><br />Footpath Renewal </p><p></p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.819329828295935, 151.24914407730103),title: "Footpath Renewal  - STANTON ROAD",  content: "<p><strong>STANTON ROAD</strong><br />Footpath Renewal </p><p>Fairfax Rd to Wyargine St</p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.81997159659752, 151.24802827835083),title: "Footpath Renewal  - THE GROVE",  content: "<p><strong>THE GROVE</strong><br />Footpath Renewal </p><p>Edwards Bay Rd to Stanton Rd</p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.810924001671935, 151.2454104423523),title: "Footpath Renewal  - UPPER SPIT ROAD",  content: "<p><strong>UPPER SPIT ROAD</strong><br />Footpath Renewal </p><p>Spit Rd to dead end</p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.81791257290328, 151.23252511024475),title: "Footpath Renewal  - WYONG ROAD",  content: "<p><strong>WYONG ROAD</strong><br />Footpath Renewal </p><p>Macpherson St to dead end</p><p>Part of a $40,000 package that includes Effingham Street, Gooseberry Lane, Killarney Street, Middle Head Road, Mosman Street, Quakers Road, Rickard Avenue, Stanton Road, The Grove, Upper Spit Road and Wyong Road</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.81779669563764, 151.2497502565384),title: "Footpath Renewal  - FAIRFAX ROAD",  content: "<p><strong>FAIRFAX ROAD</strong><br />Footpath Renewal </p><p>5 Fairfax Rd to Kirkoswald Ave</p><p>Estimated Cost  $15,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.81890198008612, 151.24616146087646),title: "Footpath Renewal  - HAMPDEN STREET",  content: "<p><strong>HAMPDEN STREET</strong><br />Footpath Renewal </p><p>Stanton Rd to dead end</p><p>Estimated Cost  $15,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.81718165213813, 151.25053882598877),title: "Footpath Renewal  - KIRKOSWALD AVENUE",  content: "<p><strong>KIRKOSWALD AVENUE</strong><br />Footpath Renewal </p><p>Upper Fairfax Rd to Burran Ave</p><p>Estimated Cost  $65,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.82415188614996, 151.24780297279358),title: "Footpath Renewal  - MANDOLONG ROAD",  content: "<p><strong>MANDOLONG ROAD</strong><br />Footpath Renewal </p><p>Lavoni St to Superba Pde</p><p>Estimated Cost  $35,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.840061, 151.2509661),title: "Footpath Renewal  - MORELLA ROAD",  content: "<p><strong>MORELLA ROAD</strong><br />Footpath Renewal </p><p></p><p>Estimated Cost  $20,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.8372173156936, 151.24311447143555),title: "Footpath Renewal  - PRINCE ALBERT STREET",  content: "<p><strong>PRINCE ALBERT STREET</strong><br />Footpath Renewal </p><p>Queen St to Bradleys Head Rd</p><p>Estimated Cost  $50,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83685193859947, 151.24318957328796),title: "Footpath Renewal  - PRINCE ALBERT STREET",  content: "<p><strong>PRINCE ALBERT STREET</strong><br />Footpath Renewal </p><p>Elfrida St to Union St</p><p>Estimated Cost  $40,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83406254491484, 151.24165534973145),title: "Footpath Renewal  - QUEEN STREET",  content: "<p><strong>QUEEN STREET</strong><br />Footpath Renewal </p><p>Prince Albert St to Raglan St</p><p>Estimated Cost  $20,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.829962951301034, 151.24759912490845),title: "Footpath Renewal  - RAGLAN STREET",  content: "<p><strong>RAGLAN STREET</strong><br />Footpath Renewal </p><p>Cullen Ave to Gibson Rd</p><p>Part of a $15,000 package that includes footpaths in Raglan Street</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.8332604659824, 151.24043226242065),title: "Footpath Renewal  - RAGLAN STREET",  content: "<p><strong>RAGLAN STREET</strong><br />Footpath Renewal </p><p>Canrobert St to Milner St</p><p>Part of a $15,000 package that includes footpaths in Raglan Street</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.82893802217836, 151.2468159198761),title: "Footpath Renewal  - REDAN STREET",  content: "<p><strong>REDAN STREET</strong><br />Footpath Renewal </p><p>Raglan St to Balmoral Ave</p><p>Estimated Cost $120,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.816967722927686, 151.24959468841553),title: "Footpath Renewal  - ROSHERVILLE ROAD",  content: "<p><strong>ROSHERVILLE ROAD</strong><br />Footpath Renewal </p><p>Kirkoswald Ave to Hopetoun Ave</p><p>Estimated Cost  $10,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83737772465616, 151.2405502796173),title: "Footpath Renewal  - SIRIUS COVE ROAD",  content: "<p><strong>SIRIUS COVE ROAD</strong><br />Footpath Renewal </p><p>Kallaroo St to Elfrida St</p><p>Estimated Cost  $20,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83082744718182, 151.23581886291504),title: "Footpath Renewal  - SPENCER ROAD",  content: "<p><strong>SPENCER ROAD</strong><br />Footpath Renewal </p><p>Cowles Rd to Bardwell Ln </p><p>Estimated Cost $85,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.832476203749096, 151.22947812080383),title: "Footpath Renewal  - SPOFFORTH STREET",  content: "<p><strong>SPOFFORTH STREET</strong><br />Footpath Renewal </p><p></p><p>Estimated Cost  $25,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83796588827639, 151.23807191848755),title: "Footpath Renewal  - SVERGE STREET",  content: "<p><strong>SVERGE STREET</strong><br />Footpath Renewal </p><p>Moran St to Clanalpine St</p><p>Estimated Cost  $15,000</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.80775043134998, 151.24526023864746),title: "Seawall Renewal - MIDDLE HARBOUR",  content: "<p><strong>MIDDLE HARBOUR</strong><br />Seawall Renewal</p><p></p><p>Part of a $75,000 package that includes seawalls in Midddle Harbour, The Spit, Musgrave Street and other minor works </p>",  icon: ired});
+makeMarker({ position: new google.maps.LatLng(-33.80703725328114, 151.24764204025269),title: "Seawall Renewal - THE SPIT",  content: "<p><strong>THE SPIT</strong><br />Seawall Renewal</p><p></p><p>Part of a $75,000 package that includes seawalls in Midddle Harbour, The Spit, Musgrave Street and other minor works </p>",  icon: ired});
+makeMarker({ position: new google.maps.LatLng(-33.84369581597418, 151.23282551765442),title: "Seawall Renewal - MUSGRAVE STREET",  content: "<p><strong>MUSGRAVE STREET</strong><br />Seawall Renewal</p><p></p><p>Part of a $75,000 package that includes seawalls in Midddle Harbour, The Spit, Musgrave Street and other minor works </p>",  icon: ired});
+makeMarker({ position: new google.maps.LatLng(-33.82728919737253, 151.25317811965942),title: "Bath and Jetty Renewal - BALMORAL BATHS",  content: "<p><strong>BALMORAL BATHS</strong><br />Bath and Jetty Renewal</p><p>Pile renewals, shark net repairs, other works</p><p>Estimated Cost  $23,0000</p>",  icon: iblue});
+makeMarker({ position: new google.maps.LatLng(-33.8395966844161, 151.2529742717743),title: "Bath and Jetty Renewal - CLIFTON GARDENS RESERVE",  content: "<p><strong>CLIFTON GARDENS RESERVE</strong><br />Bath and Jetty Renewal</p><p>Pile renewals, shark net repairs, other works</p><p>Estimated Cost  $230,000</p>",  icon: iblue});
+makeMarker({ position: new google.maps.LatLng(-33.816069660092, 151.2370553612709),title: "Bath and Jetty Renewal - INKERMAN STREET",  content: "<p><strong>INKERMAN STREET</strong><br />Bath and Jetty Renewal</p><p>Pile renewals, shark net repairs, other works</p><p>Estimated Cost  $15,000</p>",  icon: iblue});
+makeMarker({ position: new google.maps.LatLng(-33.8085349203599, 151.24850034713745),title: "Retaining Wall Renewal  - PARRIWI ROAD",  content: "<p><strong>PARRIWI ROAD</strong><br />Retaining Wall Renewal </p><p>Rock Face Rectification</p><p></p>",  icon: ibrown});
+makeMarker({ position: new google.maps.LatLng(-33.8165937, 151.2459872),title: "Retaining Wall Renewal  - KIORA AVENUE",  content: "<p><strong>KIORA AVENUE</strong><br />Retaining Wall Renewal </p><p>Retaining Wall Repairs</p><p></p>",  icon: ibrown});
+makeMarker({ position: new google.maps.LatLng(-33.809118825124095, 151.24547481536865),title: "Playground Renewal - SPIT WEST RESERVE",  content: "<p><strong>SPIT WEST RESERVE</strong><br />Playground Renewal</p><p></p><p>Estimated Cost  $150,000 </p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.81581338733023, 151.2485110759735),title: "Playground Renewal - ROSHERVILLE RESERVE",  content: "<p><strong>ROSHERVILLE RESERVE</strong><br />Playground Renewal</p><p></p><p>Estimated Cost  $30,000 </p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.82971786067215, 151.25413835048676),title: "Oval Renewal - BALMORAL OVAL",  content: "<p><strong>BALMORAL OVAL</strong><br />Oval Renewal</p><p></p><p>Part of a $50,000 package that includes Balmoral Oval, Allan Border Oval and Rawson Oval</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.82688367072398, 151.24190747737885),title: "Oval Renewal - ALLAN BORDER OVAL",  content: "<p><strong>ALLAN BORDER OVAL</strong><br />Oval Renewal</p><p></p><p>Part of a $50,000 package that includes Balmoral Oval, Allan Border Oval and Rawson Oval</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83517653094643, 151.2489777803421),title: "Oval Renewal - RAWSON OVAL",  content: "<p><strong>RAWSON OVAL</strong><br />Oval Renewal</p><p></p><p>Part of a $50,000 package that includes Balmoral Oval, Allan Border Oval and Rawson Oval</p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.811690633028626, 151.2357223033905),title: "Bushland Track Renewal  - QUAKERS HAT PARK TRACK",  content: "<p><strong>QUAKERS HAT PARK TRACK</strong><br />Bushland Track Renewal </p><p></p><p></p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.80833879878173, 151.23781442642212),title: "Bushland Track Renewal  - QUAKERS HAT NORTH TRACK",  content: "<p><strong>QUAKERS HAT NORTH TRACK</strong><br />Bushland Track Renewal </p><p></p><p></p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.808196164624356, 151.2474274635315),title: "Bushland Track Renewal  - PARRIWI POINT TRACK",  content: "<p><strong>PARRIWI POINT TRACK</strong><br />Bushland Track Renewal </p><p></p><p></p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.819213952950456, 151.2526524066925),title: "Bushland Track Renewal  - WYARGINE POINT TRACK",  content: "<p><strong>WYARGINE POINT TRACK</strong><br />Bushland Track Renewal </p><p></p><p></p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.82865282232421, 151.2509036064148),title: "Bushland Track Renewal  - LAWRY PLUNKET TRACK",  content: "<p><strong>LAWRY PLUNKET TRACK</strong><br />Bushland Track Renewal </p><p></p><p></p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.83036400717816, 151.25277042388916),title: "Stormwater Work Renewal  - BALMORAL CREEK",  content: "<p><strong>BALMORAL CREEK</strong><br />Stormwater Work Renewal </p><p>Creek Rectification Works</p><p></p>",  icon: iblue});
+makeMarker({ position: new google.maps.LatLng(-33.837641, 151.2391766),title: "Stormwater Work Renewal  - KALLAROO STREET",  content: "<p><strong>KALLAROO STREET</strong><br />Stormwater Work Renewal </p><p>Rectifiction of Stormwater Pipeline</p><p></p>",  icon: iblue});
+makeMarker({ position: new google.maps.LatLng(-33.8428293, 151.2440713),title: "Road Renewal - BRADLEYS HEAD ROAD",  content: "<p><strong>BRADLEYS HEAD ROAD</strong><br />Road Renewal</p><p>New raised pedestrian crossing outside entrance to the zoo</p><p></p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.8457249, 151.2428574),title: "Pedestrian Crossing Upgrade - ATHOL WHARF ROAD",  content: "<p><strong>ATHOL WHARF ROAD</strong><br />Pedestrian Crossing Upgrade</p><p></p><p></p>",  icon: ipink});
+makeMarker({ position: new google.maps.LatLng(-33.84470274646756, 151.2444019317627),title: "Cycling Line Marking - BRADLEYS HEAD ROAD",  content: "<p><strong>BRADLEYS HEAD ROAD</strong><br />Cycling Line Marking</p><p>New on road cycle lane from Taronga Zoo to Mosman Junction</p><p></p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.846137379150605, 151.2442409992218),title: "Cycling Line Marking - ATHOL WHARF ROAD",  content: "<p><strong>ATHOL WHARF ROAD</strong><br />Cycling Line Marking</p><p>New on road cycle lane from Athol Wharf to Taronga Zoo</p><p></p>",  icon: igreen});
+makeMarker({ position: new google.maps.LatLng(-33.8244188, 151.2379352),title: "Road Renewal - MILITARY ROAD",  content: "<p><strong>MILITARY ROAD</strong><br />Road Renewal</p>",  icon: ipink});
+
+
+
+			
+map.fitBounds(markerBounds);
+
+});
+</script>
+
+<txp:if_section name="map">
+<div id="Lmap" style="width:100%; height:100%; margin:0 0 21px 0"></div>
+<txp:else />
+<div id="Lmap" style="width:609px; height:550px; margin:0 0 21px 0"></div>
+</txp:if_section>

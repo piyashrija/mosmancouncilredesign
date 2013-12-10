@@ -1,0 +1,7 @@
+<div id="intro">
+<h2>The Mayor's Column</h2>
+</div>
+<p class="news-byline"><txp:posted format="%A %e %B %Y" /></p>
+<txp:if_custom_field name="surname of mayor" val="wilton"><txp:image class="photo-frame" id="34" class="float-l" /></txp:if_custom_field>
+<txp:body />
+<p><strong><txp:if_custom_field name="surname of mayor" val="wilton">Cr Denise Wilton, Mayor of Mosman</txp:if_custom_field></strong></p>
