@@ -1,9 +1,10 @@
 /* FOR FLOATED ELEMENTS, TO COMBAT DOUBLED FLOAT-MARGIN BUG */
-
+/*test test*/
 #intro,.col,.wider-col,.double-col,#sidebar,
 .wide-col,.side-col,.widest-col {
 display:inline;
 }
+
 
 /* PUSH FOOTER AWAY */
 

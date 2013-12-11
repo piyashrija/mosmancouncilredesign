@@ -1,1 +1,14 @@
-images/*tmp
+images/*
+textpattern/*
+.htaccess
+Thumbs.db
+*.zip
+cgi-bin/*
+data/*
+*.sql
+email-to-DW/*
+dev/*
+swf/*
+*.html
+*.php
+kml/*
