@@ -1,9 +1,0 @@
-div#header, div#navbar, div#footer, div#sidebar {
-display:none;
-}
-
-body {
-background-color:#fff;
-color:#000;
-font-family:Arial,Verdana, sans-serif;
-}
